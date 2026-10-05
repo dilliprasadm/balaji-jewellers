@@ -21,7 +21,6 @@ import {
 
 export default function HomePage() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [materialDiscipline, setMaterialDiscipline] = useState<"gold" | "silver">("gold");
 
   // Curated 4 teaser products for homepage
   const teaserProducts = PRODUCTS.slice(0, 4);
@@ -251,127 +250,97 @@ export default function HomePage() {
       </section>
 
       {/* ========================================================
-          SECTION 03: GOLD / SILVER MATERIAL EXPERIENCE
+          SECTION 03: THE THREE DISCIPLINES (MATTER & METALLURGY)
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-gradient-to-b from-[#170b0c] via-dark-wine/70 to-near-black border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-8 border-b border-champagne-gold/15">
-            <div>
-              <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase block mb-3">
-                DUAL METALLIC DISCIPLINES
-              </span>
-              <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory">
-                The Material <span className="italic text-soft-gold">Experience</span>
-              </h2>
-            </div>
+      <section
+        className="relative w-full py-28 lg:py-36 px-6 lg:px-14 bg-gradient-to-b from-near-black via-[#170b0c] to-[#180709] border-t border-champagne-gold/15"
+        id="three-disciplines"
+      >
+        <div className="max-w-[1440px] mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase block mb-3 font-semibold">
+              MATTER &amp; METALLURGY
+            </span>
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-warm-ivory font-normal tracking-tight">
+              The Three Disciplines
+            </h2>
+            <p className="font-sans text-warm-ivory/70 text-sm sm:text-base mt-4 font-light leading-relaxed">
+              Distinct alchemies celebrated under one roof. Touch the warmth of gold, the quiet glow of silver, and the optical fire of certified gemstones.
+            </p>
+          </div>
 
-            {/* Toggle Switch */}
-            <div className="inline-flex p-1 bg-near-black border border-champagne-gold/30">
-              <button
-                type="button"
-                onClick={() => setMaterialDiscipline("gold")}
-                className={`px-6 py-2.5 font-sans text-xs tracking-widest uppercase transition-all duration-300 ${
-                  materialDiscipline === "gold"
-                    ? "bg-champagne-gold text-near-black font-semibold shadow-md"
-                    : "text-warm-ivory/70 hover:text-champagne-gold"
-                }`}
-              >
-                01 Gold Discipline
-              </button>
-              <button
-                type="button"
-                onClick={() => setMaterialDiscipline("silver")}
-                className={`px-6 py-2.5 font-sans text-xs tracking-widest uppercase transition-all duration-300 ${
-                  materialDiscipline === "silver"
-                    ? "bg-slate-300 text-near-black font-semibold shadow-md"
-                    : "text-warm-ivory/70 hover:text-slate-300"
-                }`}
-              >
-                02 Silver Discipline
-              </button>
+          {/* Editorial Triptych Showcase Image */}
+          <div className="relative w-full overflow-hidden border border-champagne-gold/30 mb-14 shadow-2xl bg-near-black">
+            <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[540px]">
+              <Image
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI6hHpUV-NwRDZqyOpCKxMbyX1iOHCKLekLht_8Q3jDUjjP-PHCoLkIIPm-lU8c0OU3p6M3HPptpyUMVEcb7n5jv3TLkirP9vWcg5E8uzHCFEodqC_jHFoS3kvPsFHfeFKUI4nDiOG5mVZgOczQr5uzaE7TSHDfO4yOJemwXSLjjrt_UZOj7C1WYZyaz3rZN25WXD3jHsEclF0vv9EclybwgwSisktxr5Ua8DYPN6ky6rrtUKZyfij"
+                alt="Three Disciplines - Molten Gold, Sterling Silver, Untreated Gemstones"
+                fill
+                sizes="(max-width: 1440px) 100vw, 1440px"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-near-black/85 via-transparent to-near-black/20 pointer-events-none"></div>
+            <div className="absolute bottom-6 left-6 right-6 hidden md:flex items-center justify-between text-xs tracking-cinematic font-sans text-soft-gold uppercase">
+              <span>[ 01 PURE 22K GOLD ]</span>
+              <span>[ 02 STERLING 925 SILVER ]</span>
+              <span>[ 03 NATURAL GEMSTONES ]</span>
             </div>
           </div>
 
-          {/* Interactive Material Showcase Display */}
-          {materialDiscipline === "gold" ? (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center animate-in fade-in duration-500">
-              <div className="lg:col-span-7 relative aspect-[16/10] bg-near-black border border-champagne-gold/30 overflow-hidden shadow-2xl">
-                <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XP4V2p_xKvgj72X3tXGOn1pqqIGO4iTuk4XQaXxtI17_3OJ3qAZrJNcLnWmrE1XqFqzEUfbiS-_UpdSSL_H0ocKzRVcoZgA255YDTEwEUCiZmMf5w9pfhZV2AhBogMDMlhkI0PkuPbRiM0AYnyPjWIjQr34WWNGVHPJhVVt8ejlp-4LxFjgNaKj1QdO6BS99L8yzv9LM08bIqjUIMZsfo6SzJzQIApR6-B5jhIdnFLO7Y9HyAo2vVpvWc"
-                  alt="Gold Metallic Granulation Macro"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-                  <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase bg-near-black/80 px-3 py-1 border border-champagne-gold/30">
-                    22K GOLD REPOUSSÉ STUDY
-                  </span>
-                  <span className="font-sans text-xs text-warm-ivory/60">Warm Champagne Specular Luster</span>
-                </div>
-              </div>
-
-              <div className="lg:col-span-5 flex flex-col gap-6">
-                <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
-                  CHARACTERISTICS · GOLD
+          {/* Interactive Material Selector Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Discipline 01 */}
+            <Link
+              href="/collections#gold"
+              className="p-8 bg-[#200b0e]/80 border border-champagne-gold/30 hover:border-champagne-gold hover:bg-[#2b0e13] transition-all duration-300 group block"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3 py-1 bg-deep-burgundy border border-champagne-gold/40 text-champagne-gold text-[10px] font-sans tracking-widest uppercase font-medium">
+                  01 GOLD
                 </span>
-                <h3 className="font-serif text-3xl sm:text-4xl text-warm-ivory leading-tight">
-                  Generous Warmth &amp; Hand-Chiseled Stippling
-                </h3>
-                <p className="font-sans text-warm-ivory/80 text-sm sm:text-base leading-relaxed font-light">
-                  Gold captures ambient salon light with warm metallic depth. Shaped through repoussé chasing and delicate bead granulation, each gold piece radiates timeless regal gravity.
-                </p>
-                <div className="pt-4 flex items-center gap-4">
-                  <Link
-                    href="/collections#gold"
-                    className="inline-flex items-center gap-2 text-xs font-sans tracking-widest text-champagne-gold hover:text-soft-gold uppercase font-medium"
-                  >
-                    <span>View All Gold Works</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
+                <ArrowRight className="w-4 h-4 text-champagne-gold group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </div>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center animate-in fade-in duration-500">
-              <div className="lg:col-span-7 relative aspect-[16/10] bg-near-black border border-slate-400/30 overflow-hidden shadow-2xl">
-                <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1Vxt6aboQZhCDvL1ubDhyfAdn2KHro_PLLDma-2zdwWQlufi3UW50cyg_sJxvSEcl-7HTg9wCJsJ133C9pJElMSo83NaBOSE49vFHebGvyuoA9h0bRR9VxnY7PtxdHwoQbAqhMZZRy0eiAnD31zh3ZgdPwurpGJEX8KS3Sj_5Qg340hWQhfFsFVDQRyIvfBUdo_MCMGMwRrR4vsNaEcwbjbchsj3Zd8aOkyObW4MBfIAK3RCddFA_kqQtA"
-                  alt="Silver Hand-Hammered Surface Macro"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-                  <span className="font-sans text-[10px] tracking-monumental text-slate-300 uppercase bg-near-black/80 px-3 py-1 border border-slate-400/30">
-                    925 STERLING SILVER STUDY
-                  </span>
-                  <span className="font-sans text-xs text-warm-ivory/60">Tactile Satin Burnish</span>
-                </div>
-              </div>
+              <h3 className="font-serif text-2xl lg:text-3xl text-warm-ivory mb-3 font-normal">THE WARMTH OF GOLD</h3>
+              <p className="font-sans text-warm-ivory/70 text-sm font-light leading-relaxed">
+                22K BIS Hallmarked noble alloy, hand-chiseled repoussé and Nakashi wirework designed to retain enduring sovereign weight and warmth upon contact.
+              </p>
+            </Link>
 
-              <div className="lg:col-span-5 flex flex-col gap-6">
-                <span className="font-sans text-xs tracking-monumental text-slate-300 uppercase">
-                  CHARACTERISTICS · SILVER
+            {/* Discipline 02 */}
+            <Link
+              href="/collections#silver"
+              className="p-8 bg-[#180709]/80 border border-champagne-gold/20 hover:border-champagne-gold hover:bg-[#230a0d] transition-all duration-300 group block"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3 py-1 bg-deep-burgundy/60 border border-champagne-gold/40 text-champagne-gold text-[10px] font-sans tracking-widest uppercase font-medium">
+                  02 SILVER
                 </span>
-                <h3 className="font-serif text-3xl sm:text-4xl text-warm-ivory leading-tight">
-                  Architectural Coolness &amp; Sculptural Purity
-                </h3>
-                <p className="font-sans text-warm-ivory/80 text-sm sm:text-base leading-relaxed font-light">
-                  Sterling silver possesses a crisp, architectural presence. From solid hasli collars to hand-hammered chevron cuffs, silver commands attention through clean silhouette and tactile texture.
-                </p>
-                <div className="pt-4 flex items-center gap-4">
-                  <Link
-                    href="/collections#silver"
-                    className="inline-flex items-center gap-2 text-xs font-sans tracking-widest text-slate-300 hover:text-warm-ivory uppercase font-medium"
-                  >
-                    <span>View All Silver Works</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
+                <ArrowRight className="w-4 h-4 text-champagne-gold group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </div>
-            </div>
-          )}
+              <h3 className="font-serif text-2xl lg:text-3xl text-warm-ivory mb-3 font-normal">THE QUIET REFLECTION</h3>
+              <p className="font-sans text-warm-ivory/70 text-sm font-light leading-relaxed">
+                Pure 925 sterling silver, hand-hammered chiseled tribal geometry, cooled desert moonlight luster, and ceremonial heirloom artefacts.
+              </p>
+            </Link>
+
+            {/* Discipline 03 */}
+            <Link
+              href="/collections"
+              className="p-8 bg-[#180709]/80 border border-champagne-gold/20 hover:border-champagne-gold hover:bg-[#230a0d] transition-all duration-300 group block"
+            >
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3 py-1 bg-deep-burgundy/60 border border-champagne-gold/40 text-champagne-gold text-[10px] font-sans tracking-widest uppercase font-medium">
+                  03 GEMSTONES
+                </span>
+                <ArrowRight className="w-4 h-4 text-champagne-gold group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+              <h3 className="font-serif text-2xl lg:text-3xl text-warm-ivory mb-3 font-normal">LIGHT BECOMES COLOUR</h3>
+              <p className="font-sans text-warm-ivory/70 text-sm font-light leading-relaxed">
+                Certified unheated gemstones, individual bezel cold-burnished mounts, pure spectral dispersion, and untreated astrological stones of exceptional hue.
+              </p>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -410,112 +379,104 @@ export default function HomePage() {
       </section>
 
       {/* ========================================================
-          SECTION 05: MACRO WORLD
+          SECTION 05: MICROSCOPIC EXCELLENCE (BEAUTY LIVES IN THE DETAIL)
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-gradient-to-b from-[#120708] via-dark-wine/60 to-[#170b0c] border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto flex flex-col gap-16">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-champagne-gold/15">
-            <div>
-              <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase block mb-3">
-                100× OPTICAL INSPECTION
-              </span>
-              <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory">
-                Beauty Lives in the <span className="italic text-soft-gold">Detail</span>
-              </h2>
+      <section className="relative w-full py-28 lg:py-36 px-6 lg:px-14 bg-near-black border-t border-champagne-gold/15" id="macro-inspection">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="lg:col-span-5 order-2 lg:order-1">
+            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase block mb-3 font-semibold">
+              MICROSCOPIC EXCELLENCE
+            </span>
+            <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory font-normal leading-tight mb-6">
+              BEAUTY LIVES IN THE DETAIL.
+            </h2>
+            <div className="w-16 h-[1px] bg-champagne-gold/40 mb-8"></div>
+            <p className="font-sans text-warm-ivory/80 text-base font-light leading-relaxed mb-8">
+              Examining the micro-craftsmanship beneath standard sight: 0.12mm pure gold foil backing, hand-planished collets, and tension-set uncut diamonds preserved for generations.
+            </p>
+            {/* Macro Progression Steps */}
+            <div className="border border-champagne-gold/20 p-5 bg-[#1b080b]/60 mb-6">
+              <p className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase mb-3 font-medium">
+                INSPECTION TRAJECTORY
+              </p>
+              <div className="text-xs font-sans tracking-wider text-warm-ivory/80 flex flex-col gap-2.5">
+                <div className="flex items-center gap-2">
+                  <span className="text-champagne-gold font-medium">01</span> MACRO GRAIN
+                  <ArrowRight className="w-3.5 h-3.5 text-champagne-gold/70" />
+                  <span className="text-champagne-gold font-medium">02</span> METALLIC LATTICE
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-champagne-gold font-medium">03</span> BEZEL SETTING
+                  <ArrowRight className="w-3.5 h-3.5 text-champagne-gold/70" />
+                  <span className="text-champagne-gold font-medium">04</span> SOVEREIGN FINISH
+                </div>
+              </div>
             </div>
-            <Link
-              href="/collections"
-              className="inline-flex items-center gap-2 text-xs font-sans tracking-widest text-champagne-gold hover:text-soft-gold uppercase font-medium"
-            >
-              <span>Explore The Collection</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
-
-          {/* 3 Macro Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#260003] border border-champagne-gold/25 p-6 flex flex-col gap-4">
-              <div className="relative aspect-square w-full overflow-hidden bg-near-black">
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="relative border border-champagne-gold/40 p-2 bg-gradient-to-br from-deep-burgundy/40 to-near-black shadow-2xl">
+              <div className="relative overflow-hidden aspect-[16/10] bg-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XP4V2p_xKvgj72X3tXGOn1pqqIGO4iTuk4XQaXxtI17_3OJ3qAZrJNcLnWmrE1XqFqzEUfbiS-_UpdSSL_H0ocKzRVcoZgA255YDTEwEUCiZmMf5w9pfhZV2AhBogMDMlhkI0PkuPbRiM0AYnyPjWIjQr34WWNGVHPJhVVt8ejlp-4LxFjgNaKj1QdO6BS99L8yzv9LM08bIqjUIMZsfo6SzJzQIApR6-B5jhIdnFLO7Y9HyAo2vVpvWc"
-                  alt="Micro Granulation"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPvup1w5oqr9jItA_mIfIo8Bj3CakovjUs_gMIJmhvnufTalX9d4V_C1I2RfOFXf0epiIfyCT72vUyi7F77tqgX4xTgTwYufiAm27u-bG_8RoEukEPqt6iWqHAXdeTIfmZHSQjbkf2vQZEQq0pQRZi20Ro8afHXM7IzcPR4yhSwnGpwZJlCPfoAteon9yGPPcaHH1RgH3kTRbakVJ-V_xFn61HLhM1O6JNU2FkIOnE6n0fw-Tr3pK7"
+                  alt="Extreme macro Kundan gold setting holding raw uncut crystal diamonds"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                  className="object-cover transition-transform duration-1000 hover:scale-110"
                 />
               </div>
-              <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase">01 / SURFACE</span>
-              <h3 className="font-serif text-xl text-warm-ivory">Micro Granulation Spheres</h3>
-              <p className="text-xs font-sans text-warm-ivory/70 font-light leading-relaxed">
-                Hand-fused gold beads calibrated down to sub-millimeter scales, reflecting pinpricks of warm salon light.
-              </p>
-            </div>
-
-            <div className="bg-[#260003] border border-champagne-gold/25 p-6 flex flex-col gap-4">
-              <div className="relative aspect-square w-full overflow-hidden bg-near-black">
-                <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1W2UoV3C9QJ2oLKXYMsENeTBrLv8SzG6wrIbHIzRK9Z8rHz_91FuWYAKiMXJCCpyPSTZV59iuEkfDSEs-Lj2kBDEmSHwc_OJztgb9cJtfrhdLT6rCuxnyO4Yk16IhzMSDmD7slLYyfFp4aTl1gD96DD5k1wna8T_Y3DnFUMVvbbBZyeeKoxAEb6ZGFSBnxFzUIv3gvbzlmJkLYxdU9TljbRQ2mTizILl9WQPdowb-Xy-6dHBZc9YBq-C0s"
-                  alt="Kundan Bezel Setting"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
-                />
+              <div className="p-3 bg-near-black/90 flex items-center justify-between text-xs font-sans text-warm-ivory/60 tracking-widest uppercase">
+                <span>Magnification: 24x True Optical</span>
+                <span className="text-champagne-gold font-medium">Pure 24K Jadau Foil</span>
               </div>
-              <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase">02 / EMBELLISHMENT</span>
-              <h3 className="font-serif text-xl text-warm-ivory">Burnished Bezel Mounts</h3>
-              <p className="text-xs font-sans text-warm-ivory/70 font-light leading-relaxed">
-                Hand-burnished pure gold foil bezels holding natural uncut stone crystal facets securely in traditional collars.
-              </p>
-            </div>
-
-            <div className="bg-[#260003] border border-champagne-gold/25 p-6 flex flex-col gap-4">
-              <div className="relative aspect-square w-full overflow-hidden bg-near-black">
-                <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1Wk04KjoU3QEkTkjuqhrvnxPv5PzLttgJjlGOKhGUq4GhDGOnjBh2KdnnxewizCaQBn-Eh_pbI36VFBZN1c5ToDOo6-zdSVqaUaS0eopc5QnGJQw0ctbANICRIru9wchs5Vba7uJfXUDit2zgu1LQ4a4zxSqqKCbBqeI1cSdqruuo9gTaNgsrwqZNGXmSVD3uj_ZDt9VwLV_ie5sL4nWMKB5P70baPy4B_3dpSsJ1YYdUstAxKyCPun9Z0"
-                  alt="Filigree Lattice"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase">03 / ARCHITECTURE</span>
-              <h3 className="font-serif text-xl text-warm-ivory">Symmetrical Openwork Wire</h3>
-              <p className="text-xs font-sans text-warm-ivory/70 font-light leading-relaxed">
-                Intricate pierced lattices drawn from precious wirework, balancing structural strength with featherlight drape.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ========================================================
-          SECTION 06: EDITORIAL JEWELLERY MOMENT
+          SECTION 06: THE EDITORIAL FORM (FOR THE MOMENTS THAT MATTER)
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-[#170b0c] border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6 relative aspect-[3/4] bg-near-black border border-champagne-gold/30 overflow-hidden shadow-2xl">
-            <Image
-              src="https://lh3.googleusercontent.com/aida/AEtjO1Vn4rhAyeJgWPEcBCAkDo6-z8skDqo70UTilcfBHw0MnfTEFWIOfnBUtPFHLBDWFrlvpOA11zkg8ZjZHP2uSnsp95l0t8_f1YF9JqZxm4H7g9mQRCQ7TVWCwa4L0CH9zu90byLwp8AcHXzG_X1Du2xLYMW6BnerTxeQBB8z56e7xoMr1un5iEyl4wpetVjULU55U5Yx6LX5uj-5NwKsFgZenS34c20bZ47yj02a_PmYsW0_6eYGm6LjuQ"
-              alt="Editorial Portrait Layered Gold"
-              fill
-              className="object-cover filter contrast-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-near-black/70 via-transparent to-transparent"></div>
+      <section className="relative w-full py-28 lg:py-36 px-6 lg:px-14 bg-[#FAF7EF] text-[#260003] overflow-hidden border-t border-champagne-gold/20">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Left: High Fashion Imagery */}
+          <div className="lg:col-span-6">
+            <div className="relative max-w-[520px] mx-auto shadow-[0_20px_60px_-15px_rgba(38,0,3,0.35)] border border-[#d8b46a]/40 bg-[#f3ece0] p-3">
+              <div className="relative aspect-[3/4] w-full overflow-hidden bg-black">
+                <Image
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEnEzNMEyG9a2ps0dLsnE-JoPHo3Xc6Q5RRkXoOXpEz2XcbP1g1gE_EvbnFTNZxP14JIhtUXOfAbtaSMfKo3bhov7r10KybPfNffZsjvziI41BAVx4-l-E-B0gmjjcc5xnjqZNUghxcHr8amvD2WwB4cQA0XHuyK7IWEnoitZwP8PIY4EiWZ8eKqAXmSyGc98xMvkgI1g-YaFmnWYpoYI8r5V-BfNH_VFiiA3Y0bkRBHsNToXJWKtJ"
+                  alt="High fashion fine jewellery portrait of an elegant contemporary Indian woman"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="mt-3 flex items-center justify-between text-[10px] font-sans tracking-widest uppercase text-[#450006] font-medium">
+                <span>Haute Joaillerie Editorial</span>
+                <span>Rajputana Modernity</span>
+              </div>
+            </div>
           </div>
-
-          <div className="lg:col-span-6 lg:pl-10 flex flex-col gap-8">
-            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
-              EDITORIAL PORTFOLIO
+          {/* Right: Asymmetric Editorial Typography */}
+          <div className="lg:col-span-6 flex flex-col justify-center">
+            <span className="font-sans text-xs tracking-monumental text-[#450006] uppercase mb-4 font-semibold">
+              THE EDITORIAL FORM
             </span>
-            <blockquote className="font-serif text-3xl sm:text-4xl lg:text-5xl text-warm-ivory leading-tight font-normal">
-              &ldquo;Jewellery is not mere ornament; it is an intimate expression of grace, pause, and personal poise.&rdquo;
-            </blockquote>
-            <p className="font-sans text-warm-ivory/80 text-base font-light leading-relaxed max-w-lg">
-              Designed to move with the cadence of human emotion. Layered chokers, articulating drops, and sculpted cuffs become part of living moments.
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#260003] font-normal leading-[1.02] tracking-tight mb-8">
+              FOR THE MOMENTS<br />THAT MATTER.
+            </h2>
+            <div className="w-20 h-[1.5px] bg-[#450006]/60 mb-8"></div>
+            <p className="font-sans text-[#260003]/85 text-lg font-light leading-relaxed mb-6">
+              Contemporary poise rooted in royal Rajputana heritage. Adornments sculpted to live effortlessly with the skin.
             </p>
-            <div className="pt-2">
+            <p className="font-sans text-[#260003]/75 text-sm font-light leading-relaxed mb-10 max-w-lg">
+              Neither heavy for the sake of excess nor timid in scale. Each piece is proportioned for the woman who commands every room she enters with gentle grace.
+            </p>
+            <div>
               <Link
                 href="/moments"
-                className="inline-flex items-center gap-2 text-xs font-sans tracking-widest text-champagne-gold hover:text-soft-gold uppercase font-medium"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-[#260003] text-warm-ivory font-sans text-xs tracking-monumental uppercase hover:bg-[#450006] transition-colors"
               >
-                <span>Discover Moments Editorial</span>
+                <span>EXPLORE BESPOKE COMMISSIONS</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -559,81 +520,91 @@ export default function HomePage() {
       </section>
 
       {/* ========================================================
-          SECTION 08: HUMAN MOMENT
+          SECTION 08: SOMETIMES THINGS BECOME PART OF YOU
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-[#170b0c] border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
-            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
-              MOMENTS THAT ENDURE
-            </span>
-            <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory leading-tight">
-              Jewellery Becomes <br />
-              <span className="italic text-soft-gold">Part of the Moment.</span>
-            </h2>
-            <p className="font-sans text-warm-ivory/80 text-base leading-relaxed font-light">
-              From celebratory courtyard gatherings under evening lanterns to intimate quiet celebrations, our pieces are crafted to accompany significant milestones with quiet elegance.
-            </p>
-            <div className="pt-2">
-              <Link
-                href="/moments"
-                className="inline-flex items-center gap-2 text-xs font-sans tracking-widest text-champagne-gold hover:text-soft-gold uppercase font-medium"
-              >
-                <span>View Lifestyle Portfolio</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+      <section className="relative w-full py-28 lg:py-36 px-6 lg:px-14 bg-gradient-to-b from-[#180709] via-deep-burgundy/20 to-near-black border-t border-champagne-gold/15">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="relative w-full border border-champagne-gold/30 shadow-2xl overflow-hidden mb-12 bg-near-black">
+            <div className="relative w-full h-[420px] sm:h-[500px] lg:h-[600px]">
+              <Image
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrP0RK9IuQQsMdPjnTvOB_qdjrn8TDl7U6V2OT9lHPuyMEz8N2av-tA-RiZVzVg91fRYw1QDwtmStxauycPeHlomrvoJlijYPHsTTWe_Er-81KgOP_6ODoz-7FaL8IDt6pBHnRFLPYYWmafhtEKHNi5XqPiNzdYuPriH_1QM1bmu5dYUVt_mNRInGa9A0eVl5Etev_bFRtxcAumfT7Oqu5sRWI0sySRJpPGAV68dGQ-UNX2mjVqqD-"
+                alt="Indian women admiring handcrafted heirloom jewellery in an intimate salon setting"
+                fill
+                sizes="(max-width: 1400px) 100vw, 1400px"
+                className="object-cover"
+              />
             </div>
-          </div>
-
-          <div className="lg:col-span-7 relative aspect-[16/10] bg-near-black border border-champagne-gold/30 overflow-hidden shadow-2xl order-1 lg:order-2">
-            <Image
-              src="https://lh3.googleusercontent.com/aida/AEtjO1WheJkVyuZZIGkxhZ4LmEgraNW4KKSVueXZn_rlpqRqVoNJbQmRJrLTLtDkpETVI7f9VQY5xwHK6cr3jSV7Tg6w5i5jacNk4-rQWhtwE8YerYbPVtTrLEUUi1wWLtYr0YSyB2dNuatdN_5a9Dyh0k0adU9AUjZJzlYKf6xXRAZxRClQTN-5RMUGUPbGH_1XYuSs5CmJRxQAXe8nGRCZ_51YHVGCf42TXQHrmyLNgx9I7uDzlU1_oG6zpMs"
-              alt="Celebratory Moment Lifestyle"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-near-black/70 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-near-black via-near-black/30 to-transparent"></div>
+            <div className="absolute bottom-8 left-6 sm:left-12 max-w-2xl">
+              <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase block mb-3 font-semibold">
+                HEIRLOOM TRADITION
+              </span>
+              <h2 className="font-serif text-3xl sm:text-5xl text-warm-ivory font-normal leading-tight mb-4">
+                SOME THINGS BECOME PART OF YOU.
+              </h2>
+              <p className="font-sans text-warm-ivory/80 text-sm sm:text-base font-light leading-relaxed mb-6">
+                Jewellery is never merely precious metal—it is the silent keeper of milestones, vows, and familial affection. Designed to be worn, cherished, and handed down across generations.
+              </p>
+              <a
+                href={getWhatsAppProductUrl("Bridal & Heirloom Curations")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors"
+              >
+                <span>DISCOVER BRIDAL &amp; HEIRLOOM CURATIONS</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ========================================================
-          SECTION 09: BRAND STORY TEASER
+          SECTION 09: FROM CRAFT TO CHARACTER
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-gradient-to-b from-[#170b0c] via-dark-wine/70 to-near-black border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6 relative aspect-square bg-near-black border border-champagne-gold/30 overflow-hidden shadow-2xl">
-            <Image
-              src="https://lh3.googleusercontent.com/aida/AEtjO1WYFIx-MRIhEnBhWT3oh2hg4VxYTPS_m8g-1XaeUJbfx_vYcBEPrTI6bJvCpv5xeZqYusPalI-PA0z_x-ffV-4H7o9YuRBOoTr8ETTzwjySGcBUIK32WeAnv3FqgCWih12SE6KEIjCUd_jhzwfz86lRaV1_CDD_yI6XkSmQyRsi_p2TTBVBhyUM61SDQwrP2jYmRaYmKDVXT17S6xZVe-phLnHFsNQc7Ow5JmByanlNvFqMXjGXHzA-TRo"
-              alt="Artisan Workbench Instruments"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-near-black/70 via-transparent to-transparent"></div>
-            <div className="absolute bottom-6 left-6 right-6">
-              <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase bg-near-black/85 px-3 py-1 border border-champagne-gold/20">
-                BENCH STUDY · PARVATSAR
-              </span>
+      <section className="relative w-full py-28 lg:py-36 px-6 lg:px-14 bg-near-black border-t border-champagne-gold/15" id="brand-story">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="lg:col-span-6">
+            <div className="relative p-3 bg-gradient-to-b from-[#2e0b10] to-[#120708] border border-champagne-gold/30">
+              <div className="relative aspect-square sm:aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuASQjWwAeYS043A5JOSZqxpPmsvYJAL_SBEe0EOCCHi-kxm5Sn5Iz9FXHX7kjL-Lv91cE3NpviBi992UWM1TeugQqAhtboV65WBWcjVVx0GTRw2tCgatQTERgGrsTIq1wl0V6iEEAS4nWaiaPUCJGMVeQhTLiicV7r-0CKfkjmxAlQ4QylFfEzH_FllPcrpIoFeHC5UuAP5AbFC70SlEK-8LHszr2YV0OLZWaWJvuHyBMbXRTiv4P3c"
+                  alt="Sculpture representing the fusion of gold, silver, and gemstones"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover shadow-2xl"
+                />
+              </div>
+              <div className="mt-3 text-right">
+                <span className="font-sans text-[9px] tracking-widest text-champagne-gold/70 uppercase">
+                  Parvatsar Atelier Philosophy
+                </span>
+              </div>
             </div>
           </div>
 
-          <div className="lg:col-span-6 lg:pl-10 flex flex-col gap-6">
-            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
-              THE STORY BEHIND THE PIECES
+          <div className="lg:col-span-6 flex flex-col justify-center">
+            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase mb-3 font-semibold">
+              BALAJI JEWELLERS &amp; SHYAM DIAMONDS · PARVATSAR
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory leading-tight">
-              Devotion to <br />
-              <span className="italic text-soft-gold">Form &amp; Material.</span>
+            <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory font-normal leading-tight mb-6">
+              FROM CRAFT TO CHARACTER.
             </h2>
-            <p className="font-sans text-warm-ivory/80 text-base leading-relaxed font-light">
-              In a world hurried by convenience, we honour the unhurried craft of fine jewellery. Calipers, fine burnishers, and careful setting create pieces of character.
-            </p>
-            <div className="pt-2">
+            <div className="w-16 h-[1px] bg-champagne-gold/40 mb-8"></div>
+            <div className="space-y-5 font-sans text-warm-ivory/80 text-base font-light leading-relaxed mb-10">
+              <p>
+                In Parvatsar, jewellery is not measured simply by carats and bullion scales. It is an expression of Marwari trust, an intimate dialogue between a family and their goldsmith that spans decades and weddings.
+              </p>
+              <p>
+                At Balaji Jewellers &amp; Shyam Diamonds, we preserve this authentic bond. Every piece is hallmarked with uncompromising BIS rigor, paired with genuine certified stones, and presented without pretense.
+              </p>
+            </div>
+            <div>
               <Link
                 href="/story"
-                className="inline-flex items-center gap-2 text-xs font-sans tracking-widest text-champagne-gold hover:text-soft-gold uppercase font-medium"
+                className="inline-flex items-center gap-3 px-8 py-4 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-monumental uppercase hover:bg-champagne-gold hover:text-near-black transition-all"
               >
-                <span>Read The Full Story</span>
+                <span>READ OUR STORY</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -740,19 +711,40 @@ export default function HomePage() {
       </section>
 
       {/* ========================================================
-          SECTION 12: CINEMATIC EXIT
+          SECTION 12: TIMELESS BY NATURE (CINEMATIC DISSOLVE BANNER)
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-near-black border-t border-champagne-gold/15 text-center relative overflow-hidden">
-        <div className="max-w-4xl mx-auto flex flex-col items-center gap-6 relative z-10">
-          <span className="font-sans text-[10px] tracking-monumental text-champagne-gold/70 uppercase">
-            BALAJI JEWELLERS &amp; SHYAM DIAMONDS
+      <section className="relative w-full pt-20 pb-16 bg-near-black border-t border-champagne-gold/15 overflow-hidden">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-14 mb-16 text-center">
+          <div className="relative w-full overflow-hidden border border-champagne-gold/30 shadow-2xl bg-near-black">
+            <div className="relative w-full h-[360px] sm:h-[480px] lg:h-[560px]">
+              <Image
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRjo0cRdVsxxEAwTa6hOTMQZxz9Go2ky9ysFEY_-KC40z3uVpmYKnp0slkR-tKMlbdEl9zJl5AMn4vNcJHVbqOYZznwh5zbY5Zi-5NrXG2hfWzfPljB-4HiX4VkNrUpgc09GjPYKPV79S5eS0qIW_162cJQuxWV8z708KCgGiKJ2T6EskHq5TwjZNs5T36akWdJaa-BBAtbHWVoKC--UZ3UCNB3WJRq5mIzx0GmPqLwdmHv61J-7Of"
+                alt="Cinematic editorial 22K gold necklace dissolving into velvety shadows"
+                fill
+                sizes="(max-width: 1440px) 100vw, 1440px"
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-near-black via-transparent to-near-black/50"></div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+              <h2 className="font-serif text-4xl sm:text-6xl text-warm-ivory font-light tracking-wide mb-3">
+                TIMELESS BY NATURE.
+              </h2>
+              <p className="font-sans text-xs sm:text-sm tracking-monumental text-champagne-gold uppercase">
+                BALAJI JEWELLERS &amp; SHYAM DIAMONDS · PARVATSAR, RAJASTHAN
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hallmark & Authenticity Band */}
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-14 flex flex-wrap items-center justify-between gap-4 text-xs font-sans tracking-widest text-warm-ivory/60 uppercase pb-6 border-b border-champagne-gold/15">
+          <span className="flex items-center gap-2">
+            <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
+            BIS Hallmarked 916 Gold &amp; 925 Sterling Silver
           </span>
-          <h2 className="font-serif text-4xl sm:text-6xl text-warm-ivory uppercase tracking-wide leading-tight">
-            Holding the Moment.
-          </h2>
-          <p className="font-sans text-xs text-warm-ivory/60 tracking-widest uppercase">
-            PARVATSAR · RAJASTHAN
-          </p>
+          <span>Bank Wali Gali, Parvatsar</span>
+          <span>Open Daily 9:00 AM – 8:00 PM</span>
         </div>
       </section>
 
