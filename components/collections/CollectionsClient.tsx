@@ -37,7 +37,6 @@ export function CollectionsClient() {
   };
 
   const scrollToArchetype = (archetype: string) => {
-    setSelectedTypeFilter(archetype);
     const targetId = archetype === "chains" ? "silver-section" : "gold-section";
     const el = document.getElementById(targetId);
     if (el) {
