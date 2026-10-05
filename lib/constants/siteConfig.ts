@@ -1,0 +1,39 @@
+export const SITE_CONFIG = {
+  name: "Balaji Jewellers & Shyam Diamonds",
+  shortName: "Balaji Jewellers",
+  subName: "& Shyam Diamonds",
+  tagline: "Haute Joaillerie · Parvatsar",
+  description:
+    "Balaji Jewellers & Shyam Diamonds presents a curated digital exhibition of fine Gold and Silver jewellery in Parvatsar, Rajasthan.",
+  phone: "+91 88540 00203",
+  phoneRaw: "918854000203",
+  phoneTel: "tel:+918854000203",
+  whatsappUrl: "https://wa.me/918854000203",
+  hours: "9:00 AM – 8:00 PM",
+  hoursFull: "9:00 AM – 8:00 PM (Monday – Sunday)",
+  address: {
+    street: "Bank Wali Gali",
+    city: "Parvatsar",
+    state: "Rajasthan",
+    pincode: "341512",
+    country: "India",
+    formatted: "Bank Wali Gali, Parvatsar, Rajasthan – 341512, India",
+    coordinates: "26°53'44.9\"N 74°46'04.4\"E",
+    lat: 26.8958,
+    lng: 74.7679,
+  },
+  social: {
+    instagram: "https://www.instagram.com/balajijwellerssshyamdimond",
+    googleBusiness: "https://share.google/qbMqFhAcO5alP2Fj5",
+    googleMaps: "https://maps.google.com/?q=Balaji+Jewellers+Parvatsar",
+  },
+  navLinks: [
+    { label: "Home", href: "/" },
+    { label: "Collections", href: "/collections" },
+    { label: "Our Story", href: "/story" },
+    // { label: "The Craft", href: "/craft" }, // Temporarily disabled
+    { label: "Gallery", href: "/gallery" },
+    { label: "Moments", href: "/moments" },
+    { label: "Visit Us", href: "/visit" },
+  ],
+};
