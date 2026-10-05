@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Metadata } from "next";
 import { Sparkles } from "lucide-react";
-import { SITE_CONFIG } from "@/lib/constants/siteConfig";
+import StoryClient from "./StoryClient";
 
 export const metadata: Metadata = {
   title: "Our Story & Philosophy",
@@ -216,58 +215,10 @@ export default function StoryPage() {
       </section>
 
       {/* ========================================================
-          SECTION 03: THE PHILOSOPHY OF PAUSE
+          SECTIONS 03 - 06: SPATIAL ARCHITECTURE, THREE REALMS,
+          PHILOSOPHICAL ANCHOR, AND FLAGSHIP SALON
           ======================================================== */}
-      <section className="w-full py-28 px-6 lg:px-14 bg-gradient-to-b from-[#1e080a] to-near-black border-t border-champagne-gold/15">
-        <div className="max-w-4xl mx-auto flex flex-col gap-10 text-center items-center">
-          <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
-            BRAND MANIFESTO
-          </span>
-          <h2 className="font-serif text-3xl sm:text-5xl text-warm-ivory leading-tight font-normal">
-            The Philosophy of <span className="italic text-soft-gold">Pause.</span>
-          </h2>
-          <p className="font-sans text-warm-ivory/80 text-base md:text-lg font-light leading-relaxed">
-            True luxury does not clamour for immediate attention. It asserts itself through proportion, material truth, and quiet poise. At Balaji Jewellers &amp; Shyam Diamonds, our focus remains squarely on the dialogue between wearer and piece—honouring gold and silver as expressive mediums of timeless elegance.
-          </p>
-          <div className="pt-6 flex flex-wrap justify-center items-center gap-6">
-            <Link
-              href="/collections"
-              className="px-8 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors"
-            >
-              Explore The Collection
-            </Link>
-            <Link
-              href="/visit"
-              className="px-8 py-3.5 border border-champagne-gold/60 text-soft-gold font-sans text-xs tracking-monumental uppercase font-medium hover:bg-champagne-gold/10 transition-colors"
-            >
-              Visit Showroom in Parvatsar
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================================
-          SECTION 04: PARVATSAR PRESENCE
-          ======================================================== */}
-      <section className="w-full py-20 px-6 lg:px-14 bg-near-black border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
-          <div className="flex flex-col gap-2">
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">LOCATION</span>
-            <span className="font-serif text-xl text-warm-ivory">Bank Wali Gali, Parvatsar</span>
-            <span className="font-sans text-xs text-warm-ivory/60">Nagaur District, Rajasthan – 341512</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">HOURS</span>
-            <span className="font-serif text-xl text-warm-ivory">9:00 AM – 8:00 PM</span>
-            <span className="font-sans text-xs text-warm-ivory/60">Open Daily Monday through Sunday</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">INQUIRIES</span>
-            <span className="font-serif text-xl text-warm-ivory">{SITE_CONFIG.phone}</span>
-            <span className="font-sans text-xs text-warm-ivory/60">Direct WhatsApp &amp; Telephone Concierge</span>
-          </div>
-        </div>
-      </section>
+      <StoryClient />
     </div>
   );
 }
