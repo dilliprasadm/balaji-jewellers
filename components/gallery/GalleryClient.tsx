@@ -37,7 +37,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "TRAVERTINE ARCHIVE STUDY",
     medium: "Gold Jewellery Archive",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBBVXL4YJnbYvU5r_GtYCMlq2seEkQpemytKG5M8Lple4M6luZgoVwBDzUMDwOuv9YLWXWVkj3ffRLKch3MFFqS9psqm4eAC8M5kyMJZP_8-sEhYFHPW3ZWwI66OPUeA5X6UZBRGY9QT2NsTT5C4gzdvIM2IO9eNUEHfO4CQOqWGifxQyyo-hGfcMXcoLXf3aHM-0XIICko-pt7mdXQq9qTKlJIfdOUULd0FC8ffT40AQLO6zkKpvt4",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBBVXL4YJnbYvU5r_GtYCMlq2seEkQpemytKG5M8Lple4M6luZgoVwBDzUMDwOuv9YLWXWVkj3ffRLKch3MFFqS9psqm4eAC8M5kyMJZP_8-sEhYFHPW3ZWwI66OPUeA5X6UZBRGY9QT2NsTT5C4gzdvIM2IO9eNUEHfO4CQOqWGifxQyyo-hGfcMXcoLXf3aHM-0XIICko-pt7mdXQq9qTKlJIfdOUULd0FC8ffT40AQLO6zkKpvt4=s0",
     description:
       "Grand tiered necklace cascading vertically across raw travertine ivory marble under natural side daylight.",
   },
@@ -48,7 +48,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "MINERAL CONTRAST STUDY",
     medium: "Gold Jewellery Archive",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDyItnmhCyybpxtTr-UQEGnFUxygGjMCGcjWz8JmXO19sJN9VIiL6u11LDCT4g7l8eAQ-YA57ic6RBQNkDj26rA3B-cbdZ7PUBh8DQS5SGWhkSKXC9HWjLYG7PESqJ2XkIELSHgA9CP4XS3DUg0QNuHJFI461uDEP20PSkJCgs2tk17WUFiIGmB5eIXU_0tO8eSwQoKdUwZrsj2rk4HjUhDGCAbpPXRjrLaHpLJSvboYIlplVqk4TUw",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDyItnmhCyybpxtTr-UQEGnFUxygGjMCGcjWz8JmXO19sJN9VIiL6u11LDCT4g7l8eAQ-YA57ic6RBQNkDj26rA3B-cbdZ7PUBh8DQS5SGWhkSKXC9HWjLYG7PESqJ2XkIELSHgA9CP4XS3DUg0QNuHJFI461uDEP20PSkJCgs2tk17WUFiIGmB5eIXU_0tO8eSwQoKdUwZrsj2rk4HjUhDGCAbpPXRjrLaHpLJSvboYIlplVqk4TUw=s0",
     description:
       "Heavy torque necklace draped across raw dark mineral stone catching warm amber highlights.",
   },
@@ -59,7 +59,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "MASTERWORK GOLDSMITHING",
     medium: "Gold Jewellery Archive",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB9T5PCwpHSHpiNPS52Fup5p8_GpA1xY3RBkCf1Fx5NgdzPZb9rOyVBI5JWVf41bSBHfy5ENGCqgeNxMbjxYcb0jEPGfIS_puMZrRqZSP0ps7b5Qf0jsjA40zHDU72LZqiHJJxYG1gGiqGduZYCy6jg6W-rlQpYBatysoJLZ3U5HwYG9FtCfJd1EpO9x6D7orJt9-Z2LEZoo6QpfNxEAjxW5LBQ1XAW7_uzUapUmHwRCddJZJ3YAQn2",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuB9T5PCwpHSHpiNPS52Fup5p8_GpA1xY3RBkCf1Fx5NgdzPZb9rOyVBI5JWVf41bSBHfy5ENGCqgeNxMbjxYcb0jEPGfIS_puMZrRqZSP0ps7b5Qf0jsjA40zHDU72LZqiHJJxYG1gGiqGduZYCy6jg6W-rlQpYBatysoJLZ3U5HwYG9FtCfJd1EpO9x6D7orJt9-Z2LEZoo6QpfNxEAjxW5LBQ1XAW7_uzUapUmHwRCddJZJ3YAQn2=s0",
     description:
       "Solid gold cuff bracelet featuring embossed relief motifs and delicate hand-granulated perimeter wire.",
   },
@@ -72,7 +72,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "MINERAL BLOSSOM STUDY",
     medium: "Polki & Gemstone Archive",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCVkrq9JXDFbI2PBBrGFI8AINKK8copWnSqyaPTabMpyC5fqlGYnm0Hf4l8B_uShXrPKiOiQg9wUbWAEetYWhcJLUkDleH3KCTLTia1-SlfoITYCRP6a4yNmyCd6cJ2BiZlVySdVqVy_I7ahdYwngWC4l0oMotqPf2Q8kvOuKYqX2C5CJRodopU1ZOV39M9R3rNhjNvAoNggg9UWTQWpZ5K_i-nd8jk96s3hwhjbaEhpjLoHc2u8Kni",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCVkrq9JXDFbI2PBBrGFI8AINKK8copWnSqyaPTabMpyC5fqlGYnm0Hf4l8B_uShXrPKiOiQg9wUbWAEetYWhcJLUkDleH3KCTLTia1-SlfoITYCRP6a4yNmyCd6cJ2BiZlVySdVqVy_I7ahdYwngWC4l0oMotqPf2Q8kvOuKYqX2C5CJRodopU1ZOV39M9R3rNhjNvAoNggg9UWTQWpZ5K_i-nd8jk96s3hwhjbaEhpjLoHc2u8Kni=s0",
     description:
       "Hand-set gemstones mounted in pure 24K gold foil bezels resting against charcoal slate.",
   },
@@ -83,7 +83,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "TERRACOTTA PLINTH STUDY",
     medium: "Silver Jewellery Archive",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDF9J1Jjt-rfGIgb_Cj7sjvKDdp_OXVXVJ_6yCMI2yHW4caJ47h8Jlxi-R0bvqZVLEkKC-FQvJlVODBORoVrdhR45Io2xjxtZUQg434ydmBWJyNUVnYh7zoZHkNkMLJ0qvRbB8I4ciQXpbNeAw2NOsgD_w_0RaXDt1yKJ-3AoJNJCdHm0e33kqVXZ4rrpBv74iCqtFmI_H-GQVA1E3yVt2_0DOxzG3eBtOlWzfa683-0qtJQdqS1zPv",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDF9J1Jjt-rfGIgb_Cj7sjvKDdp_OXVXVJ_6yCMI2yHW4caJ47h8Jlxi-R0bvqZVLEkKC-FQvJlVODBORoVrdhR45Io2xjxtZUQg434ydmBWJyNUVnYh7zoZHkNkMLJ0qvRbB8I4ciQXpbNeAw2NOsgD_w_0RaXDt1yKJ-3AoJNJCdHm0e33kqVXZ4rrpBv74iCqtFmI_H-GQVA1E3yVt2_0DOxzG3eBtOlWzfa683-0qtJQdqS1zPv=s0",
     description:
       "Authentic 925 sterling silver coin choker arranged vertically on an untreated terracotta desert plinth.",
   },
@@ -94,7 +94,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "PLASTER CURVE ARCHIVE",
     medium: "Silver Jewellery Archive",
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UKrzlekFvxpeaLN9pjJBRCnAZLX2OuAB4_lv-evEcc8xzyXxie2hc-mwrXPgXDxo8jkJXnBIPerbuigChE5zsk7l83J9u-0qnwMoQCtGHAkN41-rDv4kIU8rLGXkcQCsBp0iIh5DPE3pXQ3TiB0K0Seo5iZmvAwJtefeZLTJZdmSB89KCKouF5xoJJNWKCd_M_ktWRDtwDJiV6nDqatKYJaawIyafGr79DXTCbRgna3Wc_GphEGMEd0fo",
+      "https://lh3.googleusercontent.com/aida/AEtjO1UKrzlekFvxpeaLN9pjJBRCnAZLX2OuAB4_lv-evEcc8xzyXxie2hc-mwrXPgXDxo8jkJXnBIPerbuigChE5zsk7l83J9u-0qnwMoQCtGHAkN41-rDv4kIU8rLGXkcQCsBp0iIh5DPE3pXQ3TiB0K0Seo5iZmvAwJtefeZLTJZdmSB89KCKouF5xoJJNWKCd_M_ktWRDtwDJiV6nDqatKYJaawIyafGr79DXTCbRgna3Wc_GphEGMEd0fo=s0",
     description:
       "Sculptural silver cuff bracelets and jhumki drops positioned against ivory plaster architectural curves.",
   },
@@ -107,7 +107,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "GEMOLOGY ARCHIVE",
     medium: "Fine Gemstone Study",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDMSLKSRylvMGFckLl6IZW_EUMsZULWsc6OEPpO63cHem8Y2AD6E2qf_4niZnzATi7Cl1Uv4p4U9Bq3u6g2q2WLZO7LiBG7ibr2v7QFOMzmWrADnwQKIpf_lBm9r8HmX0sDlhE0QgmNYNVEbh8qzxUYZRy8IKc9i9DlIRyiC4XsyE1MOOpQr-g9y-xT6UjLzCs0hdxaPI4Gv94-Wuwpupb1hFUQlWBrQz0fLDuXJs1vf1i047Fv7CIT",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDMSLKSRylvMGFckLl6IZW_EUMsZULWsc6OEPpO63cHem8Y2AD6E2qf_4niZnzATi7Cl1Uv4p4U9Bq3u6g2q2WLZO7LiBG7ibr2v7QFOMzmWrADnwQKIpf_lBm9r8HmX0sDlhE0QgmNYNVEbh8qzxUYZRy8IKc9i9DlIRyiC4XsyE1MOOpQr-g9y-xT6UjLzCs0hdxaPI4Gv94-Wuwpupb1hFUQlWBrQz0fLDuXJs1vf1i047Fv7CIT=s0",
     description:
       "Rough and faceted natural emerald crystals set into a heavy gold armature over shimmering gold dust stone.",
   },
@@ -118,7 +118,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "SOLITARY ARCHIVE",
     medium: "Jewellery Form Study",
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1Xlvevv13UmWc7Qw1mTo1riTcCRA0MyKSvd6BBvwl3c-nbSRSraVTvqmQgcWdCrRHhRw0ZspGPOQ-kGHagRsvI01A7gYGg_xHcmw7Jqqz1DIUM4LgVcTWnyDszyodKEIvHxFal3pMM7N-3C5ASvlufptBZSrH3f4thfJrU4YmGI6dn14QaN9nEmt-UiXvurGQQeS8QFNy2Zlk1duPym3IRXPpy3s5ju-zz7ZBk9196GGInn0aSqk07GbFU",
+      "https://lh3.googleusercontent.com/aida/AEtjO1Xlvevv13UmWc7Qw1mTo1riTcCRA0MyKSvd6BBvwl3c-nbSRSraVTvqmQgcWdCrRHhRw0ZspGPOQ-kGHagRsvI01A7gYGg_xHcmw7Jqqz1DIUM4LgVcTWnyDszyodKEIvHxFal3pMM7N-3C5ASvlufptBZSrH3f4thfJrU4YmGI6dn14QaN9nEmt-UiXvurGQQeS8QFNy2Zlk1duPym3IRXPpy3s5ju-zz7ZBk9196GGInn0aSqk07GbFU=s0",
     description:
       "Cocktail ring resting on desert sandstone plinth bathed in soft morning raking light.",
   },
@@ -129,7 +129,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: "ATELIER ARCHIVE STUDY",
     medium: "Showroom Vitrine Archive",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDlO7BGb8hd4rNW45B916hScfmkGUO32m10xSmnehC1ZsXU7eY8MQCg_Ph4HHXcNsOFHb8uEZZRWo4O0fN7xtx_kmCqLYQ0e9j8hcEylEURHokijMwbb0Rb9KGat19TBAnh5Jeg_HaITowWvTwacBjmmDjh7myUutuRWb018gNqaSOgdEAh7NwJmJ57OvGDij0y6PYGm2haa7S1qlNoOLl-fc5IMG-mAbNn4nKyAM3-GvfEmq5hCFjB",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDlO7BGb8hd4rNW45B916hScfmkGUO32m10xSmnehC1ZsXU7eY8MQCg_Ph4HHXcNsOFHb8uEZZRWo4O0fN7xtx_kmCqLYQ0e9j8hcEylEURHokijMwbb0Rb9KGat19TBAnh5Jeg_HaITowWvTwacBjmmDjh7myUutuRWb018gNqaSOgdEAh7NwJmJ57OvGDij0y6PYGm2haa7S1qlNoOLl-fc5IMG-mAbNn4nKyAM3-GvfEmq5hCFjB=s0",
     description:
       "Archival jewellery pieces presented inside the dark walnut and brass viewing vitrines of our Parvatsar salon.",
   },
@@ -171,8 +171,8 @@ export function GalleryClient() {
         {/* Entrance Header */}
         <div className="relative z-20 flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[#251819]/15">
           <div className="flex items-center gap-2 text-[#450006]">
-            <Sparkles className="w-4 h-4 text-champagne-gold" />
-            <span className="font-sans text-xs tracking-monumental uppercase font-semibold">
+            <Sparkles className="w-4 h-4 text-champagne-gold shrink-0" />
+            <span className="font-sans text-[10px] sm:text-xs tracking-wider sm:tracking-monumental uppercase font-semibold">
               BALAJI JEWELLERS &amp; SHYAM DIAMONDS · CURATED EXHIBITION
             </span>
           </div>
@@ -219,7 +219,7 @@ export function GalleryClient() {
               fill
               priority
               className="object-cover"
-            />
+             quality={90} />
             <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7EF] via-transparent to-transparent"></div>
           </div>
         </div>
@@ -257,7 +257,7 @@ export function GalleryClient() {
         <div className="w-full px-6 lg:px-14 flex flex-wrap items-center justify-between gap-4 mb-8">
           <div className="flex items-center gap-4">
             <span className="w-2 h-2 rounded-full bg-champagne-gold animate-ping"></span>
-            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
+            <span className="font-sans text-[10px] sm:text-xs tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
               PERPETUAL ARCHIVE
             </span>
             <span className="text-warm-ivory/30">|</span>
@@ -309,7 +309,7 @@ export function GalleryClient() {
           {GALLERY_ITEMS.map((item, index) => (
             <div
               key={item.id}
-              className="shrink-0 w-[300px] sm:w-[420px] lg:w-[480px] flex flex-col relative group select-none"
+              className="shrink-0 w-[82vw] sm:w-[420px] lg:w-[480px] flex flex-col relative group select-none"
             >
               {/* Giant numeral watermark */}
               <div className="absolute -top-8 -left-4 font-serif text-7xl font-bold text-dark-wine/60 pointer-events-none select-none">
@@ -323,7 +323,7 @@ export function GalleryClient() {
                   alt={item.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                 quality={90} />
                 <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
                   <span className="font-sans text-[9px] tracking-widest text-champagne-gold bg-near-black/85 px-3 py-1 border border-champagne-gold/20 uppercase">
@@ -363,7 +363,7 @@ export function GalleryClient() {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-2 h-2 bg-champagne-gold rounded-full"></span>
-                <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">
+                <span className="font-sans text-[10px] tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
                   SIGNATURE DETAILS
                 </span>
               </div>
@@ -385,8 +385,8 @@ export function GalleryClient() {
                   alt="Chandbali Granulation Detail"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4XFXqLBERSZhu1cYbrPZYgvQVydiSk1_B4D9RSCiw0Jfq1E_T-JqKHIaYKeDr7qYtFIfoOwb_pzm7II8zuv-JlexROg5Loeolg2H7_kgsqskNsyUDVEEPhBt5D3JlNTkOF0KFfQeKNEh0RJVZC3uOejLwCOi3cTBpsYfYNOrKYznfSvyrPioZwaoYdt9GlWVUdjr4XJNy0yTGAMsfsjlcvPcz2Dn5abZUtCndSDd7ukCaQwyum6Wr"
-                />
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4XFXqLBERSZhu1cYbrPZYgvQVydiSk1_B4D9RSCiw0Jfq1E_T-JqKHIaYKeDr7qYtFIfoOwb_pzm7II8zuv-JlexROg5Loeolg2H7_kgsqskNsyUDVEEPhBt5D3JlNTkOF0KFfQeKNEh0RJVZC3uOejLwCOi3cTBpsYfYNOrKYznfSvyrPioZwaoYdt9GlWVUdjr4XJNy0yTGAMsfsjlcvPcz2Dn5abZUtCndSDd7ukCaQwyum6Wr=s0"
+                 quality={90} />
                 <div className="absolute top-4 right-4 bg-near-black/85 backdrop-blur-md px-3 py-1 flex items-center gap-1.5 border border-champagne-gold/30">
                   <ZoomIn className="w-3.5 h-3.5 text-champagne-gold" />
                   <span className="font-sans text-[10px] text-warm-ivory tracking-widest uppercase">
@@ -414,8 +414,8 @@ export function GalleryClient() {
                   alt="Tourmaline Kundan Setting Detail"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVkrq9JXDFbI2PBBrGFI8AINKK8copWnSqyaPTabMpyC5fqlGYnm0Hf4l8B_uShXrPKiOiQg9wUbWAEetYWhcJLUkDleH3KCTLTia1-SlfoITYCRP6a4yNmyCd6cJ2BiZlVySdVqVy_I7ahdYwngWC4l0oMotqPf2Q8kvOuKYqX2C5CJRodopU1ZOV39M9R3rNhjNvAoNggg9UWTQWpZ5K_i-nd8jk96s3hwhjbaEhpjLoHc2u8Kni"
-                />
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVkrq9JXDFbI2PBBrGFI8AINKK8copWnSqyaPTabMpyC5fqlGYnm0Hf4l8B_uShXrPKiOiQg9wUbWAEetYWhcJLUkDleH3KCTLTia1-SlfoITYCRP6a4yNmyCd6cJ2BiZlVySdVqVy_I7ahdYwngWC4l0oMotqPf2Q8kvOuKYqX2C5CJRodopU1ZOV39M9R3rNhjNvAoNggg9UWTQWpZ5K_i-nd8jk96s3hwhjbaEhpjLoHc2u8Kni=s0"
+                 quality={90} />
                 <div className="absolute top-4 right-4 bg-near-black/85 backdrop-blur-md px-3 py-1 flex items-center gap-1.5 border border-champagne-gold/30">
                   <ZoomIn className="w-3.5 h-3.5 text-champagne-gold" />
                   <span className="font-sans text-[10px] text-warm-ivory tracking-widest uppercase">
@@ -443,8 +443,8 @@ export function GalleryClient() {
                   alt="Sterling Moonstone Filigree Detail"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC23rrJWZu9h_YmkXhG1e2VkgSNuC0eVGGQMyBMf_ICrZdjfMnWoJSuu4WOhsNxo-eLbfa4cJ_rQdFTDIek-hRXGwvwHRMslASZ9p16ultHWcBrHtkT9G8ZAzypM5xVmAwNjzV99CHGcyUNWONUF3WczvuH2aEXXx2XtbBaO5vJRB_PSDKMHh4InK2SX5jNdiv2x-1_6mRE0nhOy2gPuZo6O4u5HhpMZoBe_JfwvXRU7d08SUGvhfFt"
-                />
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC23rrJWZu9h_YmkXhG1e2VkgSNuC0eVGGQMyBMf_ICrZdjfMnWoJSuu4WOhsNxo-eLbfa4cJ_rQdFTDIek-hRXGwvwHRMslASZ9p16ultHWcBrHtkT9G8ZAzypM5xVmAwNjzV99CHGcyUNWONUF3WczvuH2aEXXx2XtbBaO5vJRB_PSDKMHh4InK2SX5jNdiv2x-1_6mRE0nhOy2gPuZo6O4u5HhpMZoBe_JfwvXRU7d08SUGvhfFt=s0"
+                 quality={90} />
                 <div className="absolute top-4 right-4 bg-near-black/85 backdrop-blur-md px-3 py-1 flex items-center gap-1.5 border border-champagne-gold/30">
                   <ZoomIn className="w-3.5 h-3.5 text-champagne-gold" />
                   <span className="font-sans text-[10px] text-warm-ivory tracking-widest uppercase">
@@ -472,8 +472,8 @@ export function GalleryClient() {
                   alt="Emerald Claw Setting Detail"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMSLKSRylvMGFckLl6IZW_EUMsZULWsc6OEPpO63cHem8Y2AD6E2qf_4niZnzATi7Cl1Uv4p4U9Bq3u6g2q2WLZO7LiBG7ibr2v7QFOMzmWrADnwQKIpf_lBm9r8HmX0sDlhE0QgmNYNVEbh8qzxUYZRy8IKc9i9DlIRyiC4XsyE1MOOpQr-g9y-xT6UjLzCs0hdxaPI4Gv94-Wuwpupb1hFUQlWBrQz0fLDuXJs1vf1i047Fv7CIT"
-                />
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMSLKSRylvMGFckLl6IZW_EUMsZULWsc6OEPpO63cHem8Y2AD6E2qf_4niZnzATi7Cl1Uv4p4U9Bq3u6g2q2WLZO7LiBG7ibr2v7QFOMzmWrADnwQKIpf_lBm9r8HmX0sDlhE0QgmNYNVEbh8qzxUYZRy8IKc9i9DlIRyiC4XsyE1MOOpQr-g9y-xT6UjLzCs0hdxaPI4Gv94-Wuwpupb1hFUQlWBrQz0fLDuXJs1vf1i047Fv7CIT=s0"
+                 quality={90} />
                 <div className="absolute top-4 right-4 bg-near-black/85 backdrop-blur-md px-3 py-1 flex items-center gap-1.5 border border-champagne-gold/30">
                   <ZoomIn className="w-3.5 h-3.5 text-champagne-gold" />
                   <span className="font-sans text-[10px] text-warm-ivory tracking-widest uppercase">
@@ -551,11 +551,11 @@ export function GalleryClient() {
         <div className="relative w-full min-h-[580px] lg:min-h-[640px] flex items-center py-20 px-6 lg:px-14">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlO7BGb8hd4rNW45B916hScfmkGUO32m10xSmnehC1ZsXU7eY8MQCg_Ph4HHXcNsOFHb8uEZZRWo4O0fN7xtx_kmCqLYQ0e9j8hcEylEURHokijMwbb0Rb9KGat19TBAnh5Jeg_HaITowWvTwacBjmmDjh7myUutuRWb018gNqaSOgdEAh7NwJmJ57OvGDij0y6PYGm2haa7S1qlNoOLl-fc5IMG-mAbNn4nKyAM3-GvfEmq5hCFjB"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlO7BGb8hd4rNW45B916hScfmkGUO32m10xSmnehC1ZsXU7eY8MQCg_Ph4HHXcNsOFHb8uEZZRWo4O0fN7xtx_kmCqLYQ0e9j8hcEylEURHokijMwbb0Rb9KGat19TBAnh5Jeg_HaITowWvTwacBjmmDjh7myUutuRWb018gNqaSOgdEAh7NwJmJ57OvGDij0y6PYGm2haa7S1qlNoOLl-fc5IMG-mAbNn4nKyAM3-GvfEmq5hCFjB=s0"
               alt="Balaji Jewellers Showroom Flagship"
               fill
               className="object-cover object-center brightness-[0.38] contrast-110"
-            />
+             quality={90} />
             <div className="absolute inset-0 bg-gradient-to-r from-near-black via-near-black/85 to-transparent"></div>
             <div className="absolute inset-0 bg-radial-gradient from-transparent to-near-black/90"></div>
           </div>
@@ -563,8 +563,8 @@ export function GalleryClient() {
           {/* Foreground Architectural Card */}
           <div className="relative z-10 max-w-2xl bg-dark-wine/90 backdrop-blur-xl p-6 sm:p-10 border border-champagne-gold/30 shadow-2xl">
             <div className="flex items-center gap-2 mb-2 text-champagne-gold">
-              <MapPin className="w-5 h-5" />
-              <span className="font-sans text-[10px] tracking-monumental uppercase font-semibold">
+              <MapPin className="w-5 h-5 shrink-0" />
+              <span className="font-sans text-[10px] tracking-wider sm:tracking-monumental uppercase font-semibold">
                 FLAGSHIP ATELIER
               </span>
             </div>
@@ -605,12 +605,12 @@ export function GalleryClient() {
             </div>
 
             {/* Action Links */}
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
               <a
                 href={SITE_CONFIG.social.googleMaps}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-champagne-gold text-near-black font-sans text-xs tracking-widest uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center gap-2"
+                className="w-full sm:w-auto px-6 py-3 bg-champagne-gold text-near-black font-sans text-xs tracking-widest uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center justify-center gap-2"
               >
                 <NavIcon className="w-3.5 h-3.5" />
                 <span>VISIT SHOWROOM</span>
@@ -619,14 +619,14 @@ export function GalleryClient() {
                 href={getWhatsAppShowroomUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-champagne-gold text-champagne-gold hover:bg-champagne-gold hover:text-near-black font-sans text-xs tracking-widest uppercase transition-colors flex items-center gap-1.5"
+                className="w-full sm:w-auto px-6 py-3 border border-champagne-gold text-champagne-gold hover:bg-champagne-gold hover:text-near-black font-sans text-xs tracking-widest uppercase transition-colors flex items-center justify-center gap-1.5"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>WHATSAPP</span>
               </a>
               <a
                 href={SITE_CONFIG.phoneTel}
-                className="px-6 py-3 border border-champagne-gold/40 text-warm-ivory hover:border-champagne-gold font-sans text-xs tracking-widest uppercase transition-colors flex items-center gap-1.5"
+                className="w-full sm:w-auto px-6 py-3 border border-champagne-gold/40 text-warm-ivory hover:border-champagne-gold font-sans text-xs tracking-widest uppercase transition-colors flex items-center justify-center gap-1.5"
               >
                 <Phone className="w-3.5 h-3.5" />
                 <span>CALL NOW</span>

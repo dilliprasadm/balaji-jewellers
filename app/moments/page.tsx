@@ -44,17 +44,17 @@ export default function MomentsPage() {
           SECTION 01: HERO - CINEMATIC OPENING
           ======================================================== */}
       <section className="relative w-full overflow-hidden bg-[#450006] text-warm-ivory">
-        <div className="relative w-full min-h-[90vh] flex flex-col justify-end px-6 sm:px-12 lg:px-24 pb-20 pt-32">
+        <div className="relative w-full min-h-[85vh] sm:min-h-[90vh] flex flex-col justify-end px-4 sm:px-12 lg:px-24 pb-16 sm:pb-20 pt-28 sm:pt-32">
           {/* Background Cinematic Image with Subtle Warm Vignette */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkdJn3dkQCAYahDGgFtW9LfWKNKt336zsgeFq-CE9BIs04ZIf7P44ZGd2dHtn7jD7BPNOeX2o3VSviBY8MZJyUAknKI3spTF2lI4dvulXQ0iL5ZyU78PyrQspPlf6vLPP0Bs7b3wRhwxMENtilamkLpr5-xTDj7T8VLNbBDsfs3j75FRY8kY6WQeBZ-trxTOUJVTctUB0z0XBMubCX8_N5LumwsKdJ5P-4Wr94YIZuorKFjGFIxjVq"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkdJn3dkQCAYahDGgFtW9LfWKNKt336zsgeFq-CE9BIs04ZIf7P44ZGd2dHtn7jD7BPNOeX2o3VSviBY8MZJyUAknKI3spTF2lI4dvulXQ0iL5ZyU78PyrQspPlf6vLPP0Bs7b3wRhwxMENtilamkLpr5-xTDj7T8VLNbBDsfs3j75FRY8kY6WQeBZ-trxTOUJVTctUB0z0XBMubCX8_N5LumwsKdJ5P-4Wr94YIZuorKFjGFIxjVq=s0"
               alt="Cinematic luxury editorial of an elegant Indian woman at an evening celebratory dinner bathed in amber light, wearing a gold and diamond choker"
               fill
               priority
               sizes="100vw"
               className="object-cover object-center filter brightness-[0.78] contrast-[1.05]"
-            />
+             quality={90} />
             <div className="absolute inset-0 bg-gradient-to-t from-[#170b0c] via-[#450006]/40 to-transparent"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_20%,_rgba(28,16,17,0.4)_60%,_rgba(23,11,12,0.85)_100%)]"></div>
           </div>
@@ -63,22 +63,22 @@ export default function MomentsPage() {
           <div className="relative z-10 max-w-5xl">
             <div className="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full bg-[#170b0c]/70 backdrop-blur-md mb-8 shadow-sm border border-champagne-gold/20">
               <span className="w-1.5 h-1.5 rounded-full bg-[#e7c276]"></span>
-              <span className="font-sans text-[11px] text-[#e7c276] tracking-[0.28em] uppercase font-semibold">
+              <span className="font-sans text-[10px] sm:text-[11px] text-[#e7c276] tracking-widest sm:tracking-[0.28em] uppercase font-semibold">
                 Chronicles of Life &amp; Adornment
               </span>
             </div>
 
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-warm-ivory mb-6 tracking-tight leading-[1.05] font-normal uppercase">
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-warm-ivory mb-6 tracking-tight leading-[1.05] font-normal uppercase">
               Moments Made <br />
               <span className="italic font-light text-[#e7c276]">Imperishable.</span>
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end pt-4">
-              <p className="md:col-span-8 font-sans text-base sm:text-lg text-warm-ivory/85 max-w-2xl leading-relaxed font-light">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-start md:items-end pt-4">
+              <p className="md:col-span-8 font-sans text-sm sm:text-base md:text-lg text-warm-ivory/85 max-w-2xl leading-relaxed font-light">
                 True jewels do not merely accompany occasions; they absorb laughter, mirror vows, and cradle memory across generations. Each silhouette from our Parvatsar atelier is sculpted as a permanent reliquary of your personal epoch.
               </p>
               <div className="md:col-span-4 flex flex-col items-start md:items-end gap-1.5">
-                <span className="font-sans text-xs tracking-[0.24em] uppercase text-[#e7c276] font-semibold">
+                <span className="font-sans text-xs tracking-widest sm:tracking-[0.24em] uppercase text-[#e7c276] font-semibold">
                   Haute Joaillerie Archive
                 </span>
                 <span className="font-sans text-xs text-warm-ivory/70 tracking-wider">
@@ -93,7 +93,7 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 02: 01 / REFLECTION (Courtyard Soirée)
           ======================================================== */}
-      <section className="relative w-full bg-[#170b0c] text-warm-ivory py-28 px-6 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
+      <section className="relative w-full bg-[#170b0c] text-warm-ivory py-20 sm:py-28 px-4 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Provenance Marker & Text Content */}
           <div className="lg:col-span-5 flex flex-col justify-center">
@@ -137,12 +137,12 @@ export default function MomentsPage() {
           <div className="lg:col-span-7 relative">
             <div className="relative overflow-hidden shadow-2xl aspect-[16/10] bg-[#2a1c1d] border border-champagne-gold/25">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVa9Ig73NRGQ31WplIAMUj2HAOivbkVegUQ47qC02ghCJN8mfWFx5jB_j5zRZkT_2FCaWta8_F5MOpWfiE3iN-FxoEsr2aIFFNpXSadpdCT1bmRLENNmipJWWkBOYwqkXgJqFXO2fzXwmC4VPebtiQLWPNlccoE_9wlNS1X5NZpfX7FtMsgzmb3JQVy_tkfn4kyKwgFtONfG9FqhGl6AMjrHw5tm4wWlYt-2LgjKYz8zrkaydEEtSq"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVa9Ig73NRGQ31WplIAMUj2HAOivbkVegUQ47qC02ghCJN8mfWFx5jB_j5zRZkT_2FCaWta8_F5MOpWfiE3iN-FxoEsr2aIFFNpXSadpdCT1bmRLENNmipJWWkBOYwqkXgJqFXO2fzXwmC4VPebtiQLWPNlccoE_9wlNS1X5NZpfX7FtMsgzmb3JQVy_tkfn4kyKwgFtONfG9FqhGl6AMjrHw5tm4wWlYt-2LgjKYz8zrkaydEEtSq=s0"
                 alt="Indian woman laughing with effortless grace at a festive courtyard gathering wearing sculpted gold necklace"
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover object-center transform transition duration-700 hover:scale-[1.02]"
-              />
+               quality={90} />
               <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-[#170b0c]/85 backdrop-blur-md border border-champagne-gold/20">
                 <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#e7c276] font-medium">
                   Courtyard Soirée · 2025
@@ -156,12 +156,12 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 03: INTIMATE MACRO FOCUS — The Unseen Reverse
           ======================================================== */}
-      <section className="relative w-full bg-[#450006] text-warm-ivory py-32 px-6 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
+      <section className="relative w-full bg-[#450006] text-warm-ivory py-20 sm:py-32 px-4 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
         <div className="max-w-[1320px] mx-auto flex flex-col items-center text-center">
-          <span className="font-sans text-xs text-[#e7c276] tracking-[0.35em] uppercase mb-4 font-semibold">
+          <span className="font-sans text-xs text-[#e7c276] tracking-widest sm:tracking-[0.35em] uppercase mb-4 font-semibold">
             Intimate Macro Focus
           </span>
-          <h3 className="font-serif text-3xl sm:text-4xl text-warm-ivory max-w-2xl mb-12 font-normal">
+          <h3 className="font-serif text-2xl sm:text-4xl text-warm-ivory max-w-2xl mb-8 sm:mb-12 font-normal">
             The Unseen Reverse: Micro-Pearls &amp; Hand-Crimped Collet Craft
           </h3>
 
@@ -169,14 +169,14 @@ export default function MomentsPage() {
           <div className="w-full max-w-3xl relative p-4 sm:p-6 bg-[#352627]/60 backdrop-blur-md shadow-2xl border border-champagne-gold/25">
             <div className="relative w-full aspect-square sm:aspect-[4/3] overflow-hidden bg-[#170b0c] border border-champagne-gold/20">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRAeYuy6CHG_5Slp5Fr9jh2XmbS7BZs4V1BfdgMbOH8ahueAaXF_IgWYO_rP78jCC5Aifk1tvWtEwpEUnTicSrWCURWknN6nxaQduP21WjFtOGsHbG27gx1Y7x_uPyYYsMskW5RTRoqdYMm9dEGz7F2Kl6mFxmN1YburRKjPuAZJLqVcXKB7gDMpG0_0n7O6QNXZBYvkXM90HL2hChzuRdoUnR47w7lYyp7JTh6MXM1MpVifm6LrDh"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRAeYuy6CHG_5Slp5Fr9jh2XmbS7BZs4V1BfdgMbOH8ahueAaXF_IgWYO_rP78jCC5Aifk1tvWtEwpEUnTicSrWCURWknN6nxaQduP21WjFtOGsHbG27gx1Y7x_uPyYYsMskW5RTRoqdYMm9dEGz7F2Kl6mFxmN1YburRKjPuAZJLqVcXKB7gDMpG0_0n7O6QNXZBYvkXM90HL2hChzuRdoUnR47w7lYyp7JTh6MXM1MpVifm6LrDh=s0"
                 alt="Extreme macro fine jewellery photograph of gold and uncut diamond collet setting with micro-pearl edge on deep burgundy velvet"
                 fill
                 sizes="(max-width: 768px) 100vw, 750px"
                 className="object-cover object-center"
-              />
+               quality={90} />
             </div>
-            <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 px-2 text-left">
+            <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-2 text-left">
               <div>
                 <h4 className="font-serif text-lg text-[#e7c276] font-medium">
                   Uncut Polki &amp; Basra Seed Pearls
@@ -185,8 +185,8 @@ export default function MomentsPage() {
                   Set within pure 24K gold foil (Jadau) over deep burgundy velvet. Every gem collet is hand-crimped without mechanical prongs—the ancient Marwar discipline preserved intact.
                 </p>
               </div>
-              <div className="shrink-0 text-right sm:text-right">
-                <span className="font-sans text-[10px] tracking-[0.25em] text-[#e7c276] uppercase block font-semibold">
+              <div className="shrink-0 text-left sm:text-right">
+                <span className="font-sans text-[10px] tracking-widest sm:tracking-[0.25em] text-[#e7c276] uppercase block font-semibold">
                   Parvatsar Atelier
                 </span>
                 <span className="font-sans text-[10px] text-warm-ivory/60 tracking-widest uppercase block mt-0.5">
@@ -201,18 +201,18 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 04: 02 / BEGINNINGS — Subtle Rites of Quiet Renewal (Warm Ivory Split-Screen)
           ======================================================== */}
-      <section className="relative w-full bg-[#FAF7EF] text-[#3c2d2e] py-28 px-6 sm:px-12 lg:px-24 border-t border-champagne-gold/20">
+      <section className="relative w-full bg-[#FAF7EF] text-[#3c2d2e] py-20 sm:py-28 px-4 sm:px-12 lg:px-24 border-t border-champagne-gold/20">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Portrait Photography Column */}
           <div className="lg:col-span-6 relative order-2 lg:order-1">
             <div className="relative w-full max-w-md mx-auto aspect-[3/4] overflow-hidden bg-[#e8e2d0] shadow-xl border border-[#d8b46a]/30">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAdle9AGvuGgPKVh9QJBFyHMxJYH6k7Ef6t5lhclMbfDTAA4Lb69qHKIM9udUcm7U7SEa7PO8NVLf05cgJOJLDwbZzjPCUFk7UYO9a4EUxc2DuSZkLMoT5V9CqDQc8CdWTKbIZxnDgkN8QTK32LZDbl05UAQe99rCeXmR0vv4Hr5Y1RNfTq4eRzz3CsKWBzplDDYtbJqICMol7HyCSjG-KsyoDaeIOti3Fsk6NsZ34MCx0HJ_ei67"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAdle9AGvuGgPKVh9QJBFyHMxJYH6k7Ef6t5lhclMbfDTAA4Lb69qHKIM9udUcm7U7SEa7PO8NVLf05cgJOJLDwbZzjPCUFk7UYO9a4EUxc2DuSZkLMoT5V9CqDQc8CdWTKbIZxnDgkN8QTK32LZDbl05UAQe99rCeXmR0vv4Hr5Y1RNfTq4eRzz3CsKWBzplDDYtbJqICMol7HyCSjG-KsyoDaeIOti3Fsk6NsZ34MCx0HJ_ei67=s0"
                 alt="Indian woman dressed in minimalist raw silk with morning sunbeam highlighting gold and uncut diamond lariat pendant"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
                 className="object-cover object-center"
-              />
+               quality={90} />
               <div className="absolute top-4 left-4 px-3 py-1 bg-[#120708]/85 backdrop-blur-md">
                 <span className="font-sans text-[10px] tracking-[0.25em] uppercase text-[#e7c276] font-medium">
                   A New Chapter
@@ -282,7 +282,7 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 05: 03 / EXPRESSION — Sculptural Autonomy & Architectural Contrast
           ======================================================== */}
-      <section className="relative w-full bg-[#170b0c] text-warm-ivory py-28 px-6 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
+      <section className="relative w-full bg-[#170b0c] text-warm-ivory py-20 sm:py-28 px-4 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
         <div className="max-w-[1440px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {/* Text & Architectural Details */}
@@ -327,12 +327,12 @@ export default function MomentsPage() {
             <div className="lg:col-span-7">
               <div className="relative overflow-hidden aspect-[16/9] shadow-2xl bg-[#352627] border border-champagne-gold/25">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXsQhUbsgzrVV4PKlKKdsI2COrnnryntY8PDsXMKlOIzBttAx5wIO93Lnir7bD8f-5dqaoDrQJu_TVPXjKOze6hQNDADUWJnlygmm9ezYERcWBpH9mAoNjj56-rgI6eOdUclUJfpv5LzhHX8YJikdx2f0W9pMgvwtNl4IhzqHs7UwRVon0yr4HDDFk2KLOvTEhpWM3UklYoecSBXsGrSRwlfledzQjY5Lr_OG5kjcekHctXOHDFHhE"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXsQhUbsgzrVV4PKlKKdsI2COrnnryntY8PDsXMKlOIzBttAx5wIO93Lnir7bD8f-5dqaoDrQJu_TVPXjKOze6hQNDADUWJnlygmm9ezYERcWBpH9mAoNjj56-rgI6eOdUclUJfpv5LzhHX8YJikdx2f0W9pMgvwtNl4IhzqHs7UwRVon0yr4HDDFk2KLOvTEhpWM3UklYoecSBXsGrSRwlfledzQjY5Lr_OG5kjcekHctXOHDFHhE=s0"
                   alt="Confident Indian woman wearing modern silver cuffs and geometric gold rings in dark studio backdrop"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-cover object-center"
-                />
+                 quality={90} />
               </div>
             </div>
           </div>
@@ -347,18 +347,18 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 07: 04 / MEMORY — Passed from Hand to Hand, Never Diminished
           ======================================================== */}
-      <section className="relative w-full bg-[#352627] text-warm-ivory py-28 px-6 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
+      <section className="relative w-full bg-[#352627] text-warm-ivory py-20 sm:py-28 px-4 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Image on Left */}
           <div className="lg:col-span-6 relative">
             <div className="relative overflow-hidden aspect-[4/3] bg-[#2a1c1d] shadow-2xl border border-champagne-gold/25">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZPUO03csrRNPL4zzXKNkbYpEFS59XlCuecc5szQcvqcAyPs32_0FUCYkBLlt4_GHpTE2bREKEECz6noKRVMz4XvgkZ9kZdEZ-WMLmSxAVEjpFVgvDjCw-kmGrQgFmYRNmhZzxo3YWLrmqj4CvcpWYrrPkoiYUErATD56HnPMUgToDA7u-Hnve_7WDcCj_SJfIm5dy--tDSamgDN8QilnoBztDPvIguqF8XfPkK96j-C9zhJ4evnj7"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZPUO03csrRNPL4zzXKNkbYpEFS59XlCuecc5szQcvqcAyPs32_0FUCYkBLlt4_GHpTE2bREKEECz6noKRVMz4XvgkZ9kZdEZ-WMLmSxAVEjpFVgvDjCw-kmGrQgFmYRNmhZzxo3YWLrmqj4CvcpWYrrPkoiYUErATD56HnPMUgToDA7u-Hnve_7WDcCj_SJfIm5dy--tDSamgDN8QilnoBztDPvIguqF8XfPkK96j-C9zhJ4evnj7=s0"
                 alt="Intimate heirloom gold bracelet in warm sunset glow against raw linen"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
-              />
+               quality={90} />
             </div>
           </div>
 
@@ -380,7 +380,7 @@ export default function MomentsPage() {
               The truest measure of fine jewellery is not its acquisition date, but the hands that cherish it fifty years later. Our Parvatsar goldsmiths formulate 22-karat alloy mixtures with structural memory—built to resist the fatigue of time and stay radiant across weddings, christenings, and milestones yet unwritten.
             </p>
 
-            <div className="grid grid-cols-2 gap-6 pt-4 mb-8">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-4 mb-8">
               <div className="p-4 bg-[#251819] border border-champagne-gold/20 shadow-sm">
                 <span className="font-serif text-2xl text-[#e7c276] block mb-1 font-normal">
                   100%
@@ -400,7 +400,7 @@ export default function MomentsPage() {
             </div>
 
             <a
-              className="self-start inline-flex items-center gap-3 px-8 py-3.5 bg-[#450006] text-warm-ivory font-sans text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#260003] transition-colors border border-champagne-gold/30"
+              className="self-start inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-3.5 bg-[#450006] text-warm-ivory font-sans text-xs uppercase tracking-widest sm:tracking-[0.2em] font-semibold hover:bg-[#260003] transition-colors border border-champagne-gold/30"
               href="tel:+918854000203"
             >
               <span>Consult Salon Archivist</span>
@@ -413,7 +413,7 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 08: THE MOMENT WALL — OVERLAPPING VISUAL ANTHOLOGY
           ======================================================== */}
-      <section className="relative w-full bg-[#170b0c] text-warm-ivory py-32 px-6 sm:px-12 lg:px-20 overflow-hidden border-t border-champagne-gold/15">
+      <section className="relative w-full bg-[#170b0c] text-warm-ivory py-20 sm:py-32 px-4 sm:px-12 lg:px-20 overflow-hidden border-t border-champagne-gold/15">
         <div className="max-w-[1520px] mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-20">
             <span className="font-sans text-xs text-[#e7c276] tracking-[0.35em] uppercase block mb-3 font-semibold">
@@ -435,12 +435,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVa9Ig73NRGQ31WplIAMUj2HAOivbkVegUQ47qC02ghCJN8mfWFx5jB_j5zRZkT_2FCaWta8_F5MOpWfiE3iN-FxoEsr2aIFFNpXSadpdCT1bmRLENNmipJWWkBOYwqkXgJqFXO2fzXwmC4VPebtiQLWPNlccoE_9wlNS1X5NZpfX7FtMsgzmb3JQVy_tkfn4kyKwgFtONfG9FqhGl6AMjrHw5tm4wWlYt-2LgjKYz8zrkaydEEtSq"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVa9Ig73NRGQ31WplIAMUj2HAOivbkVegUQ47qC02ghCJN8mfWFx5jB_j5zRZkT_2FCaWta8_F5MOpWfiE3iN-FxoEsr2aIFFNpXSadpdCT1bmRLENNmipJWWkBOYwqkXgJqFXO2fzXwmC4VPebtiQLWPNlccoE_9wlNS1X5NZpfX7FtMsgzmb3JQVy_tkfn4kyKwgFtONfG9FqhGl6AMjrHw5tm4wWlYt-2LgjKYz8zrkaydEEtSq=s0"
                     alt="Courtyard celebration with sculpted gold necklace"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-[#170b0c]/85 backdrop-blur-md text-[10px] font-sans tracking-[0.25em] text-[#e7c276] uppercase border border-champagne-gold/30">
@@ -461,12 +461,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRAeYuy6CHG_5Slp5Fr9jh2XmbS7BZs4V1BfdgMbOH8ahueAaXF_IgWYO_rP78jCC5Aifk1tvWtEwpEUnTicSrWCURWknN6nxaQduP21WjFtOGsHbG27gx1Y7x_uPyYYsMskW5RTRoqdYMm9dEGz7F2Kl6mFxmN1YburRKjPuAZJLqVcXKB7gDMpG0_0n7O6QNXZBYvkXM90HL2hChzuRdoUnR47w7lYyp7JTh6MXM1MpVifm6LrDh"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRAeYuy6CHG_5Slp5Fr9jh2XmbS7BZs4V1BfdgMbOH8ahueAaXF_IgWYO_rP78jCC5Aifk1tvWtEwpEUnTicSrWCURWknN6nxaQduP21WjFtOGsHbG27gx1Y7x_uPyYYsMskW5RTRoqdYMm9dEGz7F2Kl6mFxmN1YburRKjPuAZJLqVcXKB7gDMpG0_0n7O6QNXZBYvkXM90HL2hChzuRdoUnR47w7lYyp7JTh6MXM1MpVifm6LrDh=s0"
                     alt="Extreme macro gold and uncut diamond collet on burgundy velvet"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="p-4 bg-[#251819] border-t border-champagne-gold/15 flex justify-between items-center">
                   <div>
@@ -488,12 +488,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-[3/4] overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAdle9AGvuGgPKVh9QJBFyHMxJYH6k7Ef6t5lhclMbfDTAA4Lb69qHKIM9udUcm7U7SEa7PO8NVLf05cgJOJLDwbZzjPCUFk7UYO9a4EUxc2DuSZkLMoT5V9CqDQc8CdWTKbIZxnDgkN8QTK32LZDbl05UAQe99rCeXmR0vv4Hr5Y1RNfTq4eRzz3CsKWBzplDDYtbJqICMol7HyCSjG-KsyoDaeIOti3Fsk6NsZ34MCx0HJ_ei67"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAdle9AGvuGgPKVh9QJBFyHMxJYH6k7Ef6t5lhclMbfDTAA4Lb69qHKIM9udUcm7U7SEa7PO8NVLf05cgJOJLDwbZzjPCUFk7UYO9a4EUxc2DuSZkLMoT5V9CqDQc8CdWTKbIZxnDgkN8QTK32LZDbl05UAQe99rCeXmR0vv4Hr5Y1RNfTq4eRzz3CsKWBzplDDYtbJqICMol7HyCSjG-KsyoDaeIOti3Fsk6NsZ34MCx0HJ_ei67=s0"
                     alt="Indian woman in raw silk with understated gold lariat pendant"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-[#170b0c]/85 backdrop-blur-md text-[10px] font-sans tracking-[0.25em] text-[#e7c276] uppercase border border-champagne-gold/30">
@@ -514,12 +514,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdEK8oN4OmIe861Un84MwmA9EqlNEeZm2nows0OdiUA7QZ21vi7tRG_K_POs4Q6PydH1NntodjFHPYJQRSA6y_9KiUXFHaI6jqkgTOaRHqiRragpg7csDDaQQzpbbxBUjRP_4KktczAA_v0spDic0TCjvAAB9mmhvJmxwZnpG-7meTW8k-QOEibRAYn7scXjH7Rx8k8n8gw8q5mv-srMv_pmHK85-NhmHzc2hZKHmUyFVn7OPZSYDi"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdEK8oN4OmIe861Un84MwmA9EqlNEeZm2nows0OdiUA7QZ21vi7tRG_K_POs4Q6PydH1NntodjFHPYJQRSA6y_9KiUXFHaI6jqkgTOaRHqiRragpg7csDDaQQzpbbxBUjRP_4KktczAA_v0spDic0TCjvAAB9mmhvJmxwZnpG-7meTW8k-QOEibRAYn7scXjH7Rx8k8n8gw8q5mv-srMv_pmHK85-NhmHzc2hZKHmUyFVn7OPZSYDi=s0"
                     alt="Sculpted modern 22K gold architectural ear cuff"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="p-4 bg-[#251819] border-t border-champagne-gold/15 flex justify-between items-center">
                   <span className="font-sans text-[10px] tracking-widest text-[#e7c276] uppercase font-medium">
@@ -538,12 +538,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXsQhUbsgzrVV4PKlKKdsI2COrnnryntY8PDsXMKlOIzBttAx5wIO93Lnir7bD8f-5dqaoDrQJu_TVPXjKOze6hQNDADUWJnlygmm9ezYERcWBpH9mAoNjj56-rgI6eOdUclUJfpv5LzhHX8YJikdx2f0W9pMgvwtNl4IhzqHs7UwRVon0yr4HDDFk2KLOvTEhpWM3UklYoecSBXsGrSRwlfledzQjY5Lr_OG5kjcekHctXOHDFHhE"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXsQhUbsgzrVV4PKlKKdsI2COrnnryntY8PDsXMKlOIzBttAx5wIO93Lnir7bD8f-5dqaoDrQJu_TVPXjKOze6hQNDADUWJnlygmm9ezYERcWBpH9mAoNjj56-rgI6eOdUclUJfpv5LzhHX8YJikdx2f0W9pMgvwtNl4IhzqHs7UwRVon0yr4HDDFk2KLOvTEhpWM3UklYoecSBXsGrSRwlfledzQjY5Lr_OG5kjcekHctXOHDFHhE=s0"
                     alt="Indian woman wearing asymmetrical modern silver cuffs and gold rings"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-[#170b0c]/85 backdrop-blur-md text-[10px] font-sans tracking-[0.25em] text-[#e7c276] uppercase border border-champagne-gold/30">
@@ -564,12 +564,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBycYxg-OrxWUu-gqERTydwfr_ryuVjX6flGfh4-Jdt_PjADbTj8wm_zRRqLXkvwuZIM2Oe2SIXvjkL1p6HUzv8nPbDAQnP9z81MsvgWMPWORsURjnX-cegeji6nPW2VWYGKeHHkFUmkb3KF3v1Yea_8aZccwWLDY9pmI3BGAsdsUZUJzxQ7KnR31y8ZTrDtstw9XMYW9mwb18iF3MT77fUwl0nbjWXqgSD04_yo90S-0ApRCq_6Yi"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBycYxg-OrxWUu-gqERTydwfr_ryuVjX6flGfh4-Jdt_PjADbTj8wm_zRRqLXkvwuZIM2Oe2SIXvjkL1p6HUzv8nPbDAQnP9z81MsvgWMPWORsURjnX-cegeji6nPW2VWYGKeHHkFUmkb3KF3v1Yea_8aZccwWLDY9pmI3BGAsdsUZUJzxQ7KnR31y8ZTrDtstw9XMYW9mwb18iF3MT77fUwl0nbjWXqgSD04_yo90S-0ApRCq_6Yi=s0"
                     alt="Modern gold cocktail ring with cabochon stone on sandstone plinth"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="p-4 bg-[#251819] border-t border-champagne-gold/15">
                   <span className="font-sans text-[10px] tracking-widest text-[#e7c276] block uppercase font-medium">
@@ -585,12 +585,12 @@ export default function MomentsPage() {
               <div className="relative group overflow-hidden bg-[#2a1c1d] border border-champagne-gold/20 shadow-xl">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQCy9AZRG8Y2Ij8vgGLF5JBvIcb0ricbR8nAx59vszwGuIazLYBOHc687kjrLZTaO0_2eo8H7_ukwgqLk5122r7gIIJvR6HjGMqVM98CigDaO20qVHmKh6CZyAHkGH2GebaJP6Vx_vaTNBNbvKo3-IBz_uRmyNmVtAvM4WWux68qiRj7F6xIYQtseDTM7O_l2I1DIR030bLvz0OZqlPZ5Yd2yyjxDL9ULK3yC4l1T_ZBdhepDHu-Cq"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQCy9AZRG8Y2Ij8vgGLF5JBvIcb0ricbR8nAx59vszwGuIazLYBOHc687kjrLZTaO0_2eo8H7_ukwgqLk5122r7gIIJvR6HjGMqVM98CigDaO20qVHmKh6CZyAHkGH2GebaJP6Vx_vaTNBNbvKo3-IBz_uRmyNmVtAvM4WWux68qiRj7F6xIYQtseDTM7O_l2I1DIR030bLvz0OZqlPZ5Yd2yyjxDL9ULK3yC4l1T_ZBdhepDHu-Cq=s0"
                     alt="Understated diamond and gold lariat necklace on pale sandstone"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-[#170b0c]/85 backdrop-blur-md text-[10px] font-sans tracking-[0.25em] text-[#e7c276] uppercase border border-champagne-gold/30">
@@ -614,16 +614,16 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 09: A QUIET MOMENT (WARM IVORY MINIMALISM)
           ======================================================== */}
-      <section className="relative w-full bg-[#FAF7EF] text-[#3c2d2e] py-36 px-6 sm:px-12 lg:px-24 text-center border-t border-champagne-gold/20">
+      <section className="relative w-full bg-[#FAF7EF] text-[#3c2d2e] py-24 sm:py-36 px-4 sm:px-12 lg:px-24 text-center border-t border-champagne-gold/20">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          <span className="font-sans text-xs text-[#7e2a2a] tracking-[0.35em] uppercase mb-6 font-semibold">
+          <span className="font-sans text-xs text-[#7e2a2a] tracking-widest sm:tracking-[0.35em] uppercase mb-6 font-semibold">
             Atelier Meditation
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl text-[#120708] mb-8 tracking-tight max-w-3xl leading-[1.15] font-normal uppercase">
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#120708] mb-6 sm:mb-8 tracking-tight max-w-3xl leading-[1.15] font-normal uppercase">
             SOME MOMENTS <br />
             <span className="italic text-[#7e2a2a] font-light">DON’T NEED WORDS.</span>
           </h2>
-          <p className="font-sans text-base sm:text-lg text-[#554241] max-w-xl mb-14 leading-relaxed font-light">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-[#554241] max-w-xl mb-10 sm:mb-14 leading-relaxed font-light">
             A slow breath before entering the hall. The chill of gold warming to the skin. The unspoken assurance of knowing who you are, carved in light and precious metal.
           </p>
 
@@ -631,16 +631,16 @@ export default function MomentsPage() {
           <div className="w-full max-w-2xl overflow-hidden shadow-2xl bg-[#170b0c] border border-[#d8b46a]/30">
             <div className="relative aspect-[16/10] w-full">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQCy9AZRG8Y2Ij8vgGLF5JBvIcb0ricbR8nAx59vszwGuIazLYBOHc687kjrLZTaO0_2eo8H7_ukwgqLk5122r7gIIJvR6HjGMqVM98CigDaO20qVHmKh6CZyAHkGH2GebaJP6Vx_vaTNBNbvKo3-IBz_uRmyNmVtAvM4WWux68qiRj7F6xIYQtseDTM7O_l2I1DIR030bLvz0OZqlPZ5Yd2yyjxDL9ULK3yC4l1T_ZBdhepDHu-Cq"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQCy9AZRG8Y2Ij8vgGLF5JBvIcb0ricbR8nAx59vszwGuIazLYBOHc687kjrLZTaO0_2eo8H7_ukwgqLk5122r7gIIJvR6HjGMqVM98CigDaO20qVHmKh6CZyAHkGH2GebaJP6Vx_vaTNBNbvKo3-IBz_uRmyNmVtAvM4WWux68qiRj7F6xIYQtseDTM7O_l2I1DIR030bLvz0OZqlPZ5Yd2yyjxDL9ULK3yC4l1T_ZBdhepDHu-Cq=s0"
                 alt="Editorial jewellery still life of modern diamond and gold lariat necklace on smooth pale sandstone"
                 fill
                 sizes="(max-width: 768px) 100vw, 680px"
                 className="object-cover"
-              />
+               quality={90} />
             </div>
           </div>
           <div className="pt-8">
-            <span className="font-sans text-[11px] tracking-[0.25em] uppercase text-[#7e2a2a] font-medium">
+            <span className="font-sans text-[10px] sm:text-[11px] tracking-widest sm:tracking-[0.25em] uppercase text-[#7e2a2a] font-medium">
               Purity · Restraint · Rajputana Legacy
             </span>
           </div>
@@ -650,14 +650,14 @@ export default function MomentsPage() {
       {/* ========================================================
           SECTION 10: FINAL CONCIERGE CTA (DEEP BURGUNDY)
           ======================================================== */}
-      <section className="relative w-full bg-[#450006] text-warm-ivory py-28 px-6 sm:px-12 lg:px-24 overflow-hidden border-t border-champagne-gold/15">
+      <section className="relative w-full bg-[#450006] text-warm-ivory py-20 sm:py-28 px-4 sm:px-12 lg:px-24 overflow-hidden border-t border-champagne-gold/15">
         <div className="max-w-[1440px] mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Main Headline and CTA Buttons */}
             <div className="lg:col-span-7 flex flex-col items-start">
               <div className="flex items-center gap-3 mb-6">
                 <span className="w-2 h-2 rounded-full bg-[#e7c276]"></span>
-                <span className="font-sans text-xs text-[#e7c276] tracking-[0.3em] uppercase font-semibold">
+                <span className="font-sans text-xs text-[#e7c276] tracking-widest sm:tracking-[0.3em] uppercase font-semibold">
                   Private Salon Appointments
                 </span>
               </div>
@@ -665,20 +665,20 @@ export default function MomentsPage() {
                 Find the Piece That Becomes <br />
                 <span className="italic text-[#e7c276] font-light">Part of Your Story.</span>
               </h2>
-              <p className="font-sans text-base sm:text-lg text-warm-ivory/80 max-w-xl mb-10 leading-relaxed font-light">
+              <p className="font-sans text-sm sm:text-base md:text-lg text-warm-ivory/80 max-w-xl mb-8 sm:mb-10 leading-relaxed font-light">
                 Every consultation is private, deliberate, and free of haste. Whether you seek an auspicious bridal parure or an everyday solitaire, our salon curators in Parvatsar are at your service.
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
                 <Link
-                  className="px-8 py-4 bg-[#e7c276] text-[#170b0c] font-sans text-xs uppercase tracking-[0.22em] font-bold hover:bg-[#ffdfa0] transition-all text-center"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-[#e7c276] text-[#170b0c] font-sans text-xs uppercase tracking-widest sm:tracking-[0.22em] font-bold hover:bg-[#ffdfa0] transition-all text-center"
                   href="/collections"
                 >
                   Explore Collections
                 </Link>
                 <a
-                  className="px-8 py-4 bg-[#170b0c] text-[#e7c276] border border-champagne-gold/30 font-sans text-xs uppercase tracking-[0.22em] font-semibold hover:bg-[#2a1c1d] transition-all flex items-center justify-center gap-2 text-center"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-[#170b0c] text-[#e7c276] border border-champagne-gold/30 font-sans text-xs uppercase tracking-widest sm:tracking-[0.22em] font-semibold hover:bg-[#2a1c1d] transition-all flex items-center justify-center gap-2 text-center"
                   href="https://wa.me/918854000203"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -687,7 +687,7 @@ export default function MomentsPage() {
                   <span>WhatsApp Us</span>
                 </a>
                 <a
-                  className="px-8 py-4 bg-[#352627]/80 text-warm-ivory font-sans text-xs uppercase tracking-[0.22em] font-semibold hover:bg-[#403132] transition-all flex items-center justify-center gap-2 text-center border border-champagne-gold/20"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-[#352627]/80 text-warm-ivory font-sans text-xs uppercase tracking-widest sm:tracking-[0.22em] font-semibold hover:bg-[#403132] transition-all flex items-center justify-center gap-2 text-center border border-champagne-gold/20"
                   href="tel:+918854000203"
                 >
                   <Phone className="w-4 h-4" />
@@ -697,7 +697,7 @@ export default function MomentsPage() {
             </div>
 
             {/* Verified Salon Details & Heritage Badge */}
-            <div className="lg:col-span-5 bg-[#170b0c] border border-champagne-gold/25 p-8 sm:p-10 shadow-2xl">
+            <div className="lg:col-span-5 bg-[#170b0c] border border-champagne-gold/25 p-6 sm:p-10 shadow-2xl">
               <div className="flex items-center gap-3 mb-6 pb-4 border-b border-champagne-gold/20">
                 <Store className="w-6 h-6 text-[#e7c276]" />
                 <div>

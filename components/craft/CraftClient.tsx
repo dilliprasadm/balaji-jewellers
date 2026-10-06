@@ -40,8 +40,8 @@ export function CraftClient() {
         {/* Top Metadata Header Strip */}
         <div className="relative z-10 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-champagne-gold/15">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-champagne-gold shadow-[0_0_8px_#d8b46a]"></span>
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">
+            <span className="w-2 h-2 rounded-full bg-champagne-gold shadow-[0_0_8px_#d8b46a] shrink-0"></span>
+            <span className="font-sans text-[9px] sm:text-[10px] tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
               THE CRAFT · EXPERIENTIAL ARCHIVE
             </span>
           </div>
@@ -60,7 +60,7 @@ export function CraftClient() {
           {/* Left Narrative */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="flex flex-col gap-2">
-              <span className="font-sans text-[10px] tracking-monumental text-soft-gold uppercase">
+              <span className="font-sans text-[9px] sm:text-[10px] tracking-wider sm:tracking-monumental text-soft-gold uppercase">
                 EXAMINATION RETICLE: {macroZoom.toUpperCase()}
               </span>
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-warm-ivory leading-tight font-normal">
@@ -120,12 +120,12 @@ export function CraftClient() {
               {/* The Macro Gold Texture Image */}
               <div className="w-full h-full relative transition-all duration-700 ease-out" style={getZoomStyle()}>
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XP4V2p_xKvgj72X3tXGOn1pqqIGO4iTuk4XQaXxtI17_3OJ3qAZrJNcLnWmrE1XqFqzEUfbiS-_UpdSSL_H0ocKzRVcoZgA255YDTEwEUCiZmMf5w9pfhZV2AhBogMDMlhkI0PkuPbRiM0AYnyPjWIjQr34WWNGVHPJhVVt8ejlp-4LxFjgNaKj1QdO6BS99L8yzv9LM08bIqjUIMZsfo6SzJzQIApR6-B5jhIdnFLO7Y9HyAo2vVpvWc"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XP4V2p_xKvgj72X3tXGOn1pqqIGO4iTuk4XQaXxtI17_3OJ3qAZrJNcLnWmrE1XqFqzEUfbiS-_UpdSSL_H0ocKzRVcoZgA255YDTEwEUCiZmMf5w9pfhZV2AhBogMDMlhkI0PkuPbRiM0AYnyPjWIjQr34WWNGVHPJhVVt8ejlp-4LxFjgNaKj1QdO6BS99L8yzv9LM08bIqjUIMZsfo6SzJzQIApR6-B5jhIdnFLO7Y9HyAo2vVpvWc=s0"
                   alt="Macro Jewellery Surface"
                   fill
                   priority
                   className="object-cover"
-                />
+                 quality={90} />
               </div>
 
               {/* Fine Reticle HUD Overlay */}
@@ -177,8 +177,8 @@ export function CraftClient() {
         <div className="max-w-[1460px] mx-auto flex flex-col gap-16">
           <div className="flex items-center justify-between pb-4 border-b border-[#260003]/15">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-[#260003]"></span>
-              <span className="font-sans text-xs tracking-monumental text-[#450006] uppercase font-semibold">
+              <span className="w-2 h-2 bg-[#260003] shrink-0"></span>
+              <span className="font-sans text-[11px] sm:text-xs tracking-wider sm:tracking-monumental text-[#450006] uppercase font-semibold">
                 02 / FORM BECOMES CHARACTER
               </span>
             </div>
@@ -191,16 +191,16 @@ export function CraftClient() {
             <div className="lg:col-span-7 relative aspect-[16/11] bg-[#efe9dc] p-3 shadow-2xl border border-[#260003]/15">
               <div className="relative w-full h-full overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1W2UoV3C9QJ2oLKXYMsENeTBrLv8SzG6wrIbHIzRK9Z8rHz_91FuWYAKiMXJCCpyPSTZV59iuEkfDSEs-Lj2kBDEmSHwc_OJztgb9cJtfrhdLT6rCuxnyO4Yk16IhzMSDmD7slLYyfFp4aTl1gD96DD5k1wna8T_Y3DnFUMVvbbBZyeeKoxAEb6ZGFSBnxFzUIv3gvbzlmJkLYxdU9TljbRQ2mTizILl9WQPdowb-Xy-6dHBZc9YBq-C0s"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1W2UoV3C9QJ2oLKXYMsENeTBrLv8SzG6wrIbHIzRK9Z8rHz_91FuWYAKiMXJCCpyPSTZV59iuEkfDSEs-Lj2kBDEmSHwc_OJztgb9cJtfrhdLT6rCuxnyO4Yk16IhzMSDmD7slLYyfFp4aTl1gD96DD5k1wna8T_Y3DnFUMVvbbBZyeeKoxAEb6ZGFSBnxFzUIv3gvbzlmJkLYxdU9TljbRQ2mTizILl9WQPdowb-Xy-6dHBZc9YBq-C0s=s0"
                   alt="Kundan Stone Setting Architecture"
                   fill
                   className="object-cover"
-                />
+                 quality={90} />
               </div>
             </div>
 
             <div className="lg:col-span-5 flex flex-col gap-6">
-              <span className="font-sans text-xs tracking-monumental text-[#450006] uppercase font-semibold">
+              <span className="font-sans text-[11px] sm:text-xs tracking-wider sm:tracking-monumental text-[#450006] uppercase font-semibold">
                 SETTING ANATOMY
               </span>
               <h2 className="font-serif text-4xl sm:text-5xl text-[#260003] leading-tight">
@@ -230,7 +230,7 @@ export function CraftClient() {
       <section className="w-full py-28 px-6 lg:px-14 bg-near-black border-t border-champagne-gold/15">
         <div className="max-w-[1460px] mx-auto flex flex-col gap-16">
           <div>
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase block mb-3">
+            <span className="font-sans text-[10px] tracking-wider sm:tracking-monumental text-champagne-gold uppercase block mb-3">
               03 / METALLURGICAL STUDIES
             </span>
             <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory">
@@ -241,7 +241,7 @@ export function CraftClient() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Gold Technique */}
             <div className="bg-[#260003] border border-champagne-gold/25 p-8 flex flex-col gap-6">
-              <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase font-semibold">
+              <span className="font-sans text-[11px] sm:text-xs tracking-wider sm:tracking-monumental text-champagne-gold uppercase font-semibold">
                 GOLD DISCIPLINE
               </span>
               <h3 className="font-serif text-3xl text-warm-ivory">Champlevé &amp; Repoussé Relief</h3>
@@ -250,17 +250,17 @@ export function CraftClient() {
               </p>
               <div className="relative aspect-[16/9] w-full overflow-hidden bg-near-black border border-champagne-gold/20">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XnAQQ8Q35INPjszjNleOC4YPYbMovC1GY8F9F6jJ22c2Q_5YM1AZhgw5zNaysvAQ_xBHjZhsDjLkf4Dbz3ue4mneio7R6jLz0l8ITzgueyXYrQI5i5cAW5tC8HuYsywnQQ3fvI8t7iS_W-bnKa1AqFjkTcV7S8z6vdn6cNBnCzouw7ZfMueub_w5wll_sv0g3bYFNri9pjPcaU5xtBN--PDHclWttBu2PbG1iLFKhLbEmAFVWds2WBNKI"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XnAQQ8Q35INPjszjNleOC4YPYbMovC1GY8F9F6jJ22c2Q_5YM1AZhgw5zNaysvAQ_xBHjZhsDjLkf4Dbz3ue4mneio7R6jLz0l8ITzgueyXYrQI5i5cAW5tC8HuYsywnQQ3fvI8t7iS_W-bnKa1AqFjkTcV7S8z6vdn6cNBnCzouw7ZfMueub_w5wll_sv0g3bYFNri9pjPcaU5xtBN--PDHclWttBu2PbG1iLFKhLbEmAFVWds2WBNKI=s0"
                   alt="Gold Repoussé Macro"
                   fill
                   className="object-cover"
-                />
+                 quality={90} />
               </div>
             </div>
 
             {/* Silver Technique */}
             <div className="bg-[#180709] border border-slate-400/25 p-8 flex flex-col gap-6">
-              <span className="font-sans text-xs tracking-monumental text-slate-300 uppercase font-semibold">
+              <span className="font-sans text-[11px] sm:text-xs tracking-wider sm:tracking-monumental text-slate-300 uppercase font-semibold">
                 SILVER DISCIPLINE
               </span>
               <h3 className="font-serif text-3xl text-warm-ivory">Forged Torque &amp; Hand-Hammering</h3>
@@ -269,11 +269,11 @@ export function CraftClient() {
               </p>
               <div className="relative aspect-[16/9] w-full overflow-hidden bg-near-black border border-slate-400/20">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1Vxt6aboQZhCDvL1ubDhyfAdn2KHro_PLLDma-2zdwWQlufi3UW50cyg_sJxvSEcl-7HTg9wCJsJ133C9pJElMSo83NaBOSE49vFHebGvyuoA9h0bRR9VxnY7PtxdHwoQbAqhMZZRy0eiAnD31zh3ZgdPwurpGJEX8KS3Sj_5Qg340hWQhfFsFVDQRyIvfBUdo_MCMGMwRrR4vsNaEcwbjbchsj3Zd8aOkyObW4MBfIAK3RCddFA_kqQtA"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1Vxt6aboQZhCDvL1ubDhyfAdn2KHro_PLLDma-2zdwWQlufi3UW50cyg_sJxvSEcl-7HTg9wCJsJ133C9pJElMSo83NaBOSE49vFHebGvyuoA9h0bRR9VxnY7PtxdHwoQbAqhMZZRy0eiAnD31zh3ZgdPwurpGJEX8KS3Sj_5Qg340hWQhfFsFVDQRyIvfBUdo_MCMGMwRrR4vsNaEcwbjbchsj3Zd8aOkyObW4MBfIAK3RCddFA_kqQtA=s0"
                   alt="Silver Hand Hammered Macro"
                   fill
                   className="object-cover"
-                />
+                 quality={90} />
               </div>
             </div>
           </div>

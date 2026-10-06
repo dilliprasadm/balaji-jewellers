@@ -105,12 +105,12 @@ export function CollectionsClient() {
           <div className="relative mx-auto rounded-t-2xl overflow-hidden shadow-[0_-25px_60px_rgba(0,0,0,0.85)] border-t border-x border-champagne-gold/30 bg-[#260e12]">
             <div className="relative w-full h-[280px] sm:h-[380px] md:h-[440px]">
               <Image
-                src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
                 alt="The Archival Rajputana Bridal Collar Necklace preview"
                 fill
                 priority
                 className="object-cover object-top filter brightness-95 group-hover:scale-[1.02] transition-transform duration-1000"
-              />
+               quality={90} />
               <div className="absolute inset-0 bg-gradient-to-t from-near-black via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-0 right-0 text-center pointer-events-none">
                 <span className="text-[10px] uppercase tracking-[0.3em] text-champagne-gold/90 font-sans">
@@ -198,22 +198,22 @@ export function CollectionsClient() {
       {/* ========================================================
           STICKY DISCIPLINE SWITCHER BAR
           ======================================================== */}
-      <div className="sticky top-20 z-30 w-full bg-near-black/90 backdrop-blur-md border-b border-champagne-gold/20 py-3.5 px-6 shadow-xl">
-        <div className="max-w-4xl mx-auto flex items-center justify-center gap-3 sm:gap-6">
+      <div className="sticky top-20 z-30 w-full bg-near-black/90 backdrop-blur-md border-b border-champagne-gold/20 py-3 px-3 sm:px-6 shadow-xl">
+        <div className="max-w-4xl mx-auto flex items-center justify-center gap-2 sm:gap-6">
           <button
             type="button"
             onClick={() => scrollToDiscipline("gold")}
-            className="px-4 sm:px-6 py-2 text-[11px] sm:text-xs font-sans tracking-monumental uppercase font-semibold text-soft-gold border border-champagne-gold/40 hover:bg-champagne-gold/20 hover:border-champagne-gold transition-all flex items-center gap-2 cursor-pointer shadow-sm"
+            className="px-3 sm:px-6 py-2 text-[10px] sm:text-xs font-sans tracking-wider sm:tracking-monumental uppercase font-semibold text-soft-gold border border-champagne-gold/40 hover:bg-champagne-gold/20 hover:border-champagne-gold transition-all flex items-center gap-1.5 sm:gap-2 cursor-pointer shadow-sm whitespace-nowrap"
           >
-            <span className="w-2 h-2 rounded-full bg-champagne-gold"></span>
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-champagne-gold shrink-0"></span>
             <span>01 Gold Atelier ({goldProducts.length})</span>
           </button>
           <button
             type="button"
             onClick={() => scrollToDiscipline("silver")}
-            className="px-4 sm:px-6 py-2 text-[11px] sm:text-xs font-sans tracking-monumental uppercase font-semibold text-slate-300 border border-slate-400/40 hover:bg-slate-400/20 hover:border-slate-300 transition-all flex items-center gap-2 cursor-pointer shadow-sm"
+            className="px-3 sm:px-6 py-2 text-[10px] sm:text-xs font-sans tracking-wider sm:tracking-monumental uppercase font-semibold text-slate-300 border border-slate-400/40 hover:bg-slate-400/20 hover:border-slate-300 transition-all flex items-center gap-1.5 sm:gap-2 cursor-pointer shadow-sm whitespace-nowrap"
           >
-            <span className="w-2 h-2 rounded-full bg-slate-300"></span>
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-slate-300 shrink-0"></span>
             <span>02 Silver Atelier ({silverProducts.length})</span>
           </button>
         </div>
@@ -262,11 +262,11 @@ export function CollectionsClient() {
             <article className="lg:col-span-7 bg-[#260e12] border border-champagne-gold/30 p-6 sm:p-8 flex flex-col justify-between group shadow-xl">
               <div className="relative overflow-hidden bg-near-black h-[380px] sm:h-[500px] mb-6">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
                   alt="Marwar Imperial Temple Rani Haar"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-                />
+                 quality={90} />
                 <div className="absolute top-4 left-4 bg-near-black/80 backdrop-blur-md px-3 py-1 border border-champagne-gold/30 text-champagne-gold text-[10px] tracking-[0.25em] uppercase font-semibold">
                   RANI HAAR
                 </div>
@@ -293,7 +293,7 @@ export function CollectionsClient() {
                         category: "gold",
                         type: "Rani Haar",
                         images: [
-                          "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw",
+                          "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0",
                         ],
                         description:
                           "Layered temple pendant suspended from intricate granulated chains with floral nakashi motifs and delicate seed pearl drops.",
@@ -310,7 +310,7 @@ export function CollectionsClient() {
                     className="px-5 py-2.5 bg-deep-burgundy text-soft-gold hover:bg-champagne-gold hover:text-near-black transition-all text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1.5 border border-champagne-gold/30"
                     href={getWhatsAppProductUrl(
                       "Marwar Imperial Temple Rani Haar",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -328,11 +328,11 @@ export function CollectionsClient() {
               <article className="bg-[#260e12] border border-champagne-gold/30 p-6 flex flex-col justify-between group shadow-lg">
                 <div className="relative overflow-hidden bg-near-black h-56 sm:h-64 mb-4">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
                     alt="Rajputana Kundan Collar"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                   quality={90} />
                   <div className="absolute top-3 left-3 bg-near-black/80 backdrop-blur-md px-2.5 py-0.5 border border-champagne-gold/30 text-champagne-gold text-[10px] tracking-[0.25em] uppercase font-semibold">
                     NECKLACE
                   </div>
@@ -358,7 +358,7 @@ export function CollectionsClient() {
                     className="text-warm-ivory/80 hover:text-soft-gold text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
                     href={getWhatsAppProductUrl(
                       "Rajputana Kundan Collar",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -373,11 +373,11 @@ export function CollectionsClient() {
               <article className="bg-[#260e12] border border-champagne-gold/30 p-6 flex flex-col justify-between group shadow-lg">
                 <div className="relative overflow-hidden bg-near-black h-56 sm:h-64 mb-4">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
                     alt="Hand-Hammered Gokhru Kadas"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                   quality={90} />
                   <div className="absolute top-3 left-3 bg-near-black/80 backdrop-blur-md px-2.5 py-0.5 border border-champagne-gold/30 text-champagne-gold text-[10px] tracking-[0.25em] uppercase font-semibold">
                     KADA
                   </div>
@@ -403,7 +403,7 @@ export function CollectionsClient() {
                     className="text-warm-ivory/80 hover:text-soft-gold text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
                     href={getWhatsAppProductUrl(
                       "Hand-Hammered Gokhru Kadas",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -499,11 +499,11 @@ export function CollectionsClient() {
             <article className="lg:col-span-5 bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col justify-between group shadow-xl">
               <div className="relative overflow-hidden bg-black/60 h-[380px] sm:h-[460px] mb-6">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
                   alt="Nagaur Tribal Coin Hasli"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
+                 quality={90} />
                 <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1 border border-slate-600 text-slate-200 text-[10px] tracking-[0.25em] uppercase font-semibold">
                   ANTIQUE HASLI
                 </div>
@@ -532,7 +532,7 @@ export function CollectionsClient() {
                   className="px-5 py-2.5 bg-slate-800 text-warm-ivory hover:bg-slate-700 transition-all text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1.5 border border-slate-600"
                   href={getWhatsAppProductUrl(
                     "Nagaur Tribal Coin Hasli",
-                    "https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw"
+                    "https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -549,11 +549,11 @@ export function CollectionsClient() {
               <article className="bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center group shadow-lg">
                 <div className="relative overflow-hidden bg-black/60 w-full md:w-1/2 h-56 sm:h-64 shrink-0">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1XPvYHSXDFNB9kbZ_GGX56kMBrYmeXXpV7n5_MBltn5r_Cp0M-to_f4YD4Qq2USJkkN9cJPieapelox9UiV9sWESVxUVeRU4ecnnb8LSFZJJTYu7FT4Qp7avhaVEr1IuYzZkPMd_AgR4VuR9g52Twrkq-PhRFVaQSgM8Qwxqb-rskZCoBJzPTIm1Fw4SMrb04EHQ-Tu2owQGf2D4kRLaKBspKUeHTHHbFmJwOb8TpTqtNCStmoJm072edE"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1XPvYHSXDFNB9kbZ_GGX56kMBrYmeXXpV7n5_MBltn5r_Cp0M-to_f4YD4Qq2USJkkN9cJPieapelox9UiV9sWESVxUVeRU4ecnnb8LSFZJJTYu7FT4Qp7avhaVEr1IuYzZkPMd_AgR4VuR9g52Twrkq-PhRFVaQSgM8Qwxqb-rskZCoBJzPTIm1Fw4SMrb04EHQ-Tu2owQGf2D4kRLaKBspKUeHTHHbFmJwOb8TpTqtNCStmoJm072edE=s0"
                     alt="Hammered Chevron Silver Cuff"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                   quality={90} />
                   <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-2.5 py-0.5 border border-slate-600 text-slate-200 text-[10px] tracking-[0.25em] uppercase font-semibold">
                     KADA / CUFF
                   </div>
@@ -580,7 +580,7 @@ export function CollectionsClient() {
                       className="text-slate-400 hover:text-warm-ivory text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
                       href={getWhatsAppProductUrl(
                         "Hammered Chevron Silver Cuff",
-                        "https://lh3.googleusercontent.com/aida/AEtjO1XPvYHSXDFNB9kbZ_GGX56kMBrYmeXXpV7n5_MBltn5r_Cp0M-to_f4YD4Qq2USJkkN9cJPieapelox9UiV9sWESVxUVeRU4ecnnb8LSFZJJTYu7FT4Qp7avhaVEr1IuYzZkPMd_AgR4VuR9g52Twrkq-PhRFVaQSgM8Qwxqb-rskZCoBJzPTIm1Fw4SMrb04EHQ-Tu2owQGf2D4kRLaKBspKUeHTHHbFmJwOb8TpTqtNCStmoJm072edE"
+                        "https://lh3.googleusercontent.com/aida/AEtjO1XPvYHSXDFNB9kbZ_GGX56kMBrYmeXXpV7n5_MBltn5r_Cp0M-to_f4YD4Qq2USJkkN9cJPieapelox9UiV9sWESVxUVeRU4ecnnb8LSFZJJTYu7FT4Qp7avhaVEr1IuYzZkPMd_AgR4VuR9g52Twrkq-PhRFVaQSgM8Qwxqb-rskZCoBJzPTIm1Fw4SMrb04EHQ-Tu2owQGf2D4kRLaKBspKUeHTHHbFmJwOb8TpTqtNCStmoJm072edE=s0"
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -596,11 +596,11 @@ export function CollectionsClient() {
               <article className="bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center group shadow-lg">
                 <div className="relative overflow-hidden bg-black/60 w-full md:w-1/2 h-56 sm:h-64 shrink-0">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida/AEtjO1WdzzREAZQlhEZ2a2f2MpDOa2_FvEOkmXfaL4p6as1xLhcC-GFleW6UQ8C1X7AKue_s1MSGiqcOQi7KmfPexTTvMVs-CKhaRSkw3QJ7t5vAqZuoHDKLWjQJk-GKQ9Ix_BxTLVLt7SrqTZ8Ax6YjLiK6DykZIX3tcR8XR4OfPSSvq5IfTxror--XG-5ncvAG6O8oz4A2RaKJ9Wi7tkXWajvr9Jb6qiDrXsn9hkW9wH1qJbsXLf67TPU-nDY"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1WdzzREAZQlhEZ2a2f2MpDOa2_FvEOkmXfaL4p6as1xLhcC-GFleW6UQ8C1X7AKue_s1MSGiqcOQi7KmfPexTTvMVs-CKhaRSkw3QJ7t5vAqZuoHDKLWjQJk-GKQ9Ix_BxTLVLt7SrqTZ8Ax6YjLiK6DykZIX3tcR8XR4OfPSSvq5IfTxror--XG-5ncvAG6O8oz4A2RaKJ9Wi7tkXWajvr9Jb6qiDrXsn9hkW9wH1qJbsXLf67TPU-nDY=s0"
                     alt="Raw Moonstone Filigree Ring"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                   quality={90} />
                   <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-2.5 py-0.5 border border-slate-600 text-slate-200 text-[10px] tracking-[0.25em] uppercase font-semibold">
                     RING
                   </div>
@@ -627,7 +627,7 @@ export function CollectionsClient() {
                       className="text-slate-400 hover:text-warm-ivory text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
                       href={getWhatsAppProductUrl(
                         "Raw Moonstone Filigree Ring",
-                        "https://lh3.googleusercontent.com/aida/AEtjO1WdzzREAZQlhEZ2a2f2MpDOa2_FvEOkmXfaL4p6as1xLhcC-GFleW6UQ8C1X7AKue_s1MSGiqcOQi7KmfPexTTvMVs-CKhaRSkw3QJ7t5vAqZuoHDKLWjQJk-GKQ9Ix_BxTLVLt7SrqTZ8Ax6YjLiK6DykZIX3tcR8XR4OfPSSvq5IfTxror--XG-5ncvAG6O8oz4A2RaKJ9Wi7tkXWajvr9Jb6qiDrXsn9hkW9wH1qJbsXLf67TPU-nDY"
+                        "https://lh3.googleusercontent.com/aida/AEtjO1WdzzREAZQlhEZ2a2f2MpDOa2_FvEOkmXfaL4p6as1xLhcC-GFleW6UQ8C1X7AKue_s1MSGiqcOQi7KmfPexTTvMVs-CKhaRSkw3QJ7t5vAqZuoHDKLWjQJk-GKQ9Ix_BxTLVLt7SrqTZ8Ax6YjLiK6DykZIX3tcR8XR4OfPSSvq5IfTxror--XG-5ncvAG6O8oz4A2RaKJ9Wi7tkXWajvr9Jb6qiDrXsn9hkW9wH1qJbsXLf67TPU-nDY=s0"
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -735,17 +735,17 @@ export function CollectionsClient() {
           <div className="space-y-16">
             {/* Archival Piece 01 */}
             <div className="bg-near-black border border-champagne-gold/30 overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center shadow-2xl">
-              <div className="lg:col-span-7 h-[360px] sm:h-[460px] relative overflow-hidden">
+              <div className="lg:col-span-7 h-[280px] sm:h-[400px] lg:h-[460px] relative overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
                   alt="Archival 01 The Rajputana Kundan Choker Suite"
                   fill
                   className="object-cover object-center filter brightness-95"
-                />
+                 quality={90} />
               </div>
-              <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between h-full bg-[#260e12]">
+              <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between h-full bg-[#260e12]">
                 <div>
-                  <span className="font-serif text-6xl text-champagne-gold/30 leading-none block font-light">
+                  <span className="font-serif text-5xl sm:text-6xl text-champagne-gold/30 leading-none block font-light">
                     01
                   </span>
                   <span className="text-[10px] tracking-[0.25em] text-champagne-gold uppercase font-semibold mt-2 block font-sans">
@@ -766,7 +766,7 @@ export function CollectionsClient() {
                     className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
                       "The Rajputana Kundan Collar (Archival Suite 01)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -780,9 +780,9 @@ export function CollectionsClient() {
 
             {/* Archival Piece 02 */}
             <div className="bg-near-black border border-champagne-gold/30 overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center shadow-2xl">
-              <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between h-full bg-[#260e12] order-2 lg:order-1">
+              <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between h-full bg-[#260e12] order-2 lg:order-1">
                 <div>
-                  <span className="font-serif text-6xl text-champagne-gold/30 leading-none block font-light">
+                  <span className="font-serif text-5xl sm:text-6xl text-champagne-gold/30 leading-none block font-light">
                     02
                   </span>
                   <span className="text-[10px] tracking-[0.25em] text-champagne-gold uppercase font-semibold mt-2 block font-sans">
@@ -803,7 +803,7 @@ export function CollectionsClient() {
                     className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
                       "The Parvatsar Temple Rani Haar (Archival Suite 02)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -813,29 +813,29 @@ export function CollectionsClient() {
                   </a>
                 </div>
               </div>
-              <div className="lg:col-span-7 h-[360px] sm:h-[460px] relative overflow-hidden order-1 lg:order-2">
+              <div className="lg:col-span-7 h-[280px] sm:h-[400px] lg:h-[460px] relative overflow-hidden order-1 lg:order-2">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
                   alt="Archival 02 The Parvatsar Temple Rani Haar"
                   fill
                   className="object-cover object-center filter brightness-95"
-                />
+                 quality={90} />
               </div>
             </div>
 
             {/* Archival Piece 03 */}
             <div className="bg-near-black border border-slate-800 overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center shadow-2xl">
-              <div className="lg:col-span-7 h-[360px] sm:h-[460px] relative overflow-hidden">
+              <div className="lg:col-span-7 h-[280px] sm:h-[400px] lg:h-[460px] relative overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
                   alt="Archival 03 Pure 925 Antique Coin Choker"
                   fill
                   className="object-cover object-center filter brightness-95"
-                />
+                 quality={90} />
               </div>
-              <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between h-full bg-[#141822]">
+              <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between h-full bg-[#141822]">
                 <div>
-                  <span className="font-serif text-6xl text-slate-500/30 leading-none block font-light">
+                  <span className="font-serif text-5xl sm:text-6xl text-slate-500/30 leading-none block font-light">
                     03
                   </span>
                   <span className="text-[10px] tracking-[0.25em] text-slate-300 uppercase font-semibold mt-2 block font-sans">
@@ -856,7 +856,7 @@ export function CollectionsClient() {
                     className="text-slate-300 hover:text-warm-ivory text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
                       "The Nagaur Antique Coin Hasli (Archival Suite 03)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -870,9 +870,9 @@ export function CollectionsClient() {
 
             {/* Archival Piece 04 */}
             <div className="bg-near-black border border-champagne-gold/30 overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center shadow-2xl">
-              <div className="lg:col-span-5 p-8 sm:p-12 flex flex-col justify-between h-full bg-[#260e12] order-2 lg:order-1">
+              <div className="lg:col-span-5 p-6 sm:p-10 lg:p-12 flex flex-col justify-between h-full bg-[#260e12] order-2 lg:order-1">
                 <div>
-                  <span className="font-serif text-6xl text-champagne-gold/30 leading-none block font-light">
+                  <span className="font-serif text-5xl sm:text-6xl text-champagne-gold/30 leading-none block font-light">
                     04
                   </span>
                   <span className="text-[10px] tracking-[0.25em] text-champagne-gold uppercase font-semibold mt-2 block font-sans">
@@ -893,7 +893,7 @@ export function CollectionsClient() {
                     className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
                       "The Royal Gokhru Pair (Archival Suite 04)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y"
+                      "https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -903,13 +903,13 @@ export function CollectionsClient() {
                   </a>
                 </div>
               </div>
-              <div className="lg:col-span-7 h-[360px] sm:h-[460px] relative overflow-hidden order-1 lg:order-2">
+              <div className="lg:col-span-7 h-[280px] sm:h-[400px] lg:h-[460px] relative overflow-hidden order-1 lg:order-2">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
                   alt="Archival 04 Pair of 22K Antique Rajasthani Gokhru Kadas"
                   fill
                   className="object-cover object-center filter brightness-95"
-                />
+                 quality={90} />
               </div>
             </div>
           </div>
@@ -938,11 +938,11 @@ export function CollectionsClient() {
             <div className="flex flex-col bg-[#260e12] border border-champagne-gold/30 overflow-hidden group shadow-lg">
               <div className="h-64 sm:h-72 relative overflow-hidden bg-near-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1X3b7P5UJPR_d-_wj6RMhtl9Uvki-CYiU5CCEw-I-Yr_D_XWWyKFaT-Wb7-pAqkms1PvupelAqE4jfIQzEk5WoMJhovJi8WDJXVsC7S4u77NULsT5AguwX8uGcx3dSsDgGBgOf5KG8vGHRKr8cQscaoqS0tBxJT5Cyn5YdYr4IQ0JzePEt48MfYsJgikAMId_9UwhZzNhq2bUjjD3odxzhLd8Bg6wIpiI5xG9RjkhYJmumNH8amV1m5DkE"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1X3b7P5UJPR_d-_wj6RMhtl9Uvki-CYiU5CCEw-I-Yr_D_XWWyKFaT-Wb7-pAqkms1PvupelAqE4jfIQzEk5WoMJhovJi8WDJXVsC7S4u77NULsT5AguwX8uGcx3dSsDgGBgOf5KG8vGHRKr8cQscaoqS0tBxJT5Cyn5YdYr4IQ0JzePEt48MfYsJgikAMId_9UwhZzNhq2bUjjD3odxzhLd8Bg6wIpiI5xG9RjkhYJmumNH8amV1m5DkE=s0"
                   alt="Traditional Kundan gold setting with raw uncut diamonds"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                 quality={90} />
               </div>
               <div className="p-6">
                 <span className="text-[10px] tracking-[0.25em] text-champagne-gold uppercase font-medium font-sans">
@@ -961,11 +961,11 @@ export function CollectionsClient() {
             <div className="flex flex-col bg-[#260e12] border border-champagne-gold/30 overflow-hidden group shadow-lg">
               <div className="h-64 sm:h-72 relative overflow-hidden bg-near-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1WnccR0AyUcmlzu2RWxfGe3bcyYMnnWfriMx_BqGbbZcmlwNgA1mQh1wcJZdf7OcF1Nj96RbBmBDsB0ZIdk5Nq9hfEUvDhkOvoAl6rzJ7ptOeDr0cTARFWnXxRTWOPJ-MI8O2klUsgYkZsxOei0mFPLodz9fzZ7jtvD-BvXHIFq_RD59sgkyKSTYkQs1oZySEWIfgMyaF-pMY7xbJX57XBVZP2d964IIUldivyaI8-DcQ2mpbvSvV8ViB8"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1WnccR0AyUcmlzu2RWxfGe3bcyYMnnWfriMx_BqGbbZcmlwNgA1mQh1wcJZdf7OcF1Nj96RbBmBDsB0ZIdk5Nq9hfEUvDhkOvoAl6rzJ7ptOeDr0cTARFWnXxRTWOPJ-MI8O2klUsgYkZsxOei0mFPLodz9fzZ7jtvD-BvXHIFq_RD59sgkyKSTYkQs1oZySEWIfgMyaF-pMY7xbJX57XBVZP2d964IIUldivyaI8-DcQ2mpbvSvV8ViB8=s0"
                   alt="Gold metallic grain along a 22K cuff edge"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                 quality={90} />
               </div>
               <div className="p-6">
                 <span className="text-[10px] tracking-[0.25em] text-champagne-gold uppercase font-medium font-sans">
@@ -984,11 +984,11 @@ export function CollectionsClient() {
             <div className="flex flex-col bg-[#260e12] border border-champagne-gold/30 overflow-hidden group shadow-lg">
               <div className="h-64 sm:h-72 relative overflow-hidden bg-near-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1XP4V2p_xKvgj72X3tXGOn1pqqIGO4iTuk4XQaXxtI17_3OJ3qAZrJNcLnWmrE1XqFqzEUfbiS-_UpdSSL_H0ocKzRVcoZgA255YDTEwEUCiZmMf5w9pfhZV2AhBogMDMlhkI0PkuPbRiM0AYnyPjWIjQr34WWNGVHPJhVVt8ejlp-4LxFjgNaKj1QdO6BS99L8yzv9LM08bIqjUIMZsfo6SzJzQIApR6-B5jhIdnFLO7Y9HyAo2vVpvWc"
+                  src="https://lh3.googleusercontent.com/aida/AEtjO1XP4V2p_xKvgj72X3tXGOn1pqqIGO4iTuk4XQaXxtI17_3OJ3qAZrJNcLnWmrE1XqFqzEUfbiS-_UpdSSL_H0ocKzRVcoZgA255YDTEwEUCiZmMf5w9pfhZV2AhBogMDMlhkI0PkuPbRiM0AYnyPjWIjQr34WWNGVHPJhVVt8ejlp-4LxFjgNaKj1QdO6BS99L8yzv9LM08bIqjUIMZsfo6SzJzQIApR6-B5jhIdnFLO7Y9HyAo2vVpvWc=s0"
                   alt="22K gold repoussé surface with micro-granulation spheres"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                 quality={90} />
               </div>
               <div className="p-6">
                 <span className="text-[10px] tracking-[0.25em] text-champagne-gold uppercase font-medium font-sans">
@@ -1023,7 +1023,7 @@ export function CollectionsClient() {
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-8 w-full sm:w-auto">
             <a
-              className="w-full sm:w-auto px-8 py-4 bg-champagne-gold text-near-black font-semibold text-xs tracking-[0.25em] uppercase hover:bg-soft-gold transition-all shadow-xl flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-5 sm:px-8 py-4 bg-champagne-gold text-near-black font-semibold text-xs tracking-wider sm:tracking-[0.25em] uppercase hover:bg-soft-gold transition-all shadow-xl flex items-center justify-center gap-2"
               href="https://wa.me/918854000203?text=Hello%2C%20I%20am%20interested%20in%20consulting%20on%20Balaji%20Jewellers%20collections."
               rel="noopener noreferrer"
               target="_blank"
@@ -1032,7 +1032,7 @@ export function CollectionsClient() {
               <span>WHATSAPP US (+91 88540 00203)</span>
             </a>
             <a
-              className="w-full sm:w-auto px-8 py-4 border border-champagne-gold/40 bg-dark-wine/70 text-soft-gold hover:bg-dark-wine text-xs tracking-[0.25em] uppercase font-semibold transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-5 sm:px-8 py-4 border border-champagne-gold/40 bg-dark-wine/70 text-soft-gold hover:bg-dark-wine text-xs tracking-wider sm:tracking-[0.25em] uppercase font-semibold transition-all flex items-center justify-center gap-2"
               href="tel:+918854000203"
             >
               <Phone className="w-4 h-4" />

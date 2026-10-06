@@ -25,31 +25,32 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 lg:p-10 bg-near-black/90 backdrop-blur-xl animate-in fade-in duration-300"
+      className="fixed inset-0 z-[70] flex items-center justify-center p-3 sm:p-6 lg:p-10 bg-near-black/90 backdrop-blur-xl animate-in fade-in duration-300"
     >
       {/* Background click to close */}
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Container */}
-      <div className="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto bg-gradient-to-b from-[#260003] via-[#1a0103] to-[#120708] border border-champagne-gold/30 shadow-[0_24px_64px_-12px_rgba(0,0,0,0.95)] z-10 flex flex-col md:flex-row">
+      <div className="relative w-full max-w-5xl max-h-[88vh] sm:max-h-[92vh] overflow-y-auto bg-gradient-to-b from-[#260003] via-[#1a0103] to-[#120708] border border-champagne-gold/30 shadow-[0_24px_64px_-12px_rgba(0,0,0,0.95)] z-10 flex flex-col md:flex-row pb-6 md:pb-0">
         {/* Close Button */}
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 w-9 h-9 flex items-center justify-center bg-near-black/80 border border-champagne-gold/30 text-champagne-gold hover:bg-champagne-gold hover:text-near-black transition-colors"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-9 h-9 flex items-center justify-center bg-near-black/90 border border-champagne-gold/40 text-champagne-gold hover:bg-champagne-gold hover:text-near-black transition-colors shadow-lg"
           aria-label="Close piece details"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Left: Imagery Section */}
-        <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-champagne-gold/20">
+        <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-champagne-gold/20">
           <div className="relative w-full aspect-square bg-near-black overflow-hidden border border-champagne-gold/20">
             {currentImage && (
               <Image
                 src={currentImage}
                 alt={product.name}
                 fill
+                quality={90}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-center transition-all duration-500"
                 priority
@@ -76,7 +77,7 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
                     alt={`${product.name} thumbnail ${idx + 1}`}
                     fill
                     className="object-cover"
-                  />
+                   quality={90} />
                 </button>
               ))}
             </div>
@@ -84,7 +85,7 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
         </div>
 
         {/* Right: Piece Information & Direct Enquiries */}
-        <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-between">
+        <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col justify-between">
           <div className="flex flex-col gap-4">
             {/* Taxonomy & Category */}
             <div className="flex items-center gap-2">

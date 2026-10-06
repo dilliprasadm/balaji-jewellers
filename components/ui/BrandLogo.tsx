@@ -25,7 +25,7 @@ export function BrandLogo({
         sizes="40px"
         className="object-contain"
         priority
-      />
+       quality={90} />
     </div>
   );
 

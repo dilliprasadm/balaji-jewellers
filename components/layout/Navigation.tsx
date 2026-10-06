@@ -29,6 +29,17 @@ export function Navigation() {
     setIsMobileOpen(false);
   }
 
+  useEffect(() => {
+    if (isMobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileOpen]);
+
   return (
     <>
       <header
@@ -39,7 +50,7 @@ export function Navigation() {
             : "bg-gradient-to-b from-near-black/80 via-near-black/40 to-transparent py-5"
         )}
       >
-        <div className="max-w-[1520px] mx-auto px-6 lg:px-12 flex items-center justify-between">
+        <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
           {/* Brand Logo */}
           <BrandLogo href="/" />
 
@@ -111,7 +122,7 @@ export function Navigation() {
 
       {/* Mobile Navigation Drawer */}
       {isMobileOpen && (
-        <div className="fixed inset-0 z-40 bg-near-black/98 backdrop-blur-2xl xl:hidden flex flex-col justify-between pt-24 pb-20 px-8 border-b border-champagne-gold/20 animate-in fade-in duration-300">
+        <div className="fixed inset-0 z-[60] bg-near-black/98 backdrop-blur-2xl xl:hidden flex flex-col justify-between pt-24 pb-[max(env(safe-area-inset-bottom),2rem)] px-6 sm:px-8 border-b border-champagne-gold/20 animate-in fade-in duration-300">
           <div className="flex flex-col gap-6 pt-4">
             <span className="font-sans text-[10px] tracking-monumental text-champagne-gold/80 uppercase">
               Curated Navigation

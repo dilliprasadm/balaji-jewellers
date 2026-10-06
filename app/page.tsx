@@ -52,7 +52,7 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal direction="up" delay={0.2}>
-              <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] text-warm-ivory leading-[0.98] font-normal tracking-tight mb-8">
+              <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-[5.25rem] text-warm-ivory leading-[1.02] sm:leading-[0.98] font-normal tracking-tight mb-8">
                 JEWELLERY
                 <br />
                 THAT HOLDS
@@ -71,14 +71,14 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
                 <Link
                   href="/collections"
-                  className="px-8 py-4 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental font-semibold uppercase hover:bg-soft-gold transition-all duration-300 text-center shadow-[0_6px_28px_-6px_rgba(216,180,106,0.4)]"
+                  className="px-6 sm:px-8 py-3.5 sm:py-4 bg-champagne-gold text-near-black font-sans text-xs tracking-widest sm:tracking-monumental font-semibold uppercase hover:bg-soft-gold transition-all duration-300 text-center shadow-[0_6px_28px_-6px_rgba(216,180,106,0.4)]"
                 >
                   EXPLORE THE COLLECTION
                 </Link>
 
                 <Link
                   href="/visit"
-                  className="px-8 py-4 border border-champagne-gold/60 text-soft-gold font-sans text-xs tracking-monumental uppercase hover:bg-champagne-gold/10 hover:border-champagne-gold transition-all duration-300 text-center"
+                  className="px-6 sm:px-8 py-3.5 sm:py-4 border border-champagne-gold/60 text-soft-gold font-sans text-xs tracking-widest sm:tracking-monumental uppercase hover:bg-champagne-gold/10 hover:border-champagne-gold transition-all duration-300 text-center"
                 >
                   VISIT OUR SHOWROOM
                 </Link>
@@ -130,7 +130,7 @@ export default function HomePage() {
                       priority
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
                       className="w-full h-full object-cover object-center transform transition-transform duration-1000 group-hover:scale-105"
-                    />
+                     quality={90} />
 
                     {/* Specular & Vignette Gradients */}
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#120708]/80 via-transparent to-transparent"></div>
@@ -209,15 +209,15 @@ export default function HomePage() {
           ======================================================== */}
       <section id="reveal" className="w-full py-28 px-6 lg:px-14 bg-[#170b0c] border-t border-champagne-gold/15 relative overflow-hidden">
         <div className="max-w-[1460px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-4 relative select-none">
-            <span className="font-serif text-[120px] md:text-[160px] leading-none text-champagne-gold/10 font-bold block">
+          <div className="lg:col-span-4 relative select-none min-h-[220px] sm:min-h-[260px] lg:min-h-0 flex flex-col justify-center">
+            <span className="font-serif text-[100px] sm:text-[140px] md:text-[160px] leading-none text-champagne-gold/10 font-bold block">
               01
             </span>
-            <div className="absolute top-10 left-4">
-              <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase block mb-2">
+            <div className="absolute top-6 sm:top-10 left-2 sm:left-4 right-2 sm:right-auto">
+              <span className="font-sans text-[10px] sm:text-xs tracking-widest sm:tracking-monumental text-champagne-gold uppercase block mb-2 font-medium">
                 A STUDY IN LIGHT AND FORM
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-warm-ivory leading-tight">
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-warm-ivory leading-tight">
                 Not Just Ornaments.
                 <br />
                 <span className="italic text-soft-gold">Heirlooms of Pause.</span>
@@ -225,7 +225,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="lg:col-span-8 lg:pl-12 border-l border-champagne-gold/15">
+          <div className="lg:col-span-8 lg:pl-12 border-t lg:border-t-0 lg:border-l border-champagne-gold/15 pt-8 lg:pt-0">
             <ScrollReveal direction="up">
               <p className="font-sans text-warm-ivory/80 text-base md:text-xl font-light leading-relaxed max-w-3xl mb-8">
                 Every piece is conceived as a sculpture to be worn. Where gold warms against the skin and silver reflects architectural coolness, jewellery becomes an intimate signature of the individual.
@@ -273,12 +273,12 @@ export default function HomePage() {
           <div className="relative w-full overflow-hidden border border-champagne-gold/30 mb-14 shadow-2xl bg-near-black">
             <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[540px]">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI6hHpUV-NwRDZqyOpCKxMbyX1iOHCKLekLht_8Q3jDUjjP-PHCoLkIIPm-lU8c0OU3p6M3HPptpyUMVEcb7n5jv3TLkirP9vWcg5E8uzHCFEodqC_jHFoS3kvPsFHfeFKUI4nDiOG5mVZgOczQr5uzaE7TSHDfO4yOJemwXSLjjrt_UZOj7C1WYZyaz3rZN25WXD3jHsEclF0vv9EclybwgwSisktxr5Ua8DYPN6ky6rrtUKZyfij"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI6hHpUV-NwRDZqyOpCKxMbyX1iOHCKLekLht_8Q3jDUjjP-PHCoLkIIPm-lU8c0OU3p6M3HPptpyUMVEcb7n5jv3TLkirP9vWcg5E8uzHCFEodqC_jHFoS3kvPsFHfeFKUI4nDiOG5mVZgOczQr5uzaE7TSHDfO4yOJemwXSLjjrt_UZOj7C1WYZyaz3rZN25WXD3jHsEclF0vv9EclybwgwSisktxr5Ua8DYPN6ky6rrtUKZyfij=s0"
                 alt="Three Disciplines - Molten Gold, Sterling Silver, Untreated Gemstones"
                 fill
                 sizes="(max-width: 1440px) 100vw, 1440px"
                 className="object-cover"
-              />
+               quality={90} />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-near-black/85 via-transparent to-near-black/20 pointer-events-none"></div>
             <div className="absolute bottom-6 left-6 right-6 hidden md:flex items-center justify-between text-xs tracking-cinematic font-sans text-soft-gold uppercase">
@@ -417,12 +417,12 @@ export default function HomePage() {
             <div className="relative border border-champagne-gold/40 p-2 bg-gradient-to-br from-deep-burgundy/40 to-near-black shadow-2xl">
               <div className="relative overflow-hidden aspect-[16/10] bg-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPvup1w5oqr9jItA_mIfIo8Bj3CakovjUs_gMIJmhvnufTalX9d4V_C1I2RfOFXf0epiIfyCT72vUyi7F77tqgX4xTgTwYufiAm27u-bG_8RoEukEPqt6iWqHAXdeTIfmZHSQjbkf2vQZEQq0pQRZi20Ro8afHXM7IzcPR4yhSwnGpwZJlCPfoAteon9yGPPcaHH1RgH3kTRbakVJ-V_xFn61HLhM1O6JNU2FkIOnE6n0fw-Tr3pK7"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPvup1w5oqr9jItA_mIfIo8Bj3CakovjUs_gMIJmhvnufTalX9d4V_C1I2RfOFXf0epiIfyCT72vUyi7F77tqgX4xTgTwYufiAm27u-bG_8RoEukEPqt6iWqHAXdeTIfmZHSQjbkf2vQZEQq0pQRZi20Ro8afHXM7IzcPR4yhSwnGpwZJlCPfoAteon9yGPPcaHH1RgH3kTRbakVJ-V_xFn61HLhM1O6JNU2FkIOnE6n0fw-Tr3pK7=s0"
                   alt="Extreme macro Kundan gold setting holding raw uncut crystal diamonds"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-cover transition-transform duration-1000 hover:scale-110"
-                />
+                 quality={90} />
               </div>
               <div className="p-3 bg-near-black/90 flex items-center justify-between text-xs font-sans text-warm-ivory/60 tracking-widest uppercase">
                 <span>Magnification: 24x True Optical</span>
@@ -443,12 +443,12 @@ export default function HomePage() {
             <div className="relative max-w-[520px] mx-auto shadow-[0_20px_60px_-15px_rgba(38,0,3,0.35)] border border-[#d8b46a]/40 bg-[#f3ece0] p-3">
               <div className="relative aspect-[3/4] w-full overflow-hidden bg-black">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEnEzNMEyG9a2ps0dLsnE-JoPHo3Xc6Q5RRkXoOXpEz2XcbP1g1gE_EvbnFTNZxP14JIhtUXOfAbtaSMfKo3bhov7r10KybPfNffZsjvziI41BAVx4-l-E-B0gmjjcc5xnjqZNUghxcHr8amvD2WwB4cQA0XHuyK7IWEnoitZwP8PIY4EiWZ8eKqAXmSyGc98xMvkgI1g-YaFmnWYpoYI8r5V-BfNH_VFiiA3Y0bkRBHsNToXJWKtJ"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEnEzNMEyG9a2ps0dLsnE-JoPHo3Xc6Q5RRkXoOXpEz2XcbP1g1gE_EvbnFTNZxP14JIhtUXOfAbtaSMfKo3bhov7r10KybPfNffZsjvziI41BAVx4-l-E-B0gmjjcc5xnjqZNUghxcHr8amvD2WwB4cQA0XHuyK7IWEnoitZwP8PIY4EiWZ8eKqAXmSyGc98xMvkgI1g-YaFmnWYpoYI8r5V-BfNH_VFiiA3Y0bkRBHsNToXJWKtJ=s0"
                   alt="High fashion fine jewellery portrait of an elegant contemporary Indian woman"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
-                />
+                 quality={90} />
               </div>
               <div className="mt-3 flex items-center justify-between text-[10px] font-sans tracking-widest uppercase text-[#450006] font-medium">
                 <span>Haute Joaillerie Editorial</span>
@@ -458,23 +458,23 @@ export default function HomePage() {
           </div>
           {/* Right: Asymmetric Editorial Typography */}
           <div className="lg:col-span-6 flex flex-col justify-center">
-            <span className="font-sans text-xs tracking-monumental text-[#450006] uppercase mb-4 font-semibold">
+            <span className="font-sans text-[10px] sm:text-xs tracking-widest sm:tracking-monumental text-[#450006] uppercase mb-4 font-semibold">
               THE EDITORIAL FORM
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#260003] font-normal leading-[1.02] tracking-tight mb-8">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#260003] font-normal leading-[1.02] tracking-tight mb-8">
               FOR THE MOMENTS<br />THAT MATTER.
             </h2>
             <div className="w-20 h-[1.5px] bg-[#450006]/60 mb-8"></div>
-            <p className="font-sans text-[#260003]/85 text-lg font-light leading-relaxed mb-6">
+            <p className="font-sans text-[#260003]/85 text-base sm:text-lg font-light leading-relaxed mb-6">
               Contemporary poise rooted in royal Rajputana heritage. Adornments sculpted to live effortlessly with the skin.
             </p>
-            <p className="font-sans text-[#260003]/75 text-sm font-light leading-relaxed mb-10 max-w-lg">
+            <p className="font-sans text-[#260003]/75 text-xs sm:text-sm font-light leading-relaxed mb-10 max-w-lg">
               Neither heavy for the sake of excess nor timid in scale. Each piece is proportioned for the woman who commands every room she enters with gentle grace.
             </p>
             <div>
               <Link
                 href="/moments"
-                className="inline-flex items-center gap-3 px-8 py-4 bg-[#260003] text-warm-ivory font-sans text-xs tracking-monumental uppercase hover:bg-[#450006] transition-colors"
+                className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3.5 sm:py-4 bg-[#260003] text-warm-ivory font-sans text-[11px] sm:text-xs tracking-widest sm:tracking-monumental uppercase hover:bg-[#450006] transition-colors"
               >
                 <span>EXPLORE BESPOKE COMMISSIONS</span>
                 <ArrowRight className="w-4 h-4" />
@@ -525,31 +525,31 @@ export default function HomePage() {
       <section className="relative w-full py-28 lg:py-36 px-6 lg:px-14 bg-gradient-to-b from-[#180709] via-deep-burgundy/20 to-near-black border-t border-champagne-gold/15">
         <div className="max-w-[1400px] mx-auto">
           <div className="relative w-full border border-champagne-gold/30 shadow-2xl overflow-hidden mb-12 bg-near-black">
-            <div className="relative w-full h-[420px] sm:h-[500px] lg:h-[600px]">
+            <div className="relative w-full h-[460px] sm:h-[500px] lg:h-[600px]">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrP0RK9IuQQsMdPjnTvOB_qdjrn8TDl7U6V2OT9lHPuyMEz8N2av-tA-RiZVzVg91fRYw1QDwtmStxauycPeHlomrvoJlijYPHsTTWe_Er-81KgOP_6ODoz-7FaL8IDt6pBHnRFLPYYWmafhtEKHNi5XqPiNzdYuPriH_1QM1bmu5dYUVt_mNRInGa9A0eVl5Etev_bFRtxcAumfT7Oqu5sRWI0sySRJpPGAV68dGQ-UNX2mjVqqD-"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrP0RK9IuQQsMdPjnTvOB_qdjrn8TDl7U6V2OT9lHPuyMEz8N2av-tA-RiZVzVg91fRYw1QDwtmStxauycPeHlomrvoJlijYPHsTTWe_Er-81KgOP_6ODoz-7FaL8IDt6pBHnRFLPYYWmafhtEKHNi5XqPiNzdYuPriH_1QM1bmu5dYUVt_mNRInGa9A0eVl5Etev_bFRtxcAumfT7Oqu5sRWI0sySRJpPGAV68dGQ-UNX2mjVqqD-=s0"
                 alt="Indian women admiring handcrafted heirloom jewellery in an intimate salon setting"
                 fill
                 sizes="(max-width: 1400px) 100vw, 1400px"
                 className="object-cover"
-              />
+               quality={90} />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-near-black via-near-black/30 to-transparent"></div>
-            <div className="absolute bottom-8 left-6 sm:left-12 max-w-2xl">
-              <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase block mb-3 font-semibold">
+            <div className="absolute inset-0 bg-gradient-to-t from-near-black via-near-black/50 to-transparent"></div>
+            <div className="absolute bottom-6 sm:bottom-8 left-4 sm:left-12 right-4 sm:right-12 max-w-2xl">
+              <span className="font-sans text-[10px] tracking-widest sm:tracking-monumental text-champagne-gold uppercase block mb-2 sm:mb-3 font-semibold">
                 HEIRLOOM TRADITION
               </span>
-              <h2 className="font-serif text-3xl sm:text-5xl text-warm-ivory font-normal leading-tight mb-4">
+              <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl text-warm-ivory font-normal leading-tight mb-3 sm:mb-4">
                 SOME THINGS BECOME PART OF YOU.
               </h2>
-              <p className="font-sans text-warm-ivory/80 text-sm sm:text-base font-light leading-relaxed mb-6">
+              <p className="font-sans text-warm-ivory/80 text-xs sm:text-sm lg:text-base font-light leading-relaxed mb-4 sm:mb-6 line-clamp-3 sm:line-clamp-none">
                 Jewellery is never merely precious metal—it is the silent keeper of milestones, vows, and familial affection. Designed to be worn, cherished, and handed down across generations.
               </p>
               <a
                 href={getWhatsAppProductUrl("Bridal & Heirloom Curations")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors"
+                className="inline-flex items-center gap-2 px-4 sm:px-6 py-3 sm:py-3.5 bg-champagne-gold text-near-black font-sans text-[11px] sm:text-xs tracking-widest sm:tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors"
               >
                 <span>DISCOVER BRIDAL &amp; HEIRLOOM CURATIONS</span>
                 <ArrowRight className="w-4 h-4" />
@@ -568,12 +568,12 @@ export default function HomePage() {
             <div className="relative p-3 bg-gradient-to-b from-[#2e0b10] to-[#120708] border border-champagne-gold/30">
               <div className="relative aspect-square sm:aspect-[4/3] w-full overflow-hidden">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuASQjWwAeYS043A5JOSZqxpPmsvYJAL_SBEe0EOCCHi-kxm5Sn5Iz9FXHX7kjL-Lv91cE3NpviBi992UWM1TeugQqAhtboV65WBWcjVVx0GTRw2tCgatQTERgGrsTIq1wl0V6iEEAS4nWaiaPUCJGMVeQhTLiicV7r-0CKfkjmxAlQ4QylFfEzH_FllPcrpIoFeHC5UuAP5AbFC70SlEK-8LHszr2YV0OLZWaWJvuHyBMbXRTiv4P3c"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuASQjWwAeYS043A5JOSZqxpPmsvYJAL_SBEe0EOCCHi-kxm5Sn5Iz9FXHX7kjL-Lv91cE3NpviBi992UWM1TeugQqAhtboV65WBWcjVVx0GTRw2tCgatQTERgGrsTIq1wl0V6iEEAS4nWaiaPUCJGMVeQhTLiicV7r-0CKfkjmxAlQ4QylFfEzH_FllPcrpIoFeHC5UuAP5AbFC70SlEK-8LHszr2YV0OLZWaWJvuHyBMbXRTiv4P3c=s0"
                   alt="Sculpture representing the fusion of gold, silver, and gemstones"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover shadow-2xl"
-                />
+                 quality={90} />
               </div>
               <div className="mt-3 text-right">
                 <span className="font-sans text-[9px] tracking-widest text-champagne-gold/70 uppercase">
@@ -602,7 +602,7 @@ export default function HomePage() {
             <div>
               <Link
                 href="/story"
-                className="inline-flex items-center gap-3 px-8 py-4 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-monumental uppercase hover:bg-champagne-gold hover:text-near-black transition-all"
+                className="inline-flex items-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4 border border-champagne-gold text-champagne-gold font-sans text-[11px] sm:text-xs tracking-widest sm:tracking-monumental uppercase hover:bg-champagne-gold hover:text-near-black transition-all"
               >
                 <span>READ OUR STORY</span>
                 <ArrowRight className="w-4 h-4" />
@@ -616,12 +616,12 @@ export default function HomePage() {
           SECTION 10: SHOWROOM INVITATION
           ======================================================== */}
       <section className="w-full py-28 px-6 lg:px-14 bg-near-black border-t border-champagne-gold/15">
-        <div className="max-w-[1460px] mx-auto bg-gradient-to-r from-deep-burgundy/40 via-dark-wine/60 to-near-black border border-champagne-gold/30 p-8 sm:p-14 lg:p-20 relative overflow-hidden shadow-2xl">
+        <div className="max-w-[1460px] mx-auto bg-gradient-to-r from-deep-burgundy/40 via-dark-wine/60 to-near-black border border-champagne-gold/30 p-6 sm:p-14 lg:p-20 relative overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
             <div className="lg:col-span-7 flex flex-col gap-6">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-champagne-gold"></span>
-                <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
+                <span className="font-sans text-[10px] sm:text-xs tracking-widest sm:tracking-monumental text-champagne-gold uppercase">
                   PHYSICAL FLAGSHIP SHOWROOM
                 </span>
               </div>
@@ -638,10 +638,10 @@ export default function HomePage() {
                   <span>Open Daily: {SITE_CONFIG.hours}</span>
                 </div>
               </div>
-              <div className="flex flex-wrap items-center gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-4">
                 <Link
                   href="/visit"
-                  className="px-8 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors"
+                  className="px-6 sm:px-8 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-widest sm:tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors text-center"
                 >
                   GET DIRECTIONS &amp; GUIDE
                 </Link>
@@ -649,7 +649,7 @@ export default function HomePage() {
                   href={getWhatsAppProductUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center gap-2"
+                  className="px-6 sm:px-8 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest sm:tracking-monumental uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center justify-center gap-2 text-center"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>WhatsApp Inquiries</span>
@@ -659,11 +659,11 @@ export default function HomePage() {
 
             <div className="lg:col-span-5 relative aspect-[4/3] bg-near-black border border-champagne-gold/20 overflow-hidden">
               <Image
-                src="https://lh3.googleusercontent.com/aida/AEtjO1UDl2QD-9QXwBAMdYgaZUHRczCEqdlkLaJ5FVgtPb-EntqyAaoRJd1IfU1xL9JBXRiO673hkeejfbzIsh91Voh27BmtnCfeW-1_XYFgPogwRc21k74DUwFmIIgQWtefWoRtw3vpOC6w8JzP0KZtBlu6PewkVvq1fJhVeRXMaNZw8Uk7Az-QsrnjyCcd9b1L6-UnfBuJuApu-eomv6jIF90w-w3p41WFyBvQLu855EltHJko__RGslxTJA"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1UDl2QD-9QXwBAMdYgaZUHRczCEqdlkLaJ5FVgtPb-EntqyAaoRJd1IfU1xL9JBXRiO673hkeejfbzIsh91Voh27BmtnCfeW-1_XYFgPogwRc21k74DUwFmIIgQWtefWoRtw3vpOC6w8JzP0KZtBlu6PewkVvq1fJhVeRXMaNZw8Uk7Az-QsrnjyCcd9b1L6-UnfBuJuApu-eomv6jIF90w-w3p41WFyBvQLu855EltHJko__RGslxTJA=s0"
                 alt="Atmospheric Salon Visual Study"
                 fill
                 className="object-cover"
-              />
+               quality={90} />
               <div className="absolute bottom-2 left-2 bg-near-black/80 px-2 py-0.5 text-[8.5px] font-sans text-warm-ivory/60 tracking-wider">
                 Salon Ambience Study
               </div>
@@ -680,7 +680,7 @@ export default function HomePage() {
           <div className="w-12 h-12 rounded-full border border-champagne-gold/40 flex items-center justify-center text-champagne-gold shadow-[0_0_24px_rgba(216,180,106,0.3)]">
             <MessageCircle className="w-6 h-6" />
           </div>
-          <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">
+          <span className="font-sans text-[10px] tracking-widest sm:tracking-monumental text-champagne-gold uppercase">
             DIRECT CONCIERGE DIALOGUE
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl text-warm-ivory">
@@ -689,19 +689,19 @@ export default function HomePage() {
           <p className="font-sans text-warm-ivory/80 text-sm sm:text-base max-w-xl font-light leading-relaxed">
             Interested in discovering piece availability or visiting our Parvatsar salon? Reach out directly via WhatsApp or phone.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full sm:w-auto">
             <a
               href={getWhatsAppProductUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental font-semibold uppercase hover:bg-soft-gold transition-colors flex items-center gap-2.5 shadow-lg"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-champagne-gold text-near-black font-sans text-xs tracking-widest sm:tracking-monumental font-semibold uppercase hover:bg-soft-gold transition-colors flex items-center justify-center gap-2.5 shadow-lg text-center"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Message on WhatsApp (+91 88540 00203)</span>
+              <span>Message on WhatsApp</span>
             </a>
             <a
               href={SITE_CONFIG.phoneTel}
-              className="px-8 py-4 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest sm:tracking-monumental uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center justify-center gap-2 text-center"
             >
               <Phone className="w-4 h-4" />
               <span>Call: +91 88540 00203</span>
@@ -718,19 +718,19 @@ export default function HomePage() {
           <div className="relative w-full overflow-hidden border border-champagne-gold/30 shadow-2xl bg-near-black">
             <div className="relative w-full h-[360px] sm:h-[480px] lg:h-[560px]">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRjo0cRdVsxxEAwTa6hOTMQZxz9Go2ky9ysFEY_-KC40z3uVpmYKnp0slkR-tKMlbdEl9zJl5AMn4vNcJHVbqOYZznwh5zbY5Zi-5NrXG2hfWzfPljB-4HiX4VkNrUpgc09GjPYKPV79S5eS0qIW_162cJQuxWV8z708KCgGiKJ2T6EskHq5TwjZNs5T36akWdJaa-BBAtbHWVoKC--UZ3UCNB3WJRq5mIzx0GmPqLwdmHv61J-7Of"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRjo0cRdVsxxEAwTa6hOTMQZxz9Go2ky9ysFEY_-KC40z3uVpmYKnp0slkR-tKMlbdEl9zJl5AMn4vNcJHVbqOYZznwh5zbY5Zi-5NrXG2hfWzfPljB-4HiX4VkNrUpgc09GjPYKPV79S5eS0qIW_162cJQuxWV8z708KCgGiKJ2T6EskHq5TwjZNs5T36akWdJaa-BBAtbHWVoKC--UZ3UCNB3WJRq5mIzx0GmPqLwdmHv61J-7Of=s0"
                 alt="Cinematic editorial 22K gold necklace dissolving into velvety shadows"
                 fill
                 sizes="(max-width: 1440px) 100vw, 1440px"
                 className="object-cover"
-              />
+               quality={90} />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-near-black via-transparent to-near-black/50"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-              <h2 className="font-serif text-4xl sm:text-6xl text-warm-ivory font-light tracking-wide mb-3">
+            <div className="absolute inset-0 flex flex-col items-center justify-center p-4 sm:p-6 text-center">
+              <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-warm-ivory font-light tracking-wide mb-3">
                 TIMELESS BY NATURE.
               </h2>
-              <p className="font-sans text-xs sm:text-sm tracking-monumental text-champagne-gold uppercase">
+              <p className="font-sans text-[10px] sm:text-xs tracking-widest sm:tracking-monumental text-champagne-gold uppercase max-w-lg">
                 BALAJI JEWELLERS &amp; SHYAM DIAMONDS · PARVATSAR, RAJASTHAN
               </p>
             </div>

@@ -31,7 +31,7 @@ const PERSONAS: PersonaTab[] = [
     detail2Label: "ALLOY",
     detail2Val: "916 BIS Hallmarked Gold",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBZPUO03csrRNPL4zzXKNkbYpEFS59XlCuecc5szQcvqcAyPs32_0FUCYkBLlt4_GHpTE2bREKEECz6noKRVMz4XvgkZ9kZdEZ-WMLmSxAVEjpFVgvDjCw-kmGrQgFmYRNmhZzxo3YWLrmqj4CvcpWYrrPkoiYUErATD56HnPMUgToDA7u-Hnve_7WDcCj_SJfIm5dy--tDSamgDN8QilnoBztDPvIguqF8XfPkK96j-C9zhJ4evnj7",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBZPUO03csrRNPL4zzXKNkbYpEFS59XlCuecc5szQcvqcAyPs32_0FUCYkBLlt4_GHpTE2bREKEECz6noKRVMz4XvgkZ9kZdEZ-WMLmSxAVEjpFVgvDjCw-kmGrQgFmYRNmhZzxo3YWLrmqj4CvcpWYrrPkoiYUErATD56HnPMUgToDA7u-Hnve_7WDcCj_SJfIm5dy--tDSamgDN8QilnoBztDPvIguqF8XfPkK96j-C9zhJ4evnj7=s0",
     imageAlt: "Heirloom gold bracelet resting gently against natural hand-loomed raw linen in evening light",
     whatsappMessage: "Inquiring about Timeless Heirloom bracelets",
   },
@@ -47,7 +47,7 @@ const PERSONAS: PersonaTab[] = [
     detail2Label: "WEIGHT CATEGORY",
     detail2Val: "Ultra-Light Ergonomic",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDdEK8oN4OmIe861Un84MwmA9EqlNEeZm2nows0OdiUA7QZ21vi7tRG_K_POs4Q6PydH1NntodjFHPYJQRSA6y_9KiUXFHaI6jqkgTOaRHqiRragpg7csDDaQQzpbbxBUjRP_4KktczAA_v0spDic0TCjvAAB9mmhvJmxwZnpG-7meTW8k-QOEibRAYn7scXjH7Rx8k8n8gw8q5mv-srMv_pmHK85-NhmHzc2hZKHmUyFVn7OPZSYDi",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDdEK8oN4OmIe861Un84MwmA9EqlNEeZm2nows0OdiUA7QZ21vi7tRG_K_POs4Q6PydH1NntodjFHPYJQRSA6y_9KiUXFHaI6jqkgTOaRHqiRragpg7csDDaQQzpbbxBUjRP_4KktczAA_v0spDic0TCjvAAB9mmhvJmxwZnpG-7meTW8k-QOEibRAYn7scXjH7Rx8k8n8gw8q5mv-srMv_pmHK85-NhmHzc2hZKHmUyFVn7OPZSYDi=s0",
     imageAlt: "Sculpted 22K modern gold architectural ear cuff on dark plum raw silk",
     whatsappMessage: "Inquiring about Modern Architectural Ear Cuff",
   },
@@ -63,7 +63,7 @@ const PERSONAS: PersonaTab[] = [
     detail2Label: "BEZEL",
     detail2Val: "Stepped Architectural Gold",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCBycYxg-OrxWUu-gqERTydwfr_ryuVjX6flGfh4-Jdt_PjADbTj8wm_zRRqLXkvwuZIM2Oe2SIXvjkL1p6HUzv8nPbDAQnP9z81MsvgWMPWORsURjnX-cegeji6nPW2VWYGKeHHkFUmkb3KF3v1Yea_8aZccwWLDY9pmI3BGAsdsUZUJzxQ7KnR31y8ZTrDtstw9XMYW9mwb18iF3MT77fUwl0nbjWXqgSD04_yo90S-0ApRCq_6Yi",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCBycYxg-OrxWUu-gqERTydwfr_ryuVjX6flGfh4-Jdt_PjADbTj8wm_zRRqLXkvwuZIM2Oe2SIXvjkL1p6HUzv8nPbDAQnP9z81MsvgWMPWORsURjnX-cegeji6nPW2VWYGKeHHkFUmkb3KF3v1Yea_8aZccwWLDY9pmI3BGAsdsUZUJzxQ7KnR31y8ZTrDtstw9XMYW9mwb18iF3MT77fUwl0nbjWXqgSD04_yo90S-0ApRCq_6Yi=s0",
     imageAlt: "Modern gold cocktail ring with cabochon stone on sandstone plinth",
     whatsappMessage: "Inquiring about Statement Cocktail Rings",
   },
@@ -79,7 +79,7 @@ const PERSONAS: PersonaTab[] = [
     detail2Label: "CHAIN",
     detail2Val: "Laser-Welded 18K Yellow Gold",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAQCy9AZRG8Y2Ij8vgGLF5JBvIcb0ricbR8nAx59vszwGuIazLYBOHc687kjrLZTaO0_2eo8H7_ukwgqLk5122r7gIIJvR6HjGMqVM98CigDaO20qVHmKh6CZyAHkGH2GebaJP6Vx_vaTNBNbvKo3-IBz_uRmyNmVtAvM4WWux68qiRj7F6xIYQtseDTM7O_l2I1DIR030bLvz0OZqlPZ5Yd2yyjxDL9ULK3yC4l1T_ZBdhepDHu-Cq",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAQCy9AZRG8Y2Ij8vgGLF5JBvIcb0ricbR8nAx59vszwGuIazLYBOHc687kjrLZTaO0_2eo8H7_ukwgqLk5122r7gIIJvR6HjGMqVM98CigDaO20qVHmKh6CZyAHkGH2GebaJP6Vx_vaTNBNbvKo3-IBz_uRmyNmVtAvM4WWux68qiRj7F6xIYQtseDTM7O_l2I1DIR030bLvz0OZqlPZ5Yd2yyjxDL9ULK3yC4l1T_ZBdhepDHu-Cq=s0",
     imageAlt: "Understated modern diamond and gold lariat necklace on smooth pale sandstone slab",
     whatsappMessage: "Inquiring about Subtle Diamond Lariats",
   },
@@ -89,11 +89,11 @@ export default function MomentsClient() {
   const [activeTab, setActiveTab] = useState<PersonaTab>(PERSONAS[0]);
 
   return (
-    <section className="relative w-full bg-[#1c1011] text-warm-ivory py-32 px-6 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
+    <section className="relative w-full bg-[#1c1011] text-warm-ivory py-20 sm:py-32 px-4 sm:px-12 lg:px-24 border-t border-champagne-gold/15">
       <div className="max-w-[1440px] mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div>
-            <span className="font-sans text-xs text-[#e7c276] tracking-[0.35em] uppercase block mb-3 font-semibold">
+            <span className="font-sans text-xs text-[#e7c276] tracking-widest sm:tracking-[0.35em] uppercase block mb-3 font-semibold">
               Atelier Persona Consultation
             </span>
             <h2 className="font-serif text-3xl sm:text-5xl text-warm-ivory font-normal">
@@ -105,8 +105,8 @@ export default function MomentsClient() {
           </p>
         </div>
 
-        {/* Selector Tabs */}
-        <div className="flex flex-wrap gap-3 mb-12">
+        {/* Selector Tabs with Horizontal Scroll on Mobile */}
+        <div className="overflow-x-auto no-scrollbar flex flex-nowrap sm:flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-12 pb-2">
           {PERSONAS.map((persona) => {
             const isActive = activeTab.id === persona.id;
             return (
@@ -114,7 +114,7 @@ export default function MomentsClient() {
                 key={persona.id}
                 type="button"
                 onClick={() => setActiveTab(persona)}
-                className={`px-7 py-3 font-sans text-xs tracking-[0.22em] uppercase transition-all duration-300 cursor-pointer border ${
+                className={`px-4 sm:px-7 py-2.5 sm:py-3 font-sans text-xs tracking-widest sm:tracking-[0.22em] uppercase transition-all duration-300 cursor-pointer border shrink-0 ${
                   isActive
                     ? "bg-[#e7c276] text-[#170b0c] font-semibold border-[#e7c276] shadow-lg"
                     : "bg-[#2a1c1d] text-warm-ivory/80 hover:bg-[#352627] font-medium border-transparent"
@@ -127,7 +127,7 @@ export default function MomentsClient() {
         </div>
 
         {/* Interactive Display Card Container */}
-        <div className="relative w-full bg-[#251819] p-6 sm:p-10 shadow-2xl border border-champagne-gold/20">
+        <div className="relative w-full bg-[#251819] p-4 sm:p-10 shadow-2xl border border-champagne-gold/20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Visual Frame */}
             <div className="lg:col-span-7 aspect-[4/3] relative overflow-hidden bg-[#170b0c] border border-champagne-gold/20">
@@ -137,7 +137,7 @@ export default function MomentsClient() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="object-cover object-center transition-all duration-700"
-              />
+               quality={90} />
             </div>
 
             {/* Persona Details */}
@@ -175,7 +175,7 @@ export default function MomentsClient() {
                 href={`https://wa.me/918854000203?text=${encodeURIComponent(activeTab.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="self-start inline-flex items-center gap-2 px-6 py-3 bg-[#e7c276] text-[#170b0c] font-sans text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#ffdfa0] transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-3 bg-[#e7c276] text-[#170b0c] font-sans text-xs uppercase tracking-widest sm:tracking-[0.2em] font-semibold hover:bg-[#ffdfa0] transition-colors text-center"
               >
                 Request Private Curation
               </a>

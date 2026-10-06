@@ -49,12 +49,12 @@ export default function VisitPage() {
         {/* Background atmospheric image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://lh3.googleusercontent.com/aida/AEtjO1UDl2QD-9QXwBAMdYgaZUHRczCEqdlkLaJ5FVgtPb-EntqyAaoRJd1IfU1xL9JBXRiO673hkeejfbzIsh91Voh27BmtnCfeW-1_XYFgPogwRc21k74DUwFmIIgQWtefWoRtw3vpOC6w8JzP0KZtBlu6PewkVvq1fJhVeRXMaNZw8Uk7Az-QsrnjyCcd9b1L6-UnfBuJuApu-eomv6jIF90w-w3p41WFyBvQLu855EltHJko__RGslxTJA"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1UDl2QD-9QXwBAMdYgaZUHRczCEqdlkLaJ5FVgtPb-EntqyAaoRJd1IfU1xL9JBXRiO673hkeejfbzIsh91Voh27BmtnCfeW-1_XYFgPogwRc21k74DUwFmIIgQWtefWoRtw3vpOC6w8JzP0KZtBlu6PewkVvq1fJhVeRXMaNZw8Uk7Az-QsrnjyCcd9b1L6-UnfBuJuApu-eomv6jIF90w-w3p41WFyBvQLu855EltHJko__RGslxTJA=s0"
             alt="Atmospheric Salon Architecture Study"
             fill
             priority
             className="object-cover object-center filter brightness-[0.35] contrast-125 scale-105"
-          />
+           quality={90} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#170b0c] via-[#170b0c]/70 to-[#170b0c]/40"></div>
         </div>
 
@@ -62,7 +62,7 @@ export default function VisitPage() {
         <div className="relative z-10 max-w-7xl mx-auto w-full flex items-center justify-between">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-near-black/80 backdrop-blur-md border border-champagne-gold/30">
             <span className="w-1.5 h-1.5 rounded-full bg-champagne-gold animate-pulse"></span>
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">
+            <span className="font-sans text-[9px] sm:text-[10px] tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
               PHYSICAL SHOWROOM · PARVATSAR
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function VisitPage() {
         {/* Center Narrative */}
         <div className="relative z-10 max-w-7xl mx-auto w-full py-12">
           <div className="max-w-3xl flex flex-col gap-6">
-            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase">
+            <span className="font-sans text-[11px] sm:text-xs tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
               BALAJI JEWELLERS &amp; SHYAM DIAMONDS
             </span>
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-warm-ivory tracking-tight leading-[1.05]">
@@ -117,7 +117,7 @@ export default function VisitPage() {
       <section className="relative w-full py-28 px-6 lg:px-14 bg-gradient-to-b from-[#170b0c] via-dark-wine to-near-black border-t border-champagne-gold/15">
         <div className="max-w-[1460px] mx-auto">
           <div className="flex flex-col items-center text-center mb-16">
-            <span className="font-sans text-xs tracking-monumental text-champagne-gold uppercase mb-2">
+            <span className="font-sans text-[11px] sm:text-xs tracking-wider sm:tracking-monumental text-champagne-gold uppercase mb-2">
               FLAGSHIP GEOLOCATION
             </span>
             <h2 className="font-serif text-5xl sm:text-7xl text-warm-ivory uppercase tracking-wide">
@@ -180,12 +180,12 @@ export default function VisitPage() {
                 </div>
 
                 {/* Primary Conversion Buttons */}
-                <div className="flex flex-wrap items-center gap-3 pt-2">
+                <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 pt-2">
                   <a
                     href={SITE_CONFIG.social.googleMaps}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-widest uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center gap-2 shadow-md"
+                    className="w-full sm:w-auto px-6 py-3.5 bg-champagne-gold text-near-black font-sans text-xs tracking-widest uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center justify-center gap-2 shadow-md"
                   >
                     <Navigation className="w-4 h-4" />
                     <span>Get Directions (Maps)</span>
@@ -195,7 +195,7 @@ export default function VisitPage() {
                     href={SITE_CONFIG.social.googleBusiness}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center gap-2"
+                    className="w-full sm:w-auto px-6 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center justify-center gap-2"
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span>Google Business Profile</span>
@@ -205,7 +205,7 @@ export default function VisitPage() {
                     href={getWhatsAppShowroomUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center gap-2"
+                    className="w-full sm:w-auto px-6 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center justify-center gap-2"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>WhatsApp Concierge</span>
@@ -213,7 +213,7 @@ export default function VisitPage() {
 
                   <a
                     href={SITE_CONFIG.phoneTel}
-                    className="px-6 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center gap-2"
+                    className="w-full sm:w-auto px-6 py-3.5 border border-champagne-gold text-champagne-gold font-sans text-xs tracking-widest uppercase font-semibold hover:bg-champagne-gold/10 transition-colors flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
                     <span>Call Showroom</span>
@@ -256,7 +256,7 @@ export default function VisitPage() {
       <section className="relative w-full py-28 px-6 lg:px-14 bg-[#120708] text-warm-ivory border-t border-champagne-gold/15 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center mb-20">
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase mb-2">
+            <span className="font-sans text-[10px] tracking-wider sm:tracking-monumental text-champagne-gold uppercase mb-2">
               SPATIAL NARRATIVE
             </span>
             <h2 className="font-serif text-4xl sm:text-5xl text-warm-ivory uppercase tracking-wide">
@@ -370,10 +370,10 @@ export default function VisitPage() {
                 <div className="relative w-full h-[460px]">
                   <Image
                     alt="Atmospheric luxury jewellery showroom lounge with dark walnut, brass vitrines, amber cove lighting, and burgundy velvet armchairs"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj7MCesmYQP1ztj8KvnPfIS1nfqAHz0WqrFJRvinabIge6NS_UBD_4vnqn7KrmfMyoCG31PGGimiodrnQtV3kjR9AyD5kWnu8kqQhnJVBZQQfXKSyQ-vot_jEBW66xvWCPEBMxIMxA5z3S02CjXr2X4tP2ZloeWOJn4_Wvj5-lVYutaDIP9R3TBDI2-ze459a3TaXLcwyI9Q9daUOyhMSpvj_57XlmH_iAqrutrCFZ8VR6CobWibgp"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj7MCesmYQP1ztj8KvnPfIS1nfqAHz0WqrFJRvinabIge6NS_UBD_4vnqn7KrmfMyoCG31PGGimiodrnQtV3kjR9AyD5kWnu8kqQhnJVBZQQfXKSyQ-vot_jEBW66xvWCPEBMxIMxA5z3S02CjXr2X4tP2ZloeWOJn4_Wvj5-lVYutaDIP9R3TBDI2-ze459a3TaXLcwyI9Q9daUOyhMSpvj_57XlmH_iAqrutrCFZ8VR6CobWibgp=s0"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                   quality={90} />
                   <div className="absolute inset-0 bg-gradient-to-t from-near-black/85 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-warm-ivory">
                     <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase bg-near-black/80 px-3 py-1 border border-champagne-gold/20">
@@ -405,10 +405,10 @@ export default function VisitPage() {
                 <div className="relative w-full h-44">
                   <Image
                     alt="Private vitrine with champagne velvet bust and hand-carved stone alcove in warm evening light"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCECQ4EyZiUdswKVBLyaeHHFxdklzpiDKKimvMIPk0X4gpZsxIPjHM3sBFwD9VDnNQs_ZIYOGJ8s_AqNd2toDJr8ZLsLcDT-2YB8E3UpdFhrN6x_jyJpyIQZwzf2oX5sbIokwP1aYqsuz6QZR4wVyCZnVRAzZavCIU48Td8vXKwGSgiWZ7vrO_d4rDraF5z1UHNtPLbidloPs8VgM0WoHCYchv7-H7pUzM_Rz6M9-Q9XoiHpUMnM57Z"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCECQ4EyZiUdswKVBLyaeHHFxdklzpiDKKimvMIPk0X4gpZsxIPjHM3sBFwD9VDnNQs_ZIYOGJ8s_AqNd2toDJr8ZLsLcDT-2YB8E3UpdFhrN6x_jyJpyIQZwzf2oX5sbIokwP1aYqsuz6QZR4wVyCZnVRAzZavCIU48Td8vXKwGSgiWZ7vrO_d4rDraF5z1UHNtPLbidloPs8VgM0WoHCYchv7-H7pUzM_Rz6M9-Q9XoiHpUMnM57Z=s0"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                   quality={90} />
                 </div>
                 <div className="p-4 bg-dark-wine/90">
                   <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase block mb-1">
@@ -549,10 +549,10 @@ export default function VisitPage() {
               <div className="relative w-full h-[440px]">
                 <Image
                   alt="Hyper-minimalist 3D architectural sculpture of a faceted champagne-gold gemological location marker pin suspended above a dark sculpted raw burgundy marble topo pedestal"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkYAJ95Q41DqibXgLCr9DnwR48_E03xRYmHssTQ38KxbebWC3znPpd7uciy4LvfEQ5ruADYDTxcN8exkZZ8lfi1sPZLmqa3cTTp5rQlcLNSVaXRA_QAti6Mu3ncRpRo800VQT726GxbPElvlKencwbpC8Rwqc4SDQHPopK_6DG-ZbFXyLusnmLwDdMcD_xYXF8fd79yf_qMYHKAmd-hIkFBNWcuQhWPSpClJ9gHCI6QKiRpfcpeQpO"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkYAJ95Q41DqibXgLCr9DnwR48_E03xRYmHssTQ38KxbebWC3znPpd7uciy4LvfEQ5ruADYDTxcN8exkZZ8lfi1sPZLmqa3cTTp5rQlcLNSVaXRA_QAti6Mu3ncRpRo800VQT726GxbPElvlKencwbpC8Rwqc4SDQHPopK_6DG-ZbFXyLusnmLwDdMcD_xYXF8fd79yf_qMYHKAmd-hIkFBNWcuQhWPSpClJ9gHCI6QKiRpfcpeQpO=s0"
                   fill
                   className="object-cover"
-                />
+                 quality={90} />
                 <div className="absolute inset-0 bg-gradient-to-t from-near-black via-transparent to-transparent pointer-events-none"></div>
                 <div className="absolute bottom-6 left-0 right-0 text-center">
                   <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase block">
@@ -698,7 +698,7 @@ export default function VisitPage() {
               src="/logo.png"
               fill
               className="object-contain p-2"
-            />
+             quality={90} />
           </div>
 
           <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase mb-2">

@@ -21,12 +21,16 @@ export function ProductCard({ product, onSelectProduct }: ProductCardProps) {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-champagne-gold/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
       {/* Image Container with 4:3 / 1:1 Aspect Ratio */}
-      <div className="relative w-full aspect-[4/3] bg-near-black overflow-hidden">
+      <div
+        className="relative w-full aspect-[4/3] bg-near-black overflow-hidden cursor-pointer"
+        onClick={() => onSelectProduct?.(product)}
+      >
         {primaryImage && (
           <Image
             src={primaryImage}
             alt={product.name}
             fill
+            quality={90}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover object-center filter brightness-95 group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out"
           />

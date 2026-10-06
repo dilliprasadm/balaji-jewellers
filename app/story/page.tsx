@@ -37,12 +37,12 @@ export default function StoryPage() {
         {/* Immersive Background Layer with Vignette */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzNib3O3O3kmiS5Y7XjvDJEPW1q1t_1Yt1eCNZ3bDqYl-fwDaOMIxcGS0iAM98OoGNEffe4gN3iP-qLblQazUJS55vNMPkblOYTKwnQeXjn1T0NNXMIpuvzUVVF4e3Kd6l2d7fVlA4OskiUUQMilQ_vzBpRlT2hzCZ9wt01trRvHFyTnB4m_O5TtU5nWCRLIW5rnYWUg-zPdycKFJGiLacIL601wi2qEloSI7jc03pZnvK6-9eM8jY"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzNib3O3O3kmiS5Y7XjvDJEPW1q1t_1Yt1eCNZ3bDqYl-fwDaOMIxcGS0iAM98OoGNEffe4gN3iP-qLblQazUJS55vNMPkblOYTKwnQeXjn1T0NNXMIpuvzUVVF4e3Kd6l2d7fVlA4OskiUUQMilQ_vzBpRlT2hzCZ9wt01trRvHFyTnB4m_O5TtU5nWCRLIW5rnYWUg-zPdycKFJGiLacIL601wi2qEloSI7jc03pZnvK6-9eM8jY=s0"
             alt="Artisan Goldsmith Hands at the Workbench"
             fill
             priority
             className="object-cover object-center filter brightness-[0.4] contrast-125 scale-105"
-          />
+           quality={90} />
           <div className="absolute inset-0 bg-gradient-to-t from-[#170b0c] via-[#170b0c]/60 to-[#170b0c]/40"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_20%,_rgba(23,11,12,0.85)_100%)]"></div>
         </div>
@@ -56,9 +56,9 @@ export default function StoryPage() {
 
         {/* Top Eyebrow */}
         <div className="relative z-20 w-full flex justify-between items-start">
-          <div className="inline-flex items-center gap-3 py-1.5 px-3 bg-dark-wine/70 border border-champagne-gold/25 backdrop-blur-md">
-            <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
-            <span className="font-sans text-[10px] tracking-monumental text-champagne-gold uppercase">
+          <div className="inline-flex items-center gap-2 sm:gap-3 py-1.5 px-3 bg-dark-wine/70 border border-champagne-gold/25 backdrop-blur-md">
+            <Sparkles className="w-3.5 h-3.5 text-champagne-gold shrink-0" />
+            <span className="font-sans text-[9px] sm:text-[10px] tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
               BALAJI JEWELLERS &amp; SHYAM DIAMONDS
             </span>
           </div>
@@ -131,11 +131,11 @@ export default function StoryPage() {
             <div className="group relative flex flex-col">
               <div className="relative overflow-hidden bg-near-black aspect-square mb-4 border border-champagne-gold/25 shadow-xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-yYzljPch7VtjhyAEItmpJV5uCsz2XTxuFt0AmjMQOWu8saiJrjpT_VucQ2zXX5HaSTrIhhyZT4UsgJ2i_sfzN8dO_RDI2EvtGOF1vyfR5mmGyyfyBp4lgP1yLraFTxXNyd8vsVpoQqXCv8RAoS9XuTIdE4k932W3rrXhCaeUZ6lEnc2QW5XI9kJNJtbc5-PC75a6tPcpFYgWO7m4FJSUzkrLRzr8u675arzPGiwDTDNWU5ns_GU"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-yYzljPch7VtjhyAEItmpJV5uCsz2XTxuFt0AmjMQOWu8saiJrjpT_VucQ2zXX5HaSTrIhhyZT4UsgJ2i_sfzN8dO_RDI2EvtGOF1vyfR5mmGyyfyBp4lgP1yLraFTxXNyd8vsVpoQqXCv8RAoS9XuTIdE4k932W3rrXhCaeUZ6lEnc2QW5XI9kJNJtbc5-PC75a6tPcpFYgWO7m4FJSUzkrLRzr8u675arzPGiwDTDNWU5ns_GU=s0"
                   alt="Enamel and Repoussé Surface Detail"
                   fill
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+                 quality={90} />
                 <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-near-black/85 backdrop-blur-md px-2.5 py-1 border border-champagne-gold/20">
                   <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase">01 / DETAIL</span>
@@ -159,11 +159,11 @@ export default function StoryPage() {
             <div className="group relative flex flex-col md:mt-12">
               <div className="relative overflow-hidden bg-near-black aspect-square mb-4 border border-champagne-gold/25 shadow-xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZGSBkLb8Gej_cPRqipPPBGk2aLDZq2MzRytEKANkCiPA5hePVyrn0ciBGH63Xnh2Dz7n22qDLJKV4E_FXQDw3dGDrw8IuTL0kXyfzNERc54xCbKrj4-wFDmrOf1FtL-FeGFt5F7mZACkTvXtzoJIIbXt9CTZQE624TKT_MWny-q6DxPbUyAtbgXsmWkGcATyMUGMn3PFUh6Phc11dB9bafXwu9JjjCeuMxFhKkJNDMMfLlX63937_"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZGSBkLb8Gej_cPRqipPPBGk2aLDZq2MzRytEKANkCiPA5hePVyrn0ciBGH63Xnh2Dz7n22qDLJKV4E_FXQDw3dGDrw8IuTL0kXyfzNERc54xCbKrj4-wFDmrOf1FtL-FeGFt5F7mZACkTvXtzoJIIbXt9CTZQE624TKT_MWny-q6DxPbUyAtbgXsmWkGcATyMUGMn3PFUh6Phc11dB9bafXwu9JjjCeuMxFhKkJNDMMfLlX63937_=s0"
                   alt="Atelier Instruments on Ebony Workbench"
                   fill
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+                 quality={90} />
                 <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-near-black/85 backdrop-blur-md px-2.5 py-1 border border-champagne-gold/20">
                   <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase">02 / FORM</span>
@@ -187,11 +187,11 @@ export default function StoryPage() {
             <div className="group relative flex flex-col md:-mt-6">
               <div className="relative overflow-hidden bg-near-black aspect-square mb-4 border border-champagne-gold/25 shadow-xl">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyItnmhCyybpxtTr-UQEGnFUxygGjMCGcjWz8JmXO19sJN9VIiL6u11LDCT4g7l8eAQ-YA57ic6RBQNkDj26rA3B-cbdZ7PUBh8DQS5SGWhkSKXC9HWjLYG7PESqJ2XkIELSHgA9CP4XS3DUg0QNuHJFI461uDEP20PSkJCgs2tk17WUFiIGmB5eIXU_0tO8eSwQoKdUwZrsj2rk4HjUhDGCAbpPXRjrLaHpLJSvboYIlplVqk4TUw"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyItnmhCyybpxtTr-UQEGnFUxygGjMCGcjWz8JmXO19sJN9VIiL6u11LDCT4g7l8eAQ-YA57ic6RBQNkDj26rA3B-cbdZ7PUBh8DQS5SGWhkSKXC9HWjLYG7PESqJ2XkIELSHgA9CP4XS3DUg0QNuHJFI461uDEP20PSkJCgs2tk17WUFiIGmB5eIXU_0tO8eSwQoKdUwZrsj2rk4HjUhDGCAbpPXRjrLaHpLJSvboYIlplVqk4TUw=s0"
                   alt="Sculptural Torque Choker on Slate"
                   fill
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+                 quality={90} />
                 <div className="absolute inset-0 bg-gradient-to-t from-near-black/80 via-transparent to-transparent"></div>
                 <div className="absolute top-4 left-4 bg-near-black/85 backdrop-blur-md px-2.5 py-1 border border-champagne-gold/20">
                   <span className="font-sans text-[10px] tracking-widest text-champagne-gold uppercase">03 / EXPRESSION</span>

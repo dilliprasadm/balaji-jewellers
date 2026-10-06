@@ -96,12 +96,12 @@ export default function StoryClient() {
               >
                 <div className="relative w-4/5 h-4/5">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC157oDb6dyIeZaMeLempN5Fl2vruMV26cWxFhcsZWzNPbxyytcVAa8gej3Zhr0jiL2J9805DnXqkvye_6_JiK7DOYYKMtbc9dqd0VdRPN_86-4wKm3G52mmpFm-zW3Zm4DSj7TF6sha_kHs3MKC6f6J3LoudVM_RPhf8FfPy60XRyS0vbm2t4j6mOF1UEv2GAojyGojiInisgSUgDKMZ_930nEDyDo6PVOQBP_pVhSFA4V4jrlPXhC"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC157oDb6dyIeZaMeLempN5Fl2vruMV26cWxFhcsZWzNPbxyytcVAa8gej3Zhr0jiL2J9805DnXqkvye_6_JiK7DOYYKMtbc9dqd0VdRPN_86-4wKm3G52mmpFm-zW3Zm4DSj7TF6sha_kHs3MKC6f6J3LoudVM_RPhf8FfPy60XRyS0vbm2t4j6mOF1UEv2GAojyGojiInisgSUgDKMZ_930nEDyDo6PVOQBP_pVhSFA4V4jrlPXhC=s0"
                     alt="Rajput Ceremonial Armlet Bazuband in 3D Vitrine"
                     fill
                     sizes="(max-width: 768px) 80vw, 550px"
                     className="object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.85)] pointer-events-none transition-transform duration-500"
-                  />
+                   quality={90} />
                 </div>
 
                 {/* Hotspot 1: Royal Meenakari */}
@@ -269,12 +269,12 @@ export default function StoryClient() {
           <div className="w-[85vw] md:w-[620px] shrink-0 snap-start bg-[#1f090b] border border-champagne-gold/25 p-6 md:p-8 flex flex-col justify-between shadow-2xl">
             <div className="relative w-full aspect-[16/10] overflow-hidden mb-6 bg-near-black border border-champagne-gold/20">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyItnmhCyybpxtTr-UQEGnFUxygGjMCGcjWz8JmXO19sJN9VIiL6u11LDCT4g7l8eAQ-YA57ic6RBQNkDj26rA3B-cbdZ7PUBh8DQS5SGWhkSKXC9HWjLYG7PESqJ2XkIELSHgA9CP4XS3DUg0QNuHJFI461uDEP20PSkJCgs2tk17WUFiIGmB5eIXU_0tO8eSwQoKdUwZrsj2rk4HjUhDGCAbpPXRjrLaHpLJSvboYIlplVqk4TUw"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyItnmhCyybpxtTr-UQEGnFUxygGjMCGcjWz8JmXO19sJN9VIiL6u11LDCT4g7l8eAQ-YA57ic6RBQNkDj26rA3B-cbdZ7PUBh8DQS5SGWhkSKXC9HWjLYG7PESqJ2XkIELSHgA9CP4XS3DUg0QNuHJFI461uDEP20PSkJCgs2tk17WUFiIGmB5eIXU_0tO8eSwQoKdUwZrsj2rk4HjUhDGCAbpPXRjrLaHpLJSvboYIlplVqk4TUw=s0"
                 alt="Gold Jewellery Real Chapter"
                 fill
                 sizes="(max-width: 768px) 85vw, 620px"
                 className="object-cover transition-transform duration-700 hover:scale-105"
-              />
+               quality={90} />
               <div className="absolute top-4 left-4 bg-near-black/85 backdrop-blur-md px-3 py-1 border border-champagne-gold/30">
                 <span className="font-sans text-[10px] text-champagne-gold tracking-widest uppercase">CHAPTER · I</span>
               </div>
@@ -306,12 +306,12 @@ export default function StoryClient() {
           <div className="w-[85vw] md:w-[620px] shrink-0 snap-start bg-[#1f090b] border border-champagne-gold/25 p-6 md:p-8 flex flex-col justify-between shadow-2xl">
             <div className="relative w-full aspect-[16/10] overflow-hidden mb-6 bg-near-black border border-champagne-gold/20">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOUbqCKO0X42PdTItPUjBmnNn5fw-85O4aa1AUMGWRq6fZE5gF41p6NvW5BVBQBhjPWyoENK63BA28r-mhR_im5anTKRanKZC06RN0zCyqH5JvP6ou3MANU6awhhvT95PLooWPfe_MuvUkb6RQBf2hrFPpSmxFNT6-VeEO29a2iDYw6VQfPJ6_sjAd4WDaUIs0TMlMtDNVYdTGu-kB0SmoqJPEC8-wd5Fpcy5-Fz4qYE6Jgnwszp7g"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOUbqCKO0X42PdTItPUjBmnNn5fw-85O4aa1AUMGWRq6fZE5gF41p6NvW5BVBQBhjPWyoENK63BA28r-mhR_im5anTKRanKZC06RN0zCyqH5JvP6ou3MANU6awhhvT95PLooWPfe_MuvUkb6RQBf2hrFPpSmxFNT6-VeEO29a2iDYw6VQfPJ6_sjAd4WDaUIs0TMlMtDNVYdTGu-kB0SmoqJPEC8-wd5Fpcy5-Fz4qYE6Jgnwszp7g=s0"
                 alt="Silver Jewellery Chapter"
                 fill
                 sizes="(max-width: 768px) 85vw, 620px"
                 className="object-cover transition-transform duration-700 hover:scale-105"
-              />
+               quality={90} />
               <div className="absolute top-4 left-4 bg-near-black/85 backdrop-blur-md px-3 py-1 border border-champagne-gold/30">
                 <span className="font-sans text-[10px] text-champagne-gold tracking-widest uppercase">CHAPTER · II</span>
               </div>
@@ -343,12 +343,12 @@ export default function StoryClient() {
           <div className="w-[85vw] md:w-[620px] shrink-0 snap-start bg-[#1f090b] border border-champagne-gold/25 p-6 md:p-8 flex flex-col justify-between shadow-2xl">
             <div className="relative w-full aspect-[16/10] overflow-hidden mb-6 bg-near-black border border-champagne-gold/20">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcKkJ07guzxwqdH6CnZm1sVXeHCOPaPT4yLhWyMaGJ29YcoXbWuzNszSAJxCe8t2V0An7fjBVT-7lIAtcTFzEOkgcMyOkkrJuuJgwWzYF3V2zQUC05jiEpzn61Qhien5VsXOPhsfhvfORwFz0MNLsZBY_ZyPoEXeektUT_uX1fbyqQoVJhQBY10TuaS9OdmBJ7IDZDh9aljDdJvbqWKmSawsDWHImcVO5u7n0EX1rgQgQ1xNRFc3mQ"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcKkJ07guzxwqdH6CnZm1sVXeHCOPaPT4yLhWyMaGJ29YcoXbWuzNszSAJxCe8t2V0An7fjBVT-7lIAtcTFzEOkgcMyOkkrJuuJgwWzYF3V2zQUC05jiEpzn61Qhien5VsXOPhsfhvfORwFz0MNLsZBY_ZyPoEXeektUT_uX1fbyqQoVJhQBY10TuaS9OdmBJ7IDZDh9aljDdJvbqWKmSawsDWHImcVO5u7n0EX1rgQgQ1xNRFc3mQ=s0"
                 alt="Gemstones Chapter"
                 fill
                 sizes="(max-width: 768px) 85vw, 620px"
                 className="object-cover transition-transform duration-700 hover:scale-105"
-              />
+               quality={90} />
               <div className="absolute top-4 left-4 bg-near-black/85 backdrop-blur-md px-3 py-1 border border-champagne-gold/30">
                 <span className="font-sans text-[10px] text-champagne-gold tracking-widest uppercase">CHAPTER · III</span>
               </div>
@@ -430,12 +430,12 @@ export default function StoryClient() {
             <div className="lg:col-span-6 relative mt-6 lg:mt-0">
               <div className="relative aspect-[4/3] overflow-hidden shadow-2xl bg-[#e8e2d0] border border-[#d8b46a]/30">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAblFBJfoHeeFlCjjI5i5jlZOqADJlZajR5x-7tUp7B03Hx0awx1LaE3TOgIKzjs3siKCI1ApqioPC4AciJ50jeGQuWnFsRldtmOnyIopE6uQal-NnwxsZ0gJLkafkdFDVlHxerorRQKXjKJhIZ3kXO4xpw1Kvbp3o-fImGb3BQaQ8vWvtgVSw3x4-Deybd24vdV8DztEH6Ski-AHgrQNJ8PP1dKgNe8vttvGJGnaX2aM5ifuqROZp2"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAblFBJfoHeeFlCjjI5i5jlZOqADJlZajR5x-7tUp7B03Hx0awx1LaE3TOgIKzjs3siKCI1ApqioPC4AciJ50jeGQuWnFsRldtmOnyIopE6uQal-NnwxsZ0gJLkafkdFDVlHxerorRQKXjKJhIZ3kXO4xpw1Kvbp3o-fImGb3BQaQ8vWvtgVSw3x4-Deybd24vdV8DztEH6Ski-AHgrQNJ8PP1dKgNe8vttvGJGnaX2aM5ifuqROZp2=s0"
                   alt="Fine Jewellery Resting on Desert Sandstone Slab"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover filter contrast-[1.05]"
-                />
+                 quality={90} />
                 <div className="absolute bottom-4 right-4 bg-[#FAF7EF]/90 backdrop-blur-md px-4 py-2 shadow-sm border border-[#120708]/10">
                   <span className="font-sans text-[11px] text-[#120708] tracking-widest uppercase font-medium">
                     DESERT SANDSTONE STILL LIFE
@@ -458,12 +458,12 @@ export default function StoryClient() {
               {/* Interior Architectural Photography */}
               <div className="lg:col-span-7 relative min-h-[380px] lg:min-h-[560px]">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsonJd62XsrsPys7f_ruuXz77W_nlfg5MOln2Dq_UflWLgblveiOXHUAvuJhA39UmuNuTEHgvBXQeteTj_JNSMY5vYLu12LEBd7Evmwpu6Kyk7SP8nP2mGIsoZPqcDsW8k4stHX7-qlT4v5CPteVFvTfTGbipbZqU7vSlGmRJFoBhsDrP6jqNkiMjaOUqlBidNojp7LI_3MNu87I0_DAiu_ovjoRe64Se7PGsu92MzJV-_Pe11LsN_"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsonJd62XsrsPys7f_ruuXz77W_nlfg5MOln2Dq_UflWLgblveiOXHUAvuJhA39UmuNuTEHgvBXQeteTj_JNSMY5vYLu12LEBd7Evmwpu6Kyk7SP8nP2mGIsoZPqcDsW8k4stHX7-qlT4v5CPteVFvTfTGbipbZqU7vSlGmRJFoBhsDrP6jqNkiMjaOUqlBidNojp7LI_3MNu87I0_DAiu_ovjoRe64Se7PGsu92MzJV-_Pe11LsN_=s0"
                   alt="Atmospheric Luxury Jewellery Salon Lounge in Parvatsar"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-cover"
-                />
+                 quality={90} />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1c090c] via-transparent to-transparent lg:hidden"></div>
                 {/* Radar Coordinate Badge */}
                 <div className="absolute top-6 left-6 bg-[#120708]/85 border border-champagne-gold/30 backdrop-blur-md px-3.5 py-2 flex items-center gap-3">
