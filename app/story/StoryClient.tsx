@@ -79,7 +79,7 @@ export default function StoryClient() {
             </div>
 
             {/* Interactive 3D Showcase Frame */}
-            <div className="relative w-full max-w-2xl aspect-square flex items-center justify-center select-none overflow-hidden my-4">
+            <div className="relative w-full max-w-2xl aspect-square flex items-center justify-center select-none my-4">
               {/* Concentric Architectural Degree Rings (SVG) */}
               <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20 animate-[spin_120s_linear_infinite]" fill="none" viewBox="0 0 400 400">
                 <circle className="text-champagne-gold" cx="200" cy="200" r="190" stroke="currentColor" strokeDasharray="4 8" strokeWidth="0.75" />
@@ -96,7 +96,7 @@ export default function StoryClient() {
               >
                 <div className="relative w-4/5 h-4/5">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC157oDb6dyIeZaMeLempN5Fl2vruMV26cWxFhcsZWzNPbxyytcVAa8gej3Zhr0jiL2J9805DnXqkvye_6_JiK7DOYYKMtbc9dqd0VdRPN_86-4wKm3G52mmpFm-zW3Zm4DSj7TF6sha_kHs3MKC6f6J3LoudVM_RPhf8FfPy60XRyS0vbm2t4j6mOF1UEv2GAojyGojiInisgSUgDKMZ_930nEDyDo6PVOQBP_pVhSFA4V4jrlPXhC=s0"
+                    src="https://lh3.googleusercontent.com/aida/AEtjO1VMISsoHRTRI1zSAPk78W1FzMv7OeZKMpejtlw2372yD-iWa5l2kQ810lfbF9ORzirpxs1pa2fQx6BvzHNHFFoVbaRqGx1-KSTD9wGjmIbVBqG1eL-ofJmQF-ETS0QFzIEBAph63xrj_n0BIoRi09efjeUJEbWsE9fGYJrGC74LS2PMcbrUwfL3tAnX3DejRZh8Y1dC8V-WmZ5j3CnNsUFts39M2TBK1oFctLG4re3ly7dX2TaSWdJebdA=s0"
                     alt="Rajput Ceremonial Armlet Bazuband in 3D Vitrine"
                     fill
                     sizes="(max-width: 768px) 80vw, 550px"
@@ -116,8 +116,8 @@ export default function StoryClient() {
                   <span className="w-2.5 h-2.5 rounded-full bg-champagne-gold animate-ping absolute"></span>
                   <span className="w-2 h-2 rounded-full bg-champagne-gold relative z-10"></span>
                   <div
-                    className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-56 p-3 bg-near-black border border-champagne-gold/40 text-left shadow-2xl z-30 transition-all duration-300 pointer-events-none ${
-                      activeHotspot === 1 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
+                    className={`absolute top-full left-1/2 -translate-x-1/2 mt-2.5 w-52 sm:w-56 p-3 bg-near-black border border-champagne-gold/40 text-left shadow-2xl z-30 transition-all duration-300 pointer-events-none ${
+                      activeHotspot === 1 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
                     }`}
                   >
                     <span className="font-sans text-[10px] text-champagne-gold uppercase tracking-widest block font-medium">
@@ -141,8 +141,8 @@ export default function StoryClient() {
                   <span className="w-2.5 h-2.5 rounded-full bg-champagne-gold animate-ping absolute"></span>
                   <span className="w-2 h-2 rounded-full bg-champagne-gold relative z-10"></span>
                   <div
-                    className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 p-3 bg-near-black border border-champagne-gold/40 text-left shadow-2xl z-30 transition-all duration-300 pointer-events-none ${
-                      activeHotspot === 2 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+                    className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 w-52 sm:w-56 p-3 bg-near-black border border-champagne-gold/40 text-left shadow-2xl z-30 transition-all duration-300 pointer-events-none ${
+                      activeHotspot === 2 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
                     }`}
                   >
                     <span className="font-sans text-[10px] text-champagne-gold uppercase tracking-widest block font-medium">
@@ -166,8 +166,8 @@ export default function StoryClient() {
                   <span className="w-2.5 h-2.5 rounded-full bg-champagne-gold animate-ping absolute"></span>
                   <span className="w-2 h-2 rounded-full bg-champagne-gold relative z-10"></span>
                   <div
-                    className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-56 p-3 bg-near-black border border-champagne-gold/40 text-left shadow-2xl z-30 transition-all duration-300 pointer-events-none ${
-                      activeHotspot === 3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2 pointer-events-none"
+                    className={`absolute top-full mt-2.5 right-0 sm:left-1/2 sm:-translate-x-1/2 w-52 sm:w-56 p-3 bg-near-black border border-champagne-gold/40 text-left shadow-2xl z-30 transition-all duration-300 pointer-events-none ${
+                      activeHotspot === 3 ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
                     }`}
                   >
                     <span className="font-sans text-[10px] text-champagne-gold uppercase tracking-widest block font-medium">
