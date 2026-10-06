@@ -44,8 +44,8 @@ export default function HomePage() {
           <div className="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1 pt-6 lg:pt-0">
             <ScrollReveal direction="down" delay={0.1}>
               <div className="flex items-center gap-3 mb-6">
-                <span className="w-2 h-2 rounded-full bg-champagne-gold animate-pulse"></span>
-                <span className="font-sans text-[10px] sm:text-xs tracking-monumental text-champagne-gold uppercase">
+                <span className="w-2 h-2 rounded-full bg-champagne-gold animate-pulse shrink-0"></span>
+                <span className="font-sans text-[10px] sm:text-xs tracking-wider sm:tracking-monumental text-champagne-gold uppercase">
                   BALAJI JEWELLERS &amp; SHYAM DIAMONDS · PARVATSAR
                 </span>
               </div>
@@ -86,14 +86,14 @@ export default function HomePage() {
             </ScrollReveal>
 
             <ScrollReveal direction="up" delay={0.5}>
-              <div className="pt-6 border-t border-champagne-gold/15 flex flex-wrap items-center gap-6 text-xs text-warm-ivory/70 tracking-wider font-sans">
+              <div className="pt-6 border-t border-champagne-gold/15 flex flex-wrap items-center gap-3 sm:gap-6 text-xs text-warm-ivory/70 tracking-wider font-sans">
                 <span className="flex items-center gap-2">
-                  <Sparkles className="w-3.5 h-3.5 text-champagne-gold" />
+                  <Sparkles className="w-3.5 h-3.5 text-champagne-gold shrink-0" />
                   Gold &amp; Silver Disciplines
                 </span>
-                <span className="h-3 w-[1px] bg-champagne-gold/30"></span>
+                <span className="h-3 w-[1px] bg-champagne-gold/30 hidden sm:inline"></span>
                 <span className="flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-champagne-gold" />
+                  <MapPin className="w-3.5 h-3.5 text-champagne-gold shrink-0" />
                   Bank Wali Gali, Parvatsar
                 </span>
               </div>
@@ -197,7 +197,7 @@ export default function HomePage() {
         {/* Scroll Indicator */}
         <a
           href="#reveal"
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-champagne-gold/70 hover:text-champagne-gold transition-colors z-20"
+          className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-champagne-gold/70 hover:text-champagne-gold transition-colors z-20"
         >
           <span className="font-sans text-[9px] tracking-monumental uppercase">SCROLL TO DISCOVER ↓</span>
           <div className="w-[1px] h-8 bg-gradient-to-b from-champagne-gold to-transparent animate-pulse"></div>
@@ -209,12 +209,13 @@ export default function HomePage() {
           ======================================================== */}
       <section id="reveal" className="w-full py-28 px-6 lg:px-14 bg-[#170b0c] border-t border-champagne-gold/15 relative overflow-hidden">
         <div className="max-w-[1460px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-4 relative select-none min-h-[220px] sm:min-h-[260px] lg:min-h-0 flex flex-col justify-center">
-            <span className="font-serif text-[100px] sm:text-[140px] md:text-[160px] leading-none text-champagne-gold/10 font-bold block">
+          <div className="lg:col-span-4 relative select-none">
+            {/* Background 01 Watermark */}
+            <span className="absolute -top-6 sm:-top-8 -left-2 sm:-left-3 font-serif text-[85px] sm:text-[120px] md:text-[140px] leading-none text-champagne-gold/10 font-bold select-none pointer-events-none -z-0">
               01
             </span>
-            <div className="absolute top-6 sm:top-10 left-2 sm:left-4 right-2 sm:right-auto">
-              <span className="font-sans text-[10px] sm:text-xs tracking-widest sm:tracking-monumental text-champagne-gold uppercase block mb-2 font-medium">
+            <div className="relative z-10 pt-2 sm:pt-4">
+              <span className="font-sans text-[10px] sm:text-xs tracking-wider sm:tracking-monumental text-champagne-gold uppercase block mb-2 font-medium">
                 A STUDY IN LIGHT AND FORM
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-warm-ivory leading-tight">
@@ -271,20 +272,20 @@ export default function HomePage() {
 
           {/* Editorial Triptych Showcase Image */}
           <div className="relative w-full overflow-hidden border border-champagne-gold/30 mb-14 shadow-2xl bg-near-black">
-            <div className="relative w-full h-[380px] sm:h-[460px] lg:h-[540px]">
+            <div className="relative w-full aspect-[16/9] lg:aspect-auto lg:h-[540px]">
               <Image
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI6hHpUV-NwRDZqyOpCKxMbyX1iOHCKLekLht_8Q3jDUjjP-PHCoLkIIPm-lU8c0OU3p6M3HPptpyUMVEcb7n5jv3TLkirP9vWcg5E8uzHCFEodqC_jHFoS3kvPsFHfeFKUI4nDiOG5mVZgOczQr5uzaE7TSHDfO4yOJemwXSLjjrt_UZOj7C1WYZyaz3rZN25WXD3jHsEclF0vv9EclybwgwSisktxr5Ua8DYPN6ky6rrtUKZyfij=s0"
                 alt="Three Disciplines - Molten Gold, Sterling Silver, Untreated Gemstones"
                 fill
                 sizes="(max-width: 1440px) 100vw, 1440px"
-                className="object-cover"
+                className="object-cover object-center"
                quality={90} />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-near-black/85 via-transparent to-near-black/20 pointer-events-none"></div>
-            <div className="absolute bottom-6 left-6 right-6 hidden md:flex items-center justify-between text-xs tracking-cinematic font-sans text-soft-gold uppercase">
-              <span>[ 01 PURE 22K GOLD ]</span>
-              <span>[ 02 STERLING 925 SILVER ]</span>
-              <span>[ 03 NATURAL GEMSTONES ]</span>
+            <div className="absolute bottom-2 sm:bottom-6 left-2 sm:left-6 right-2 sm:right-6 flex items-center justify-between text-[8px] sm:text-xs tracking-wider sm:tracking-cinematic font-sans text-soft-gold uppercase">
+              <span className="bg-near-black/75 px-1.5 py-0.5 sm:bg-transparent sm:p-0">[ 01 PURE 22K GOLD ]</span>
+              <span className="bg-near-black/75 px-1.5 py-0.5 sm:bg-transparent sm:p-0">[ 02 STERLING 925 SILVER ]</span>
+              <span className="bg-near-black/75 px-1.5 py-0.5 sm:bg-transparent sm:p-0">[ 03 NATURAL GEMSTONES ]</span>
             </div>
           </div>
 
