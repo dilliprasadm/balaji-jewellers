@@ -125,13 +125,13 @@ export default function HomePage() {
                   {/* Main Visual Stage */}
                   <div className="overflow-hidden aspect-[4/3] sm:aspect-[16/11] bg-black relative">
                     <Image
-                      src="/images/hero/hero-necklace-burgundy.jpg"
+                      src="https://lh3.googleusercontent.com/aida/AEtjO1VG6xQSq9wkCqg8uUxhD8imdE8NGargLfw3RItRGhigy9lAxMiR82jErCXd0cGDDm4lqaAMuLeaVXaGeHTlvqS4ql1LGb39bCD9pTkp5edBzf-kPcUmbeSHxQCdEWiwGNsE50BTpd07D3IC3oFqmswfR2J-__dW0jrIzZ2h6AqBStJSuJpr-o3dlRttUeyuHTnjVcUzFABsi6KA86o7WggLRkXpWFmXVe0cH7YbFM97b1iD7LWz4aFdDw=s0"
                       alt="Handcrafted Indian royal gold polki and emerald drops necklace on deep burgundy velvet"
                       fill
                       priority
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px"
                       className="w-full h-full object-cover object-center transform transition-transform duration-1000 group-hover:scale-105"
-                     quality={90} />
+                      quality={90} />
 
                     {/* Specular & Vignette Gradients */}
                     <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#120708]/80 via-transparent to-transparent"></div>
