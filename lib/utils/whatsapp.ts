@@ -8,9 +8,13 @@ import { PRODUCTS } from "../data/products";
  */
 export function getBaseSiteUrl(): string {
   if (typeof window !== "undefined" && window.location && window.location.origin) {
-    return window.location.origin;
+    const origin = window.location.origin;
+    // Don't send localhost links in WhatsApp messages — always share public URL
+    if (!origin.includes("localhost") && !origin.includes("127.0.0.1")) {
+      return origin;
+    }
   }
-  return "https://balaji-jewellers.vercel.app";
+  return SITE_CONFIG.siteUrl || "https://balaji-jewellers.vercel.app";
 }
 
 /**

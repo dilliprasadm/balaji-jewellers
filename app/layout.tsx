@@ -27,7 +27,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://balajijewellers.com"),
+  metadataBase: new URL("https://balaji-jewellers.vercel.app"),
   title: {
     default: "Balaji Jewellers & Shyam Diamonds — Fine Gold & Silver Jewellery | Parvatsar",
     template: "%s | Balaji Jewellers & Shyam Diamonds",
