@@ -33,7 +33,6 @@ export const PRODUCTS: Product[] = [
     type: "Collar Necklace",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1VG6xQSq9wkCqg8uUxhD8imdE8NGargLfw3RItRGhigy9lAxMiR82jErCXd0cGDDm4lqaAMuLeaVXaGeHTlvqS4ql1LGb39bCD9pTkp5edBzf-kPcUmbeSHxQCdEWiwGNsE50BTpd07D3IC3oFqmswfR2J-__dW0jrIzZ2h6AqBStJSuJpr-o3dlRttUeyuHTnjVcUzFABsi6KA86o7WggLRkXpWFmXVe0cH7YbFM97b1iD7LWz4aFdDw=s0",
     ],
     description:
       "Handcrafted gold collar necklace featuring delicate repoussé chasing and articulating fringe elements.",
@@ -61,7 +60,6 @@ export const PRODUCTS: Product[] = [
     type: "Earrings",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1VyDf5W3_uM8w1g-0BdmveHihGZifLVJKIkryLHjm6OA-96Ye7_3F3ASVtqe672KJLInZZw-WbvTBVUl50zdU-u8WcQGQ5H9rk4iNevZktANFitdzqSFC5mLUAlb4qmaXDDR20TcguW4g8VDc7dxxTu1dJc945iDPFJy_wBN9T4Sza0AYxxWrWIwYxZI9zV9RN-EJ4oOykSvncvHmOV3giD0MDbrVDfFMvz6uKnsik8LWP-6wMlbE8NdBw=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1U9aBNrcAcLcfV2o6ZadrzvAeNYg-MxuPgFcgYNdj4dLQLW2TKuRuvf92QcvB4mOpGgD_7eONcYy4X_dwr-jCwpCAigX7AxbY4MK3IoeYrIL-xGwoQKpAEusp77MQzX3vfjqaziwhLswaDaGRAlDaXnb3zZhmV5TmY6DOcMwDdCWsg2KtOzwQF7bmTU_fOU9UZMtnHa4V85w6Z8w3DIoonYjhbZNAFc9tnofKa5yfsCaIDokrzhzylbPoY=s0",
     ],
     description:
       "Handcrafted crescent ear ornaments adorned with intricate wire filigree and suspended seed accents.",
@@ -76,7 +74,6 @@ export const PRODUCTS: Product[] = [
     type: "Ring",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1WF8PSyZDaFFXJRmJCwfPMtZ7W_zjY57plUbb56p2VSrZqqcYdLzLVOqYocEHa2tEMXFWU-saWoQp-x8b05FQ3ZOLS4fWGjG2FCWaFEvgj09pIIFUFaQB03_TVtUFPT8Wqt8u2KjccGuF3mwwAZCaP-Hy0L6Hg1DYoLriiozsLL1SeIR-JWnATUZGaTPW4GNnJjgX2EPIKM-cBTGILagvmk3I6cw93_K900OQgfvoT98kdEKkBmXJhcq3Y=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1VRlafAXX1KpZ6gr6vs-xEvxs0utBBoCHMzjvT2MC3kyBlmRJyPzbmvKe4ofhYOCtjTuCGYkUjt2s2U4Is7WIUwALhf-twD0k0e-A3K3SAn6lQe-Cj0avN7y0gB6XTX9RffRF89X1yXn_naxxb0EhtyaR3FJA_paRkZNxepy6RLdt3np4Y7s49HG6AYrhW_vfI1nJF_TmIHl6sWVVYbnisYZadpnAkOMSoNjgtzYEq1nraTPqYKpL0cEw=s0",
     ],
     description:
       "Statement gold ring featuring a raised floral motif and hand-burnished bezel setting.",
@@ -91,7 +88,6 @@ export const PRODUCTS: Product[] = [
     type: "Necklace",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1VIyopUBviDgeYin7L5KvSyXtPrKHGHcdB04rLjeVKkr_CMJM_8Z419tEEfw48I5at4lUrbu2hFCj_zTfFAn6i5gKDvxgdw56oS3gv3cBKfRGtyyG32jDFUepLib-zXr8TlF-sOxBbWQNSWtPMUfJE-wFTb6BJ7mVVztyRlRl-HJHb09cfPPdBH3bh8NkUk0gNYSlwYrmaucNDnDaZmyQXyhYi__2sNL5v8bfhnxzsh2I5uwLWcZJciZwE=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1VkTxoVSZHLNueX9HjqY1Ax7th6Hlz2Qp8dP6GA5-ODxPVSZq8Z8Z0oaeLKjMFEmEuS57OUprhFXDPJ_U_aK61p12e3VCrUOKZBPL_12Shkf4r9urhvsR8YhgNBGBC4NFJGHpQNB0pU0Mrhiieet1zjocK-UB-yEawPuGvrjP_wHshoB1op4CpprtUdhJ2TbIEJPl5mXS2Z2hdHvCDIZqFTXveBzqa8pls_CAXzfPFH9T-5WT4hYGzbDZ4=s0",
     ],
     description:
       "Grand multi-tiered gold necklace with cascading bead terminals and pierced openwork medallions.",
@@ -147,7 +143,6 @@ export const PRODUCTS: Product[] = [
     type: "Choker",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1VkTxoVSZHLNueX9HjqY1Ax7th6Hlz2Qp8dP6GA5-ODxPVSZq8Z8Z0oaeLKjMFEmEuS57OUprhFXDPJ_U_aK61p12e3VCrUOKZBPL_12Shkf4r9urhvsR8YhgNBGBC4NFJGHpQNB0pU0Mrhiieet1zjocK-UB-yEawPuGvrjP_wHshoB1op4CpprtUdhJ2TbIEJPl5mXS2Z2hdHvCDIZqFTXveBzqa8pls_CAXzfPFH9T-5WT4hYGzbDZ4=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1WCR_euShv_2J3wr8PlZM-iHksQ-r6QW1Xzdlljk9ka26DWdgJstHhyY8cycDrYfo_YEZzu3NKciiICoIuCgLyCb5uOfoz8fFYbbsSL0Km9xi57zOmYKcxVisEMiojzleOfhPvBnTSmrO4LDyn9CL9O-XDUEcNl1Nw3FHNbwTqs3sjN5tcPOhxzehyr0JpOEx3chn3LEE1HY3lZeCOSPt2FJ-ctmr06e3sABCKEyGFKjP3F2Ve2mZqs9Q=s0",
     ],
     description:
       "Handcrafted gold choker necklace with hand-burnished bezel foil mounts and articulating gold wire links.",
@@ -217,7 +212,6 @@ export const PRODUCTS: Product[] = [
     type: "Necklace",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1V-jJF4CwHBn64C81vi8BDsw3NjJhdr-SEqFWuK_5AB1mIO3jmun37jCYPbfQuVhaWiPWjSszgPk4WaXF2OX3kEfx5RHDBkEg4RFBXln99g-EPukr7np0rJA4yvLdblPbfQyjk4QPg4xySpb_6GRBiUMFGrow40S2vjf3IiApKRyU5i0OiYcrASM7f1sBclGiutuRxvpB3AQeJdlv4pBVye4rS9qDr5EnN6XpvXbg2NSSnBkDC3iAdIJIM=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1Xa1lbKYQfVaaXn9DaXF5j7617V-nOmWrai8zEVFCyFyojuOzI_bjGXjU8SO0UBh-b_XmsgPViLglRmRzMCdxfWDNEC11m7KUnC0YOD8aHPK5mZZh7Z9PFi6j7jqVTINdykS1zUykR1_dMdjca-4Y2PFGYFYd7QhFGWtckfoStw3ocQBtsZ6beMBGKPSmPF8k6vuYaVhVfA2OPMhIy2URprJ93KY35pGFnw3JCSqFOO8MtmxcydeenvcWs=s0",
     ],
     description:
       "Sculptural solid silver hasli torque necklace accompanied by ornate hand-forged accents.",
@@ -231,7 +225,6 @@ export const PRODUCTS: Product[] = [
     type: "Cuff & Bangles",
     images: [
       "https://lh3.googleusercontent.com/aida/AEtjO1Vxt6aboQZhCDvL1ubDhyfAdn2KHro_PLLDma-2zdwWQlufi3UW50cyg_sJxvSEcl-7HTg9wCJsJ133C9pJElMSo83NaBOSE49vFHebGvyuoA9h0bRR9VxnY7PtxdHwoQbAqhMZZRy0eiAnD31zh3ZgdPwurpGJEX8KS3Sj_5Qg340hWQhfFsFVDQRyIvfBUdo_MCMGMwRrR4vsNaEcwbjbchsj3Zd8aOkyObW4MBfIAK3RCddFA_kqQtA=s0",
-      "https://lh3.googleusercontent.com/aida/AEtjO1UKrzlekFvxpeaLN9pjJBRCnAZLX2OuAB4_lv-evEcc8xzyXxie2hc-mwrXPgXDxo8jkJXnBIPerbuigChE5zsk7l83J9u-0qnwMoQCtGHAkN41-rDv4kIU8rLGXkcQCsBp0iIh5DPE3pXQ3TiB0K0Seo5iZmvAwJtefeZLTJZdmSB89KCKouF5xoJJNWKCd_M_ktWRDtwDJiV6nDqatKYJaawIyafGr79DXTCbRgna3Wc_GphEGMEd0fo=s0",
     ],
     description:
       "Satin-finished wide silver wrist cuff detailed with subtle geometric chevron stippling.",

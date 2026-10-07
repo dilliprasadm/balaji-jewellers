@@ -51,9 +51,9 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
           </button>
         </div>
 
-        {/* Left: Imagery Section */}
-        <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-champagne-gold/20">
-          <div className="relative w-full aspect-square bg-near-black overflow-hidden border border-champagne-gold/20">
+        {/* Left: Imagery Section (Single Curated Piece Image) */}
+        <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col justify-center border-b md:border-b-0 md:border-r border-champagne-gold/20">
+          <div className="relative w-full aspect-square bg-near-black overflow-hidden border border-champagne-gold/20 shadow-inner">
             {currentImage && (
               <Image
                 src={currentImage}
@@ -61,36 +61,11 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
                 fill
                 quality={90}
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center transition-all duration-500"
+                className="object-cover object-center"
                 priority
               />
             )}
           </div>
-
-          {/* Thumbnails if multiple images exist */}
-          {product.images.length > 1 && (
-            <div className="flex items-center gap-3 overflow-x-auto pb-2">
-              {product.images.map((img, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={() => setSelectedImageIndex(idx)}
-                  className={`relative w-16 h-16 shrink-0 border transition-all ${
-                    selectedImageIndex === idx
-                      ? "border-champagne-gold scale-105 shadow-md"
-                      : "border-champagne-gold/20 opacity-60 hover:opacity-100"
-                  }`}
-                >
-                  <Image
-                    src={img}
-                    alt={`${product.name} thumbnail ${idx + 1}`}
-                    fill
-                    className="object-cover"
-                   quality={90} />
-                </button>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Right: Piece Information & Direct Enquiries */}

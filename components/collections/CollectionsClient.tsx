@@ -21,8 +21,25 @@ import {
 import { getWhatsAppProductUrl, getWhatsAppShowroomUrl } from "@/lib/utils/whatsapp";
 import { ProductShareButton } from "@/components/ui/ProductShareButton";
 
-export function CollectionsClient() {
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+interface CollectionsClientProps {
+  initialProductId?: string;
+}
+
+export function CollectionsClient({ initialProductId }: CollectionsClientProps = {}) {
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(() => {
+    if (initialProductId) {
+      const clean = initialProductId.toLowerCase().trim();
+      const stripped = clean.replace(/[^a-z0-9]/g, "");
+      return (
+        PRODUCTS.find((p) => {
+          const pId = p.id.toLowerCase();
+          const pIdStripped = pId.replace(/[^a-z0-9]/g, "");
+          return pId === clean || pIdStripped === stripped;
+        }) || null
+      );
+    }
+    return null;
+  });
 
   const goldProducts = PRODUCTS.filter((p) => p.category === "gold");
   const silverProducts = PRODUCTS.filter((p) => p.category === "silver");
