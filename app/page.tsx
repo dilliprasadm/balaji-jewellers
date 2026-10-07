@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FloatingJewelleryScene } from "@/components/3d/FloatingJewelleryScene";
@@ -22,6 +22,36 @@ import { InstagramFeed } from "@/components/social/InstagramFeed";
 
 export default function HomePage() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const productQuery = params.get("product");
+      if (productQuery) {
+        const cleanQuery = productQuery.toLowerCase().trim();
+        const strippedQuery = cleanQuery.replace(/[^a-z0-9]/g, "");
+        const found = PRODUCTS.find((p) => {
+          const pId = p.id.toLowerCase();
+          const pIdStripped = pId.replace(/[^a-z0-9]/g, "");
+          const pNameLower = p.name.toLowerCase();
+          const pNameSlug = pNameLower.replace(/[^a-z0-9]+/g, "-");
+          const pNameStripped = pNameLower.replace(/[^a-z0-9]/g, "");
+
+          return (
+            pId === cleanQuery ||
+            pIdStripped === strippedQuery ||
+            pNameSlug === cleanQuery ||
+            pNameStripped === strippedQuery ||
+            pNameLower.includes(cleanQuery.replace(/-/g, " ")) ||
+            cleanQuery.includes(pId)
+          );
+        });
+        if (found) {
+          setSelectedProduct(found);
+        }
+      }
+    }
+  }, []);
 
   // Curated 4 teaser products for homepage
   const teaserProducts = PRODUCTS.slice(0, 4);

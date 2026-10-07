@@ -7,6 +7,7 @@ import { Product } from "@/lib/data/products";
 import { getWhatsAppProductUrl } from "@/lib/utils/whatsapp";
 import { SITE_CONFIG } from "@/lib/constants/siteConfig";
 import { X, MessageCircle, Phone, MapPin, Sparkles } from "lucide-react";
+import { ProductShareButton } from "@/components/ui/ProductShareButton";
 
 interface ProductDetailModalProps {
   product: Product | null;
@@ -32,15 +33,23 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
 
       {/* Modal Container */}
       <div className="relative w-full max-w-5xl max-h-[88vh] sm:max-h-[92vh] overflow-y-auto bg-gradient-to-b from-[#260003] via-[#1a0103] to-[#120708] border border-champagne-gold/30 shadow-[0_24px_64px_-12px_rgba(0,0,0,0.95)] z-10 flex flex-col md:flex-row pb-6 md:pb-0">
-        {/* Close Button */}
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 w-9 h-9 flex items-center justify-center bg-near-black/90 border border-champagne-gold/40 text-champagne-gold hover:bg-champagne-gold hover:text-near-black transition-colors shadow-lg"
-          aria-label="Close piece details"
-        >
-          <X className="w-5 h-5" />
-        </button>
+        {/* Top Actions: Native Share + Close */}
+        <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 flex items-center gap-2">
+          <ProductShareButton
+            productId={product.id}
+            productName={product.name}
+            variant="icon"
+            className="w-9 h-9"
+          />
+          <button
+            type="button"
+            onClick={onClose}
+            className="w-9 h-9 flex items-center justify-center bg-near-black/90 border border-champagne-gold/40 text-champagne-gold hover:bg-champagne-gold hover:text-near-black transition-colors shadow-lg"
+            aria-label="Close piece details"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
         {/* Left: Imagery Section */}
         <div className="w-full md:w-1/2 p-4 sm:p-6 md:p-8 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-champagne-gold/20">
@@ -144,17 +153,26 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
             </div>
           </div>
 
-          {/* Conversion Actions: WhatsApp + Call + Visit Showroom */}
+          {/* Conversion Actions: WhatsApp + Native Share + Call + Visit Showroom */}
           <div className="flex flex-col gap-3 pt-6 border-t border-champagne-gold/20 mt-6">
-            <a
-              href={whatsAppUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-3.5 px-6 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center justify-center gap-2 shadow-[0_6px_20px_-6px_rgba(216,180,106,0.4)]"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span>Enquire on WhatsApp</span>
-            </a>
+            <div className="flex flex-col sm:flex-row gap-2.5">
+              <a
+                href={whatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 py-3.5 px-6 bg-champagne-gold text-near-black font-sans text-xs tracking-monumental uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center justify-center gap-2 shadow-[0_6px_20px_-6px_rgba(216,180,106,0.4)]"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>Enquire on WhatsApp</span>
+              </a>
+
+              <ProductShareButton
+                productId={product.id}
+                productName={product.name}
+                variant="pill"
+                className="py-3.5 px-5 text-xs font-semibold justify-center sm:w-auto"
+              />
+            </div>
 
             <div className="grid grid-cols-2 gap-3">
               <a

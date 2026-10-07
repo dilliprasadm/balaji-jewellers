@@ -4,7 +4,7 @@ import { PRODUCTS } from "../data/products";
 /**
  * Returns the active base URL of the site:
  * - Uses window.location.origin when running in browser (e.g. http://localhost:3000 or production domain)
- * - Falls back to production domain (https://balaji-jewellers.vercel.app)
+ * - Falls back to production domain (https://balajijewellers.vercel.app)
  */
 export function getBaseSiteUrl(): string {
   if (typeof window !== "undefined" && window.location && window.location.origin) {
@@ -14,7 +14,7 @@ export function getBaseSiteUrl(): string {
       return origin;
     }
   }
-  return SITE_CONFIG.siteUrl || "https://balaji-jewellers.vercel.app";
+  return SITE_CONFIG.siteUrl || "https://balajijewellers.vercel.app";
 }
 
 /**

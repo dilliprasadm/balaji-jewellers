@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Product } from "@/lib/data/products";
 import { getWhatsAppProductUrl } from "@/lib/utils/whatsapp";
 import { MessageCircle, Eye } from "lucide-react";
+import { ProductShareButton } from "@/components/ui/ProductShareButton";
 
 interface ProductCardProps {
   product: Product;
@@ -53,17 +54,18 @@ export function ProductCard({ product, onSelectProduct }: ProductCardProps) {
         </div>
 
         {/* Quick View Overlay Button */}
-        <div className="absolute inset-0 bg-near-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 p-4">
+        <div className="absolute inset-0 bg-near-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2 p-4">
           {onSelectProduct && (
             <button
               type="button"
               onClick={() => onSelectProduct(product)}
-              className="px-4 py-2.5 bg-champagne-gold text-near-black font-sans text-xs tracking-widest uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center gap-2 shadow-lg"
+              className="px-3.5 py-2 bg-champagne-gold text-near-black font-sans text-xs tracking-widest uppercase font-semibold hover:bg-soft-gold transition-colors flex items-center gap-1.5 shadow-lg"
             >
               <Eye className="w-3.5 h-3.5" />
               <span>View Piece</span>
             </button>
           )}
+          <ProductShareButton productId={product.id} productName={product.name} variant="icon" />
         </div>
       </div>
 
@@ -84,7 +86,7 @@ export function ProductCard({ product, onSelectProduct }: ProductCardProps) {
         </div>
 
         {/* Footer Actions */}
-        <div className="pt-4 border-t border-champagne-gold/15 flex items-center justify-between gap-3">
+        <div className="pt-4 border-t border-champagne-gold/15 flex items-center justify-between gap-2 flex-wrap">
           {onSelectProduct ? (
             <button
               type="button"
@@ -99,16 +101,20 @@ export function ProductCard({ product, onSelectProduct }: ProductCardProps) {
             </span>
           )}
 
-          <a
-            href={whatsAppUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-[10.5px] font-sans tracking-widest text-warm-ivory/80 hover:text-champagne-gold uppercase transition-colors"
-            title="Enquire on WhatsApp"
-          >
-            <MessageCircle className="w-3.5 h-3.5 text-champagne-gold" />
-            <span>Enquire</span>
-          </a>
+          <div className="flex items-center gap-3">
+            <ProductShareButton productId={product.id} productName={product.name} />
+
+            <a
+              href={whatsAppUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[10.5px] font-sans tracking-widest text-warm-ivory/80 hover:text-champagne-gold uppercase transition-colors"
+              title="Enquire on WhatsApp"
+            >
+              <MessageCircle className="w-3.5 h-3.5 text-champagne-gold" />
+              <span>Enquire</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

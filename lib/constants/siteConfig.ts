@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   shortName: "Balaji Jewellers",
   subName: "& Shyam Diamonds",
   tagline: "Haute Joaillerie · Parvatsar",
-  siteUrl: "https://balaji-jewellers.vercel.app",
+  siteUrl: "https://balajijewellers.vercel.app",
   description:
     "Balaji Jewellers & Shyam Diamonds presents a curated digital exhibition of fine Gold and Silver jewellery in Parvatsar, Rajasthan.",
   phone: "+91 88540 00203",

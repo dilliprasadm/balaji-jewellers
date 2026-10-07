@@ -99,6 +99,20 @@ export const PRODUCTS: Product[] = [
     featured: false,
   },
   {
+    id: "marwar-temple-rani-haar",
+    name: "Marwar Imperial Temple Rani Haar",
+    category: "gold",
+    type: "Rani Haar",
+    images: [
+      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0",
+    ],
+    description:
+      "Layered temple pendant suspended from intricate granulated chains with floral nakashi motifs and delicate seed pearl drops.",
+    hasStoneDetail: true,
+    stoneDetails: "Hanging gold seed clusters and micro-pearl accents.",
+    featured: true,
+  },
+  {
     id: "architectural-gold-ear-cuff",
     name: "Architectural Gold Ear Cuff",
     category: "gold",

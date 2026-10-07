@@ -19,6 +19,7 @@ import {
   Navigation as NavIcon,
 } from "lucide-react";
 import { getWhatsAppProductUrl, getWhatsAppShowroomUrl } from "@/lib/utils/whatsapp";
+import { ProductShareButton } from "@/components/ui/ProductShareButton";
 
 export function CollectionsClient() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -52,11 +53,24 @@ export function CollectionsClient() {
       const params = new URLSearchParams(window.location.search);
       const productQuery = params.get("product");
       if (productQuery) {
-        const found = PRODUCTS.find(
-          (p) =>
-            p.id.toLowerCase() === productQuery.toLowerCase() ||
-            p.name.toLowerCase().replace(/[^a-z0-9]/g, "-") === productQuery.toLowerCase()
-        );
+        const cleanQuery = productQuery.toLowerCase().trim();
+        const strippedQuery = cleanQuery.replace(/[^a-z0-9]/g, "");
+        const found = PRODUCTS.find((p) => {
+          const pId = p.id.toLowerCase();
+          const pIdStripped = pId.replace(/[^a-z0-9]/g, "");
+          const pNameLower = p.name.toLowerCase();
+          const pNameSlug = pNameLower.replace(/[^a-z0-9]+/g, "-");
+          const pNameStripped = pNameLower.replace(/[^a-z0-9]/g, "");
+
+          return (
+            pId === cleanQuery ||
+            pIdStripped === strippedQuery ||
+            pNameSlug === cleanQuery ||
+            pNameStripped === strippedQuery ||
+            pNameLower.includes(cleanQuery.replace(/-/g, " ")) ||
+            cleanQuery.includes(pId)
+          );
+        });
         if (found) {
           setSelectedProduct(found);
           setTimeout(() => {
@@ -290,7 +304,7 @@ export function CollectionsClient() {
           {/* Asymmetric Editorial Grid (Stitch Spec: 7-col Hero feature + 5-col stacked right) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-8">
             {/* Large Hero Feature Card: Rani Haar (Spans 7 cols) */}
-            <article className="lg:col-span-7 bg-[#260e12] border border-champagne-gold/30 p-6 sm:p-8 flex flex-col justify-between group shadow-xl">
+            <article id="marwar-temple-rani-haar" className="lg:col-span-7 bg-[#260e12] border border-champagne-gold/30 p-6 sm:p-8 flex flex-col justify-between group shadow-xl scroll-mt-28">
               <div className="relative overflow-hidden bg-near-black h-[380px] sm:h-[500px] mb-6">
                 <Image
                   src="https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
@@ -315,33 +329,30 @@ export function CollectionsClient() {
                   </p>
                 </div>
                 <div className="pt-6 mt-6 border-t border-champagne-gold/20 flex items-center justify-between gap-4 flex-wrap">
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setSelectedProduct({
-                        id: "marwar-temple-rani-haar",
-                        name: "Marwar Imperial Temple Rani Haar",
-                        category: "gold",
-                        type: "Rani Haar",
-                        images: [
-                          "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0",
-                        ],
-                        description:
-                          "Layered temple pendant suspended from intricate granulated chains with floral nakashi motifs and delicate seed pearl drops.",
-                        hasStoneDetail: true,
-                        stoneDetails: "Hanging gold seed clusters and micro-pearl accents.",
-                      })
-                    }
-                    className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.22em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
-                  >
-                    <span>View Details</span>
-                    <Eye className="w-4 h-4" />
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelectedProduct(
+                          PRODUCTS.find((p) => p.id === "marwar-temple-rani-haar") || null
+                        )
+                      }
+                      className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.22em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <Eye className="w-4 h-4" />
+                    </button>
+                    <ProductShareButton
+                      productId="marwar-temple-rani-haar"
+                      productName="Marwar Imperial Temple Rani Haar"
+                      variant="pill"
+                    />
+                  </div>
                   <a
                     className="px-5 py-2.5 bg-deep-burgundy text-soft-gold hover:bg-champagne-gold hover:text-near-black transition-all text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1.5 border border-champagne-gold/30"
                     href={getWhatsAppProductUrl(
                       "Marwar Imperial Temple Rani Haar",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
+                      "marwar-temple-rani-haar"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -356,7 +367,7 @@ export function CollectionsClient() {
             {/* Right Column Stacked Cards (Spans 5 cols) */}
             <div className="lg:col-span-5 flex flex-col gap-8">
               {/* Card 2: Kundan Bridal Collar */}
-              <article className="bg-[#260e12] border border-champagne-gold/30 p-6 flex flex-col justify-between group shadow-lg">
+              <article id="archival-kundan-collar" className="bg-[#260e12] border border-champagne-gold/30 p-6 flex flex-col justify-between group shadow-lg scroll-mt-28">
                 <div className="relative overflow-hidden bg-near-black h-56 sm:h-64 mb-4">
                   <Image
                     src="https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
@@ -374,7 +385,7 @@ export function CollectionsClient() {
                     Articulated gold choker with foil-set polki diamonds and south sea pearl tassels.
                   </p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-champagne-gold/20 flex items-center justify-between">
+                <div className="pt-4 mt-4 border-t border-champagne-gold/20 flex items-center justify-between gap-2 flex-wrap">
                   <button
                     type="button"
                     onClick={() =>
@@ -385,23 +396,29 @@ export function CollectionsClient() {
                     <span>View Details</span>
                     <Eye className="w-3.5 h-3.5" />
                   </button>
-                  <a
-                    className="text-warm-ivory/80 hover:text-soft-gold text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
-                    href={getWhatsAppProductUrl(
-                      "Rajputana Kundan Collar",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
-                    )}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>Enquire</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
+                  <div className="flex items-center gap-3">
+                    <ProductShareButton
+                      productId="archival-kundan-collar"
+                      productName="Rajputana Kundan Collar"
+                    />
+                    <a
+                      className="text-warm-ivory/80 hover:text-soft-gold text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
+                      href={getWhatsAppProductUrl(
+                        "Rajputana Kundan Collar",
+                        "archival-kundan-collar"
+                      )}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="w-3.5 h-3.5 text-champagne-gold" />
+                      <span>Enquire</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
               {/* Card 3: Antique Gokhru Kadas */}
-              <article className="bg-[#260e12] border border-champagne-gold/30 p-6 flex flex-col justify-between group shadow-lg">
+              <article id="sculpted-gokhru-kadas" className="bg-[#260e12] border border-champagne-gold/30 p-6 flex flex-col justify-between group shadow-lg scroll-mt-28">
                 <div className="relative overflow-hidden bg-near-black h-56 sm:h-64 mb-4">
                   <Image
                     src="https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
@@ -419,7 +436,7 @@ export function CollectionsClient() {
                     Monumental pair of high-relief repoussé gold bangles with internal pin lock.
                   </p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-champagne-gold/20 flex items-center justify-between">
+                <div className="pt-4 mt-4 border-t border-champagne-gold/20 flex items-center justify-between gap-2 flex-wrap">
                   <button
                     type="button"
                     onClick={() =>
@@ -430,18 +447,24 @@ export function CollectionsClient() {
                     <span>View Details</span>
                     <Eye className="w-3.5 h-3.5" />
                   </button>
-                  <a
-                    className="text-warm-ivory/80 hover:text-soft-gold text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
-                    href={getWhatsAppProductUrl(
-                      "Hand-Hammered Gokhru Kadas",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
-                    )}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>Enquire</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
+                  <div className="flex items-center gap-3">
+                    <ProductShareButton
+                      productId="sculpted-gokhru-kadas"
+                      productName="Hand-Hammered Gokhru Kadas"
+                    />
+                    <a
+                      className="text-warm-ivory/80 hover:text-soft-gold text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
+                      href={getWhatsAppProductUrl(
+                        "Hand-Hammered Gokhru Kadas",
+                        "sculpted-gokhru-kadas"
+                      )}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="w-3.5 h-3.5 text-champagne-gold" />
+                      <span>Enquire</span>
+                    </a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -527,7 +550,7 @@ export function CollectionsClient() {
           {/* Staggered Showcase Spec from Stitch (Spans 5 cols + 7 cols) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-8">
             {/* Silver Hero: Nagaur Tribal Coin Hasli (5 cols) */}
-            <article className="lg:col-span-5 bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col justify-between group shadow-xl">
+            <article id="coin-drop-silver-choker" className="lg:col-span-5 bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col justify-between group shadow-xl scroll-mt-28">
               <div className="relative overflow-hidden bg-black/60 h-[380px] sm:h-[460px] mb-6">
                 <Image
                   src="https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
@@ -548,22 +571,29 @@ export function CollectionsClient() {
                   Heavy 925 sterling collar featuring embossed medallion fringe and deep oxidized tribal repoussé engraving.
                 </p>
               </div>
-              <div className="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between">
-                <button
-                  type="button"
-                  onClick={() =>
-                    setSelectedProduct(silverProducts.find((p) => p.id === "coin-drop-silver-choker") || null)
-                  }
-                  className="text-slate-300 hover:text-warm-ivory text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
-                >
-                  <span>View Details</span>
-                  <Eye className="w-4 h-4" />
-                </button>
+              <div className="pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-4 flex-wrap">
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setSelectedProduct(silverProducts.find((p) => p.id === "coin-drop-silver-choker") || null)
+                    }
+                    className="text-slate-300 hover:text-warm-ivory text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                  >
+                    <span>View Details</span>
+                    <Eye className="w-4 h-4" />
+                  </button>
+                  <ProductShareButton
+                    productId="coin-drop-silver-choker"
+                    productName="Nagaur Tribal Coin Hasli"
+                    variant="pill"
+                  />
+                </div>
                 <a
                   className="px-5 py-2.5 bg-slate-800 text-warm-ivory hover:bg-slate-700 transition-all text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1.5 border border-slate-600"
                   href={getWhatsAppProductUrl(
                     "Nagaur Tribal Coin Hasli",
-                    "https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
+                    "coin-drop-silver-choker"
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -577,7 +607,7 @@ export function CollectionsClient() {
             {/* Silver Right Stack (7 cols) */}
             <div className="lg:col-span-7 flex flex-col gap-8 justify-between">
               {/* Chevron Cuff */}
-              <article className="bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center group shadow-lg">
+              <article id="hammered-silver-tribal-cuff" className="bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center group shadow-lg scroll-mt-28">
                 <div className="relative overflow-hidden bg-black/60 w-full md:w-1/2 h-56 sm:h-64 shrink-0">
                   <Image
                     src="https://lh3.googleusercontent.com/aida/AEtjO1XPvYHSXDFNB9kbZ_GGX56kMBrYmeXXpV7n5_MBltn5r_Cp0M-to_f4YD4Qq2USJkkN9cJPieapelox9UiV9sWESVxUVeRU4ecnnb8LSFZJJTYu7FT4Qp7avhaVEr1IuYzZkPMd_AgR4VuR9g52Twrkq-PhRFVaQSgM8Qwxqb-rskZCoBJzPTIm1Fw4SMrb04EHQ-Tu2owQGf2D4kRLaKBspKUeHTHHbFmJwOb8TpTqtNCStmoJm072edE=s0"
@@ -596,7 +626,7 @@ export function CollectionsClient() {
                       Satin-burnished 925 silver cuff inscribed with rhythmic chevron chevrons and softened natural edges.
                     </p>
                   </div>
-                  <div className="pt-4 mt-6 border-t border-slate-800 flex items-center justify-between">
+                  <div className="pt-4 mt-6 border-t border-slate-800 flex items-center justify-between gap-2 flex-wrap">
                     <button
                       type="button"
                       onClick={() =>
@@ -607,24 +637,30 @@ export function CollectionsClient() {
                       <span>View Details</span>
                       <Eye className="w-3.5 h-3.5" />
                     </button>
-                    <a
-                      className="text-slate-400 hover:text-warm-ivory text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
-                      href={getWhatsAppProductUrl(
-                        "Hammered Chevron Silver Cuff",
-                        "https://lh3.googleusercontent.com/aida/AEtjO1XPvYHSXDFNB9kbZ_GGX56kMBrYmeXXpV7n5_MBltn5r_Cp0M-to_f4YD4Qq2USJkkN9cJPieapelox9UiV9sWESVxUVeRU4ecnnb8LSFZJJTYu7FT4Qp7avhaVEr1IuYzZkPMd_AgR4VuR9g52Twrkq-PhRFVaQSgM8Qwxqb-rskZCoBJzPTIm1Fw4SMrb04EHQ-Tu2owQGf2D4kRLaKBspKUeHTHHbFmJwOb8TpTqtNCStmoJm072edE=s0"
-                      )}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>Enquire</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </a>
+                    <div className="flex items-center gap-3">
+                      <ProductShareButton
+                        productId="hammered-silver-tribal-cuff"
+                        productName="Hammered Chevron Silver Cuff"
+                      />
+                      <a
+                        className="text-slate-400 hover:text-warm-ivory text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
+                        href={getWhatsAppProductUrl(
+                          "Hammered Chevron Silver Cuff",
+                          "hammered-silver-tribal-cuff"
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5 text-slate-300" />
+                        <span>Enquire</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>
 
               {/* Moonstone Ring */}
-              <article className="bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center group shadow-lg">
+              <article id="raw-moonstone-silver-ring" className="bg-[#141822] border border-slate-800 p-6 sm:p-8 flex flex-col md:flex-row gap-6 items-center group shadow-lg scroll-mt-28">
                 <div className="relative overflow-hidden bg-black/60 w-full md:w-1/2 h-56 sm:h-64 shrink-0">
                   <Image
                     src="https://lh3.googleusercontent.com/aida/AEtjO1WdzzREAZQlhEZ2a2f2MpDOa2_FvEOkmXfaL4p6as1xLhcC-GFleW6UQ8C1X7AKue_s1MSGiqcOQi7KmfPexTTvMVs-CKhaRSkw3QJ7t5vAqZuoHDKLWjQJk-GKQ9Ix_BxTLVLt7SrqTZ8Ax6YjLiK6DykZIX3tcR8XR4OfPSSvq5IfTxror--XG-5ncvAG6O8oz4A2RaKJ9Wi7tkXWajvr9Jb6qiDrXsn9hkW9wH1qJbsXLf67TPU-nDY=s0"
@@ -643,7 +679,7 @@ export function CollectionsClient() {
                       Uncut celestial moonstone encapsulated in multi-tiered wirework granulation on 925 silver.
                     </p>
                   </div>
-                  <div className="pt-4 mt-6 border-t border-slate-800 flex items-center justify-between">
+                  <div className="pt-4 mt-6 border-t border-slate-800 flex items-center justify-between gap-2 flex-wrap">
                     <button
                       type="button"
                       onClick={() =>
@@ -654,18 +690,24 @@ export function CollectionsClient() {
                       <span>View Details</span>
                       <Eye className="w-3.5 h-3.5" />
                     </button>
-                    <a
-                      className="text-slate-400 hover:text-warm-ivory text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
-                      href={getWhatsAppProductUrl(
-                        "Raw Moonstone Filigree Ring",
-                        "https://lh3.googleusercontent.com/aida/AEtjO1WdzzREAZQlhEZ2a2f2MpDOa2_FvEOkmXfaL4p6as1xLhcC-GFleW6UQ8C1X7AKue_s1MSGiqcOQi7KmfPexTTvMVs-CKhaRSkw3QJ7t5vAqZuoHDKLWjQJk-GKQ9Ix_BxTLVLt7SrqTZ8Ax6YjLiK6DykZIX3tcR8XR4OfPSSvq5IfTxror--XG-5ncvAG6O8oz4A2RaKJ9Wi7tkXWajvr9Jb6qiDrXsn9hkW9wH1qJbsXLf67TPU-nDY=s0"
-                      )}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span>Enquire</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </a>
+                    <div className="flex items-center gap-3">
+                      <ProductShareButton
+                        productId="raw-moonstone-silver-ring"
+                        productName="Raw Moonstone Filigree Ring"
+                      />
+                      <a
+                        className="text-slate-400 hover:text-warm-ivory text-[11px] tracking-[0.2em] uppercase font-medium flex items-center gap-1"
+                        href={getWhatsAppProductUrl(
+                          "Raw Moonstone Filigree Ring",
+                          "raw-moonstone-silver-ring"
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5 text-slate-300" />
+                        <span>Enquire</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -789,15 +831,29 @@ export function CollectionsClient() {
                     Sculpted with pure 24K gold foil bezels enclosing uncut Polki diamonds. Flanked by hand-enameled meenakari reverses and south sea baroque pearls.
                   </p>
                 </div>
-                <div className="pt-8 mt-8 border-t border-champagne-gold/20 flex items-center justify-between">
-                  <span className="text-[11px] uppercase tracking-widest text-warm-ivory/50 font-sans">
-                    Private Commission
-                  </span>
+                <div className="pt-8 mt-8 border-t border-champagne-gold/20 flex items-center justify-between gap-3 flex-wrap">
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelectedProduct(PRODUCTS.find((p) => p.id === "archival-kundan-collar") || null)
+                      }
+                      className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <Eye className="w-4 h-4" />
+                    </button>
+                    <ProductShareButton
+                      productId="archival-kundan-collar"
+                      productName="The Rajputana Kundan Collar"
+                      variant="pill"
+                    />
+                  </div>
                   <a
                     className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
-                      "The Rajputana Kundan Collar (Archival Suite 01)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XB2XhfeLWZu0HKdZQfcHEXkCkzsJd2spa9s2wau-CuAlhe5HIz2pQZIK_ZAwlTP2i9HsM-zNOSIqkF2b2zLRqWL7cI9KMRgs8KMqNTMYQifmzO_FoS8TnMM7O2H4MUBx8R_2LbJOrhhjS6cKTQl2zQcH5iYRfcd_AVsp8AMVT5yM6gpkPM0Xs6wk7Zv7Aosz19VGc_O4xfpHAc3fVnhp0avMT8gco6yvE04M3iKeDw1jzX5tlMN_xEng=s0"
+                      "The Rajputana Kundan Collar",
+                      "archival-kundan-collar"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -826,15 +882,29 @@ export function CollectionsClient() {
                     Substantial hand-worked 22K gold wirework presenting mythological motifs framed within delicate gokhru floral creepers and cascading tassels.
                   </p>
                 </div>
-                <div className="pt-8 mt-8 border-t border-champagne-gold/20 flex items-center justify-between">
-                  <span className="text-[11px] uppercase tracking-widest text-warm-ivory/50 font-sans">
-                    Archival Edition
-                  </span>
+                <div className="pt-8 mt-8 border-t border-champagne-gold/20 flex items-center justify-between gap-3 flex-wrap">
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelectedProduct(PRODUCTS.find((p) => p.id === "marwar-temple-rani-haar") || null)
+                      }
+                      className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <Eye className="w-4 h-4" />
+                    </button>
+                    <ProductShareButton
+                      productId="marwar-temple-rani-haar"
+                      productName="The Parvatsar Temple Rani Haar"
+                      variant="pill"
+                    />
+                  </div>
                   <a
                     className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
-                      "The Parvatsar Temple Rani Haar (Archival Suite 02)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XnH8ftKWNSjn5HgVmzUItyXCxoY1XKgyv2x5WZS9UiCkZS4hzeLRYRTgmmEZ-o-F5PHSHYsV27Mbm0IitLEA-lku84ZOkd4iyD54moD4nP4rr4d8i7yTl5Up8rDz-QUhQ4mYGbqcqkv7KXqv85DZOfdj9PoRvYOHvnXyVbonHaLmYWIhd0-GDRGVNZwo1usVmZ-eRGuWCaSjJZpJ-plq3f95_vMwZZ3q7qhsBociB13sTvcd36P2NFffw=s0"
+                      "The Parvatsar Temple Rani Haar",
+                      "marwar-temple-rani-haar"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -879,15 +949,29 @@ export function CollectionsClient() {
                     Historical rigid torque forged from pure 925 sterling silver, hand-engraved with ritualistic Rajput motifs and weighted coin medallions.
                   </p>
                 </div>
-                <div className="pt-8 mt-8 border-t border-slate-800 flex items-center justify-between">
-                  <span className="text-[11px] uppercase tracking-widest text-warm-ivory/50 font-sans">
-                    Antique Showcase
-                  </span>
+                <div className="pt-8 mt-8 border-t border-slate-800 flex items-center justify-between gap-3 flex-wrap">
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelectedProduct(PRODUCTS.find((p) => p.id === "coin-drop-silver-choker") || null)
+                      }
+                      className="text-slate-300 hover:text-warm-ivory text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <Eye className="w-4 h-4" />
+                    </button>
+                    <ProductShareButton
+                      productId="coin-drop-silver-choker"
+                      productName="The Nagaur Antique Coin Hasli"
+                      variant="pill"
+                    />
+                  </div>
                   <a
                     className="text-slate-300 hover:text-warm-ivory text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
-                      "The Nagaur Antique Coin Hasli (Archival Suite 03)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XA9G-DoGUd0VQ78axYeWb-HLcSZzsQ6roshLWS3VsUVnJShBic_lusj-DpEGSRbVY2kkK0N2bAUsvc-Ccq_q9i7A9h4R1okNvVHgq3DI3-DzBJS_7GiydNBaSfJwTFP2fG9-7SRDKnkXoxv45ETB3Z5nrUQekvFCXehrLyG6kP4csF0_3LS1k24PV_T40C38izGGlr_5-AJzphcxHWc78oz-r53zdnbU2hSF6CTTvVEVmRwPGrIFFf5Qw=s0"
+                      "The Nagaur Antique Coin Hasli",
+                      "coin-drop-silver-choker"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -916,15 +1000,29 @@ export function CollectionsClient() {
                     Ceremonial pair of heavy 22K bangles, repoussé-chased with interlocking foliage and miniature florets. Finished with internal safety screw clasp.
                   </p>
                 </div>
-                <div className="pt-8 mt-8 border-t border-champagne-gold/20 flex items-center justify-between">
-                  <span className="text-[11px] uppercase tracking-widest text-warm-ivory/50 font-sans">
-                    Bridal Essential
-                  </span>
+                <div className="pt-8 mt-8 border-t border-champagne-gold/20 flex items-center justify-between gap-3 flex-wrap">
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelectedProduct(PRODUCTS.find((p) => p.id === "sculpted-gokhru-kadas") || null)
+                      }
+                      className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      <span>View Details</span>
+                      <Eye className="w-4 h-4" />
+                    </button>
+                    <ProductShareButton
+                      productId="sculpted-gokhru-kadas"
+                      productName="The Royal Gokhru Pair"
+                      variant="pill"
+                    />
+                  </div>
                   <a
                     className="text-champagne-gold hover:text-soft-gold text-xs tracking-[0.2em] uppercase font-semibold flex items-center gap-1.5"
                     href={getWhatsAppProductUrl(
-                      "The Royal Gokhru Pair (Archival Suite 04)",
-                      "https://lh3.googleusercontent.com/aida/AEtjO1UMhuWnXPvSYfgbTuCK0fWtvYvhgeR7NSgGK3vIldxIyzPwOALPirdcua246jDdkqWnmlgL1XzS-4aQpOcMitO02dDBMag9vqDvx3bzAA0Mp0cSzhExhPDz8p5S4LL30g1eaBz4lAqIy5vwxGXoCRqA9jBdpS1S0p_wy6rIKvo-KZIVY4Ydl21647HREHuhkV2deC5JIUS8oOicg0f1G2uaqTBsJmBCY3VQ-awk5sg1nRPfZOqmdC82j1Y=s0"
+                      "The Royal Gokhru Pair",
+                      "sculpted-gokhru-kadas"
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
