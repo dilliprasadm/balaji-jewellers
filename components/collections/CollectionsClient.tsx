@@ -48,17 +48,48 @@ export function CollectionsClient() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const hash = window.location.hash.toLowerCase();
-      if (hash === "#silver" || hash === "#silver-section") {
+      // 1. Check for product query param (?product=product-id)
+      const params = new URLSearchParams(window.location.search);
+      const productQuery = params.get("product");
+      if (productQuery) {
+        const found = PRODUCTS.find(
+          (p) =>
+            p.id.toLowerCase() === productQuery.toLowerCase() ||
+            p.name.toLowerCase().replace(/[^a-z0-9]/g, "-") === productQuery.toLowerCase()
+        );
+        if (found) {
+          setSelectedProduct(found);
+          setTimeout(() => {
+            const cardEl = document.getElementById(found.id);
+            if (cardEl) {
+              const yOffset = -120;
+              const y = cardEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            } else {
+              scrollToDiscipline(found.category);
+            }
+          }, 350);
+          return;
+        }
+      }
+
+      // 2. Check for hash (#silver, #gold, #showroom, or #product-id)
+      const hash = window.location.hash.toLowerCase().replace("#", "");
+      if (hash === "silver" || hash === "silver-section") {
         setTimeout(() => scrollToDiscipline("silver"), 200);
-      } else if (hash === "#gold" || hash === "#gold-section") {
+      } else if (hash === "gold" || hash === "gold-section") {
         setTimeout(() => scrollToDiscipline("gold"), 200);
-      } else if (hash === "#showroom") {
+      } else if (hash === "showroom") {
         const el = document.getElementById("showroom");
         if (el) {
           const yOffset = -90;
           const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      } else if (hash) {
+        const foundByHash = PRODUCTS.find((p) => p.id.toLowerCase() === hash);
+        if (foundByHash) {
+          setSelectedProduct(foundByHash);
         }
       }
     }

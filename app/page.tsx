@@ -18,6 +18,7 @@ import {
   MapPin,
   Clock,
 } from "lucide-react";
+import { InstagramFeed } from "@/components/social/InstagramFeed";
 
 export default function HomePage() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -612,6 +613,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ========================================================
+          SECTION: OFFICIAL INSTAGRAM DISPATCHES (METHOD 3)
+          ======================================================== */}
+      <InstagramFeed />
 
       {/* ========================================================
           SECTION 10: SHOWROOM INVITATION

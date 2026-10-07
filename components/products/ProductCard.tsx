@@ -13,10 +13,13 @@ interface ProductCardProps {
 
 export function ProductCard({ product, onSelectProduct }: ProductCardProps) {
   const primaryImage = product.images[0];
-  const whatsAppUrl = getWhatsAppProductUrl(product.name, primaryImage);
+  const whatsAppUrl = getWhatsAppProductUrl(product.name, product.id);
 
   return (
-    <div className="group relative bg-[#260003] border border-champagne-gold/25 hover:border-champagne-gold/60 transition-all duration-500 flex flex-col justify-between overflow-hidden shadow-[0_16px_40px_-10px_rgba(0,0,0,0.8)]">
+    <div
+      id={product.id}
+      className="group relative bg-[#260003] border border-champagne-gold/25 hover:border-champagne-gold/60 transition-all duration-500 flex flex-col justify-between overflow-hidden shadow-[0_16px_40px_-10px_rgba(0,0,0,0.8)] scroll-mt-28"
+    >
       {/* Subtle Ambient Glow on Hover */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-champagne-gold/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 

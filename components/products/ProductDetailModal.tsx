@@ -19,7 +19,7 @@ export function ProductDetailModal({ product, onClose }: ProductDetailModalProps
   if (!product) return null;
 
   const currentImage = product.images[selectedImageIndex] || product.images[0];
-  const whatsAppUrl = getWhatsAppProductUrl(product.name, currentImage);
+  const whatsAppUrl = getWhatsAppProductUrl(product.name, product.id);
 
   return (
     <div
