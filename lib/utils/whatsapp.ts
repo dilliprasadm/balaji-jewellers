@@ -67,8 +67,6 @@ export function getWhatsAppProductUrl(
     if (productUrl) {
       message += `\n\n${productUrl}`;
     }
-
-    message += `\n\nPlease share availability and showroom details in Parvatsar.`;
   }
 
   const encoded = encodeURIComponent(message);
